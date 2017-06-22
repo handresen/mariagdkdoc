@@ -14,13 +14,13 @@ This documentation has been created using [Jekyll](http://jekyllrb.com/docs/home
 Instructions for authoring can be found [here](http://idratherbewriting.com/documentation-theme-jekyll/).
 
 ### Document organization
-For specific product documentation, select wanted product from the products menu.
+For detailed  documentation, please select wanted content from the "Content" menu.
 
 |  | Name | Description |
 |:---:|:---|:---|
-| <img class="tableImage" src="images/marialogo_small.png"/> | Core documentation | Dette er en test. Common reference documentation describing low level services and base apis |
-| <img class="tableImage" src="images/marialogo_small.png"/> | Maria API | Maria API presents simplified interface for working with the GDK services and client layers  |
-| <img class="tableImage" src="images/marialogo_small.png"/> | Maria Map Maker | Used to create and manage maps  |
+| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Core GDK functionality][core_landing_page] | Detailed description of layers, functionality and services |
+| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria client API](mariaapi_landing_page.html) | Maria API presents simplified interface for working with the GDK services and client layers  |
+| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria Map Maker](mmm_landing_page.html) | Used to create and manage maps  |
 
 
 {% include links.html %}

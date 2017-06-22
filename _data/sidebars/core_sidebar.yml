@@ -1,0 +1,80 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Maria GDK Core functionality
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Maps
+    output: web, pdf
+    folderitems:
+    - title: General map setup
+      url: /core_map_setup.html
+      output: web, pdf
+
+    - title: Vector maps
+      url: /core_vector_maps.html
+      output: web, pdf
+
+    - title: Raster maps
+      url: /core_vector_maps.html
+      output: web, pdf
+    
+    - title: WMS
+      url: /core_wms.html
+      output: web
+
+  - title: Map overlays
+    output: web, pdf
+    folderitems:
+    - title: Styling
+      url: /core_styling.html
+      output: web
+
+    - title: Tracks
+      url: /core_tracks.html
+      output: web
+
+    - title: Draw objects
+      url: /core_draw_objects.html
+      output: web, pdf
+
+  - title: Technologies
+    output: web, pdf
+    folderitems:
+    - title: Rest interfaces
+      url: /core_rest.html
+      output: web, pdf
+
+    - title: Rest interfaces
+      url: /core_rest.html
+      output: web, pdf
+
+  - title: Tools, libraries and utilities
+    output: web, pdf
+    folderitems:
+    - title: Position parsing
+      url: /core_posparsing.html
+      output: web, pdf
+
+    - title: Rest interfaces
+      url: /core_rest.html
+      output: web, pdf
+
+
+
