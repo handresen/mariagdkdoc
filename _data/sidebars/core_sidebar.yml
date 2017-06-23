@@ -23,34 +23,43 @@ entries:
   - title: Maps
     output: web, pdf
     folderitems:
-    - title: General map setup
-      url: /core_map_setup.html
+    - title: Preparing map packages
+      url: /core_map_prepare.html
       output: web, pdf
 
-    - title: Vector maps
-      url: /core_vector_maps.html
+    - title: Vector map setup
+      url: /core_vector_map_setup.html
       output: web, pdf
 
-    - title: Raster maps
-      url: /core_vector_maps.html
+    - title: Raster map setup
+      url: /core_raster_map_setup.html
       output: web, pdf
     
     - title: WMS
       url: /core_wms.html
       output: web
 
-  - title: Map overlays
+  - title: On top of the map
     output: web, pdf
     folderitems:
-    - title: Styling
-      url: /core_styling.html
-      output: web
     - title: Tracks
       url: /core_tracks.html
       output: web
     - title: Draw objects
       url: /core_draw_objects.html
       output: web, pdf
+    - title: Styling
+      url: /core_styling.html
+      output: web    
+    - title: Point symbols
+      url: /core_symbolpoint.html
+      output: web
+    - title: Geo fencing
+      url: /core_geofencing.html
+      output: web
+    - title: Location
+      url: /core_location.html
+      output: web
 
   - title: Technologies
     output: web, pdf
@@ -72,6 +81,19 @@ entries:
 
     - title: Rest interfaces
       url: /core_rest.html
+      output: web, pdf
+
+  - title: Installation and setup
+    output: web, pdf
+    folderitems:
+    - title: Service installation
+      url: /core_setup_installation.html
+      output: web, pdf
+    - title: Service configuration
+      url: /core_setup_configuration.html
+      output: web, pdf
+    - title: Service discovery
+      url: /core_setup_service_discovery.html
       output: web, pdf
 
 
