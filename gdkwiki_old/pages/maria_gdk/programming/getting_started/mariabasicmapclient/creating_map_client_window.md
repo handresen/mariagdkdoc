@@ -1,0 +1,114 @@
+## Step 1: Creating the Map Client Window
+
+Create a  ***WPF Window*** (main application window or sub window) - *MariaWpfWindow* - to be used for your map client.
+((For building Maria GDK clients in Windows forms applications, see [Maria Windows-Forms Client](maria_gdk/programming/getting_started/map_client_hosted_in_a_windows_forms_window).))
+
+{{maria_gdk:programming:getting_started:mariabasicmapclient:creatingmapclientwindow.png?direct&500|Map Client Window}} 
+
+### Including MariaUserControl
+
+`<WRAP center round info>`
+For this part you will need **//TPG.Maria.MariaUserControl//** NuGet package as a minimum.\\
+See [Loading Maria GDK, NuGet Packages](maria_gdk/programming/loading_maria_2012_packages)
+`</WRAP>`
+
+Add the MariaUserControl to the xaml of your window, name of your choice, optionally including properties for the integrated map controls.
+
+```xml
+<Window x:Class="BasicMapClient.MariaWpfWindow"
+ . . . 
+ xmlns:MariaUserControl= "clr-namespace:TPG.Maria.MariaUserControl; assembly=TPG.Maria.MariaUserControl"
+ Title="MariaWpfWindow" Height="550" Width="525" >
+  `<Grid>`
+   <MariaUserControl:MariaUserControl Name="MariaCtrl"
+                                      IsMiniMapVisible="True"
+                                      IsPanNavigationVisible="True"
+                                      IsScaleBarVisible="True"
+                                      IsRulerVisible="True"
+                                      />
+  `</Grid>`
+`</Window>`
+```
+    
+### Main view model
+
+ Create a class (//MariaWindowViewModel//) for communication with the Maria component.
+
+In the constructor of your window (//MariaWpfWindow//) Set the data context of your client window to be this interface class.
+
+```csharp
+public MariaWpfWindow()
+{
+  InitializeComponent();
+  DataContext = new MariaWindowViewModel();
+}
+```
+### Handle the WindowClosing event
+
+In the window holding your *MariaUserControl* (//MariaWpfWindow//), implement an event handler for the *WindowClosing* event, disposing the *MariaUserControl* object.
+
+In the XAML :
+
+```xml
+<Window x:Class="BasicMapClient.MariaWpfWindow"
+ . . . 
+ Title="MariaWpfWindow" Height="550" Width="525" Closing="WindowClosing">
+ `<Grid>`
+  <MariaUserControl:MariaUserControl
+   . . .
+```
+In the code behind:
+
+```csharp
+private void WindowClosing(object sender, System.ComponentModel.CancelEventArgs e)
+{
+  MariaCtrl.Dispose();
+}
+```
+
+### Preparing for creation of Maria layers
+
+In the main interface class, *MariaWindowViewModel*, create an auto property to hold a list of Maria layers (//Layers//).
+
+```csharp
+public ObservableCollection`<IMariaLayer>`Layers { get; set; }
+
+// Add a constructor, initializing the list.
+internal MariaWindowViewModel()
+{
+    Layers = new ObservableCollection`<IMariaLayer>`();
+}
+```
+Then, bind the Layers property of the MariaUserControl to this list.
+
+```xml
+<MariaUserControl:MariaUserControl Name="MariaCtrl"
+                                   Layers="{Binding Layers}"
+                                   IsMiniMapVisible="True"
+                                   IsPanNavigationVisible="True"
+                                   IsScaleBarVisible="True"
+                                   IsRulerVisible="True"
+                                   />
+```
+Then, for each of the desired layers (see separate descriptions for each layer type.)
+
+
+*  Create an instance of the corresponding layer class 
+
+*  Add the created layer to the *MariaWindowViewModel* Layers property. 
+
+Note: Rendering of the layers will be in the same order as they are in the Layers property.
+
+
+*  Also add event handler(s) for the *LayerInitialized* event(s). 
+
+The layers are accessed programmatically through the different layers interfaces, from GUI controls like buttons, toggle buttons, checkboxes, combo boxes, textboxes etc., from code handling miscellanies types of events.
+
+Please note that no access should be performed against the layer until the *LayerInitialized* event has been called.
+
+`<WRAP round  box>`
+Building and running your application, the window area should now show an empty area including navigation controls according to your specifications!
+`</WRAP>`
+
+{{maria_gdk:programming:maria_2012_tutorial_html_26d0da4f.png?direct&250|Empty map area with navigation controls}}
+

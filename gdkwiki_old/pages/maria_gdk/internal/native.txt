@@ -1,0 +1,94 @@
+====== Maria GDK Native ======
+
+This page describes how to set up and compile the native (C++) components for Maria GDK. These components depend on Qt and QMake for compilation.
+
+===== Prerequisites =====
+
+Before you start, you need to install the Qt SDK and Qt Creator tools. These can be downloaded from 
+
+https://www.qt.io/download-open-source/
+
+We recommend using the online installer. In the online installer you can select all the Qt Versions we use for Maria GDK. As of this writing (January 2017) we use Qt 5.4 for VS2013 in 32- and 64-bit.
+
+{{:maria_gdk:internal:screenshot_2014-05-28_14.12.38.png?200 |}}
+
+Note that there are two versions of each Windows Qt version; default one, and //OpenGL//. The default version uses the [[https://code.google.com/p/angleproject/|ANGLE]] OpenGL wrapper, which is what we need for interfacing with managed code. 
+
+You may also want to install the source code, this enables you to step inside the Qt code itself when debugging, which can some times be useful.
+
+=== TFS Plugin ===
+
+//(As of this writing, the TFS plugin is out of date and for now you need to either check out from Visual Studio or the TFS Power Tools, or use a local workspace) //
+
+You should also download the TFS plugin for Qt Creator:
+
+http://www.oktet.net/2014/02/04/team-foundation-server-plugin-for-qt-creator/
+
+Simply download the zip file for your version of Qt Creator and unzip it into a subdirectory called //TeamFoundation// under //C:\Qt\Tools\QtCreator\lib\qtcreator\plugins//
+
+You can also find a copy of this plugin for Qt Creator 3.1 under ''U:\Qt''
+
+This plugin also uses Microsoft TFS Power Tools. I am not certain if this is required, but to be sure, you should install the TFS Powertools from the Visual Studio "Tools and Extensions" menu.
+
+The first time you start Qt Creator, you should go to the //Tools/Options// menu and select //Version Control//. There you should have a "Team Foundation" tab where you should enter the paths to the TF.exe and TFPT.exe commands, like this:
+
+{{:maria_gdk:internal:screenshot_2014-05-28_15.04.51.png?200 |}}
+
+When this is correctly set up, you should be able to check out files for edit and commit them inside Qt Creator. When editing a file for the first time, you will get a prompt allowing you to check out the file for editing.
+
+<WRAP important round>
+Note: You should not use the TFS plugin for the initial getting of the project source code, since it will by default try to get the entire TFS source tree. Use Visual Studio and Source Control explorer instead.
+</WRAP>
+
+==== Configuring the project ====
+
+When you open the Maria.pro project file from Qt Creator the first time, you will be taken to the project configuration page. Here you need to set up the different build configurations for our project.
+
+By default we use out of source or "shadow" building. This means that all object files and other generated files will be kept separate from the source tree. This prevents cluttering of the source tree, and you can simply delete the entire build folder when you are finished with it.
+
+The Maria GDK Visual Studio native solutions are set up to search for native components in the default build directories, as well as the checked in library directiories. This means that if you set up the build directory correctly, your local builds will be preferred over the checked-in versions.
+
+The default build path is 
+    
+    <Project root>\MARIA\Branches\Development\MariaNG1.0\Native\build\VS<Version>_<Platform>_<Configuration>
+    
+The build subdirectory would for example be ''VS2013_x64_Debug'' for a 64-bits Debug build with VS2013.
+
+The build path needs to be set up for both the 32- and 64-bits kits (all installed kits should appear as tabs on the project configuration page), and for Debug and Release configurations.
+
+When you have set up everything to your liking, click //Configure Project// and everything should be set up for compilation in Debug and Release for the kits you have configured.
+
+==== Installation targets ====
+
+if you need to build native releases, you also need to set up installation targets for the project. Basically this will put the output libraries in the checked in library directories, ready for checking into TFS. (You may need to check out the corresponding library files for editiing in TFS before you do this).
+
+To set up an install target for our project, go to the "Projects" page in Qt Creator, and for each Kit we add a new Debug and Release configuration that adds a "make install" command after compilation. 
+
+  - Select //Debug// from the "Edit build configuration" dropdown. 
+  - Select //Clone Selected// from the "Add" dropdown next to it.
+  - Call the new configuration "Debug Install".
+  - Select //Make// from the the "Add Build Step" dropdown.
+  - Type //install// in the "Make Arguments" text field.
+
+It should now look like the following screen shot:
+
+{{:maria_gdk:internal:screenshot_2014-05-28_15.41.10.png?200|}}
+
+Next, select //Release// from the "Edit build configuration" and repeat the process, creating a "Release Install" configuration.
+
+==== Compiling ====
+
+In the lower left hand corner of Qt Creator, you will find the configuration selector. Here you select which compiler kit/configuration to build as well as what application should be the startup application. To do the actual build, just click the hammer icon, or use the CTRL+B hotkey.
+
+
+==== Running the applications ====
+To test if everything works, you can try to run the //Marian2D// application. This application requires the Maria map and catalog services running on localhost. You can set up which map templates to use in the Maria Qt project under /data/Other files/default.cfg file
+
+To run the application from Qt Creator, you need to set up a command line parameter telling the application where to find some required data files (shaders and such). Go to "Projects" and select the "Run" tab for your active Kit. Here you add the ''--rootdir'' parameter pointing to the root dir of the Maria Native tree, for example like this:
+
+{{:maria_gdk:internal:screenshot_2014-06-04_14.49.51.png?200 |}}
+
+<WRAP tip round>
+For more details on how to use Qt Creator, see http://doc.qt.io/qtcreator/index.html
+</WRAP>
+

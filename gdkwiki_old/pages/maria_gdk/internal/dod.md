@@ -1,0 +1,17 @@
+# Definition of Done
+
+`<WRAP center round alert 60%>`
+UNDER CONSTRUCTION
+`</WRAP>`
+
+This is a checklist for verifying that an issue is actually done. Before changing the status of the issue / WIT complete the checklist and if not complient add nessesary tasks to the issue / WIT.
+
+*  The code is well written. (That is, we’re happy with it and don’t feel like it immediately needs to be rewritten.)
+
+*  The code is checked in.
+
+*  The code was either pair programmed or peer reviewed.
+
+*  The code comes with tests at all appropriate levels. (That is, unit, service and user interface.)
+
+*  The feature the code implements has been documented in any end-user documentation such as manuals or help systems.

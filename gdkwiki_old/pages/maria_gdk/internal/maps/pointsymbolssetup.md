@@ -1,0 +1,23 @@
+### Punkter i symbols.xml
+
+```xml
+`<point>`
+  `<sgname>`point_0010`</sgname>`
+  `<origo type="center" />`
+  `<extent w="50.24" h="50.24" />`
+  `<scale value="0.2" />`
+`</point>`
+```
+
+Alle punkter har en extent. Opprinnelig var dette bitmapens dimensjoner i mm, men nå fungerer den som et forholdstall mellom bredde og høyde. Dvs om det står w=100 og h=50 eller w=2 og h=1 så går det for det samme så lenge forholdet mellom dem stemmer med virkeligheten.
+
+Alle punkter må ha et definert origopunkt for at det skal bli plassert riktig i kartet. Default er «center», dvs midt på bitmapen. Konsulter kartstandarden for å finne origopunkter for mer komplekse symboler.
+Bruk f.eks. inkscape til å finne koordinatene for origo. Disse må stemme overens med dimensjonene oppgitt i «extent». Dvs en bitmap med extent 100/50 og origo 25/25 vil for en bitmap med extent 2/1 ha origo i 0.5/0.5.
+
+For å finne origo for et DNC-symbol se i standarden (MIL-DTL-89045.pdf) og lokaliser kilden til symbolet (f.eks. FC165 har source: IHO S-52, source ID: SY/RCTLPT52). 
+
+ {{:maria_gdk:internal:maps:punktsymbol1.png|}}\\
+
+ {{:maria_gdk:internal:maps:punktsymbol2.png|}}\\
+ 
+

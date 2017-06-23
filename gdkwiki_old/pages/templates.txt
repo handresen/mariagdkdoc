@@ -1,0 +1,7 @@
+{{:teleplan.png?nolink&200|}}\\
+\\
+**TELEPLAN GLOBE DOKUWIKI TEMPLATES**
+
+====== Wiki Document Templates ======
+
+  * [[templates:user_manual_template|User Document Template]]\\

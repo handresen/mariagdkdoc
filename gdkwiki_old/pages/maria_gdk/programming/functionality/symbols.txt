@@ -1,0 +1,15 @@
+====== Symbols ======
+
+<WRAP center round todo 60%>
+Under construction!
+</WRAP>
+
+General description.
+
+===== Example =====
+
+===== Sections =====
+
+  * [[maria_gdk:programming:functionality:symbols:symbolservice|Symbol Service]]
+  * [[maria_gdk:programming:functionality:symbols:symbolproviders|Symbol Providers]] 
+  * [[maria_gdk:programming:functionality:symbols:configuration|Configuration]]

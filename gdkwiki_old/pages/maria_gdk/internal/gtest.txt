@@ -1,0 +1,70 @@
+====== Using google test with Maria GDK ======
+
+Google test works seamlessly with the integrated test manager in resharper.
+[[http://blog.jetbrains.com/rscpp/unit-testing-google-test/|Unit test using resharper]].
+
+{{:maria_gdk:internal:gtestsession.png?200|}}
+
+Working test project can be found in TFS project:
+$\MARIA\Branches\Development\MariaNG1.0\Native\legacy\tests\MapFeatureCoreTests.
+
+Required gtest files can be found in:
+$\MARIA\Branches\Development\MariaNG1.0\Native\ThirdParty\gtest-1.7.0
+
+When creating a test project: 
+  * Make sure that the full resharper suite with C++ support is installed
+  * Create a regular console app project (.exe)
+  * Include/link the libs that shall be tested into this project.
+  * Add include path to $\MARIA\Branches\Development\MariaNG1.0\Native\ThirdParty\gtest-1.7.0
+
+Implement "main" and include gtest-all.cc:
+<code c++>
+#include "stdafx.h"
+#include <gtest-all.cc>
+
+int main(int ac, char *av[])
+{
+	testing::InitGoogleTest(&ac, av);
+	return RUN_ALL_TESTS();
+}
+</code>
+
+Create .cpp files as needed to structure and implement tests. Include <gtest/gtest.h> in these files:
+
+<code c++>
+#include <gtest/gtest.h>
+
+TEST(AnalyzeString, DetectGuid)
+{
+	using namespace MapFeatureCore;
+	VectorTilesAnalyzer a;
+	MapDataSetCollectionReporter::LayerFieldInfo lfiInitial, lfiGuid1, lfiGuid2, lfiNoGuid1, lfiNoGuid2;
+	MapDataSetCollectionReporter::ReportQueryParams rqp;
+
+	a.AnalyzeValue("fname", sval("{A3149920-C339-4C0E-9490-448E27BFE4E0}"), rqp, lfiGuid1);
+	a.AnalyzeValue("fname", sval("1E98D45E-2881-41F4-A68A-A1440BC9A61F"), rqp, lfiGuid2);
+	a.AnalyzeValue("fname", sval("ZZ98D45E-2881-41F4-A68A-A1440BC9A61F"), rqp, lfiNoGuid1);
+	a.AnalyzeValue("fname", sval("!!!"), rqp, lfiNoGuid2);
+
+	EXPECT_TRUE(lfiInitial._stringInfo._allGuid) << L"Uninitialised guid state should be true";
+	EXPECT_TRUE(lfiGuid1._stringInfo._allGuid) << "Basic GUID parse with curlies";
+	EXPECT_TRUE(lfiGuid2._stringInfo._allGuid) << "Basic GUID parse";;
+	EXPECT_FALSE(lfiNoGuid1._stringInfo._allGuid) << "Invalid GUID characters";
+	EXPECT_FALSE(lfiNoGuid2._stringInfo._allGuid) << "Invalid GUID string";
+}
+</code>
+
+====== Teamcity setup for GTest ======
+In the Build that compiles the project using GTest you have to do two things. \\
+1. \\
+Add a new build step that runs the executable and creates an xml file with the result. 
+<code>
+PATH_TO_GTEST.exe --gtest_output=xml:%teamcity.build.checkoutDir%\test_results.xml
+</code>
+The path to the GTest executable should be given as a relative path to the output folder of the built project.
+
+2. \\
+Add a new XML report processing Build Feature to the build configuration. \\
+{{:maria_gdk:internal:build_feature_screenshot.png?direct&600|}} 
+\\ 
+Observe that the path to the xml file uses the same teamcity variable from the build step in 1. in order to find the produced xml report.

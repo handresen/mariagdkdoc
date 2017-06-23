@@ -1,0 +1,21 @@
+====== Preprocess Vector Data ======
+The Vector Map Service is contained in the Maria GDK and dedicated to produce maps from vector data. The Vector Map Service reads a proprietary Teleplan Globe map format (.m6mdata, .m6mindex), as well as vector tiles (.vtiles.sqlite). Both of these formats are created from sets of m6m files. An m6m file is equivalent to a single layer in a spatial dataset.
+
+The m6m files may be produced using [[http://www.gdal.org/|Geospatial Data Abstraction Library / OGR]] or [[http://www.safe.com/fme/fme-desktop/|FME Desktop]]. Both require a writer / driver developed and distributed by Teleplan Globe to be able to produce m6m files.\\
+
+==== Basic guides ====
+Basic instructions on how to translate vector files to a format that can be read by Maria GDK
+
+  * [[.:convertmap:fme|Producing m6m files using FME]]
+  * [[.:convertmap:ogr|Producing m6m files using OGR]]
+  * [[.:convertmap:indexing|Building m6m datasets from m6m files]]
+  * [[.:convertmap:vector_tiles|Building vector tilesets from m6m files]]
+
+
+==== Advanced guides ====
+Instructions on larger operations related to map conversion and the creation of map packages for MariaGDK
+  * [[.:convertmap:S-57|S-57 Hydrographic Data Translation]]
+  * [[.:convertmap:N50|N50 Data Translation]]
+  * [[.:convertmap:osm|OpenStreetMap data]]
+
+{{tag>[vector] [map] [m6m] [FME] [OGR] [GDAL]}}

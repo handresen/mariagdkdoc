@@ -1,0 +1,11 @@
+====== Developer environment setup ======
+  - [[maria_gdk:internal:devenvsetup:vs2013|Visual studio 2013/2015 and MARIA GDK setup]]
+  - [[maria_gdk:internal:devenvsetup:sqlite|Working with sqlite databases in Visual Studio]]
+  - [[maria_gdk:internal:devenvsetup:compilingnative|Compiling native code using Visual Studio 2010]] 
+  - [[maria_gdk:internal:devenvsetup:protobuf|Installing and adding protobuf to a Visual Studio project]]
+  - [[maria_gdk:internal:devenvsetup:hyperv|Installing windows 8.1 on a virtual machine]]
+  - [[maria_gdk:internal:devenvsetup:gdal_proj|Compiling GDAL and PROJ.4]]
+  - [[maria_gdk:internal:native|Maria GDK Native]]
+  - [[maria_gdk:internal:devenvsetup:native_rendering|Building the native rendering package]]
+  - [[maria_gdk:internal:devenvsetup:protobuf3|Use and project setup for google protobuf3]]
+  - [[.:devenvsetup:NugetRepo|Nuget Repositories]]

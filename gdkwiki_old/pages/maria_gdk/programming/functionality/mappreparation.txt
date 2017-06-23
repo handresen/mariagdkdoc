@@ -1,0 +1,20 @@
+====== Map preparation service ======
+The map preparation service is able to take raw input data in supported formats, prepare the data and publish them to either the raster or vector service.
+{{ :maria_gdk:programming:functionality:preparation_service:mappreparationserviceschematicoverview.png?direct&600 |}}
+\\
+The service was created with the objective of being as easy to use as possible, but yet with the possibility to control parts of the conversion pipeline. To support this the service API has two modes.\\ 
+One where you point the service to your data and it will analyze them to determine the process to run in order to best prepare the data.\\ 
+The other supported way is to ask the service for details on the preparation pipeline. With this information you can tweak parameters in order to take more control over how the data is prepared.
+
+===== The preparation pipeline =====
+The preparation service works with a script concept. A script consists of a set of steps that has to be executed on input data to create a complete package that is published to a map service. Some of the individual steps may expose parameters that can be adjusted by a client.\\
+As the backend for data that has to be changed, ie. shape data, we use the GDAL/OGR suite of tools. Knowledge of these tools can help the advanced user to configure the conversion pipeline.
+
+**[[maria_gdk:programming:functionality:mappreparation:tool_available|How to define scripts]]**
+===== Sharing maps =====
+There are two options on how to share the maps generated using the preparation service. Both depend on that all users that want to share maps are connected to the same catalog service.\\
+The first option is to flag the created the map as private. This means that when querying the catalog service for available maps, a map marked as private will not be listed. The catalog service will however resolve a map signature even if it is marked as private. The result of this is that you can mark a map as private and then share it to anyone by sending the actual map signature to users that needs to see the map.\\
+The other option is to leave the map signature as public. This means that anyone connected to the same catalog service can query for available map signatures and this way get a hold of the newly created map.
+
+
+

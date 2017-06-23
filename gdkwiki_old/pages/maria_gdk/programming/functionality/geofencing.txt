@@ -1,0 +1,36 @@
+====== Geofencing ======
+Geofencing allows the user to define geographical shapes that acts as virtual "fences". By defining interaction rules, it is possible to generate events based on how tracks interact with these shapes.\\
+A geofence consists of the following components:
+  * A geographical shape. Various object types are supported, for instance lines, polygon areas, sectors and range circles
+  * Interaction type, one of //entering//, //leaving// or //crossing//
+  * Track filter
+  * Report template
+ 
+When a track interacts with a geofence in accordance with a rule, a report is generated. A report template determines the contents of the report. Typically, the report includes:
+  * Time of interaction
+  * Track details
+  * Shape/object details
+  * Static information contained in the template, for instance textual warnings and importance of the event
+
+{{:maria_gdk:programming:functionality:geofencingserviceoverview.png?600|}}\\
+
+The core geofencing component is the geofencing service. It is responsible for fetching tracks and fence objects from respective services, for handling rule setup and execution as well as for providing clients with events.
+
+<WRAP center round info 60%>
+Rules by default apply to all tracks and shapes/objects in the service. Take care to define filters that only include the desired combination of tracks and shapes
+</WRAP>
+===== Example =====
+This example was generated using recorded AIS data and sample symbology. Notifications are displayed using the geofencing service diagnostic application.
+{{:maria_gdk:programming:functionality:map.png?400|Track entering "Langesund" area}}\\
+Figure: Track entering "Langesund" area\\ \\
+{{:maria_gdk:programming:functionality:notifications.png?400|Notification details}}\\
+ Figure: Notification details
+
+===== Sections =====
+[[.geofencing:service|Geofencing service]]\\
+[[.geofencing:datasources|Data sources]]\\
+[[.geofencing:rules|Rules]]\\
+[[.geofencing:notifications|Notifications]]\\
+[[.geofencing:movingrange|Track to track fences]]\\
+[[.geofencing:webapi|Web API]]
+

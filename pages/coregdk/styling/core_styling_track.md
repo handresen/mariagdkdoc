@@ -46,20 +46,20 @@ Using the NGTester app, it is very easy to experiment with different styling def
 Very simple track styling can be defined as follows:
 
 ```xml
-`<styleset name="Default">`
-  `<stylecategory name="TrackSymbol">`
-    `<style>`
-      `<valueitem name="Visible"value="true"/>`
-      `<compositeitem name="CoreSymbol">`
-        `<valueitem name="Opacity"value="1.0"/>`
-        `<valueitem name="Scale"value="1.5"/>`
-        `<valueitem name="DynamicScale"value="false"/>`
-        `<valueitem name="SymbolKeyField"value="symbol.2525code"/>`
-        `<valueitem name="Symbology"value="MilStd2525"/>`
-      `</compositeitem>`
-    `</style>`
-  `</stylecategory>`
-`</styleset>`
+<styleset name="Default">
+  <stylecategory name="TrackSymbol">
+    <style>
+      <valueitem name="Visible"value="true"/>
+      <compositeitem name="CoreSymbol">
+        <valueitem name="Opacity"value="1.0"/>
+        <valueitem name="Scale"value="1.5"/>
+        <valueitem name="DynamicScale"value="false"/>
+        <valueitem name="SymbolKeyField"value="symbol.2525code"/>
+        <valueitem name="Symbology"value="MilStd2525"/>
+      </compositeitem>
+    </style>
+  </stylecategory>
+</styleset>
 ```
 
 By using this style definition, all tracks are rendered using Mil standard 2525 symbology (`<valueitem name="Symbology" value="MilStd2525"/>`) and symbols are fixed size at all map scales (`<valueitem name="DynamicScale" value="false"/>`). In order to change symbology to NTDS, simply change the Symbology item to `<valueitem name="Symbology" value="NTDS"/>`

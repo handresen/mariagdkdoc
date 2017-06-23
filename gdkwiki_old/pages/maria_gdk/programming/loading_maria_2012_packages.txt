@@ -1,0 +1,22 @@
+====== Loading Maria GDK, NuGet Packages ======
+
+{{ :maria_gdk:programming:managenugetpackages.png?nolink&239|Manage NuGet Packages.}} \\
+Maria GDK assemblies are added to your project(s) through NuGet packages with the NuGet package manager -- available from the project popup menu.\\ 
+
+To access the packages, you need to define the Maria GDK package source (if not already set by nuget.congif files). Select the “Settings” button to get the Package Manager Options page to create the source.
+
+{{:maria_gdk:programming:getting_started:mariabasicmapclient:nuget_packagesources.png?nolink|Maria GDK NuGet Package Sources}}\\
+
+The Maria GDK Nuget packages are loaded from the Teleplan Globe support site. Use the following source:
+  * Release builds: http://support.teleplanglobe.com/NuGetReleases/nuget 
+  * Nightly builds: [[http://support.teleplanglobe.com/NuGetNightly/nuget|http://support.teleplanglobe.com/NuGetNightly/nuget]]\\ //Not guaranteed to be compatible with the released service installations.//
+
+Here you will find the available Maria GDK Nuget packages for download to your project(s), and also available updates when already installed.
+
+{{:maria_gdk:programming:mariagdk_nugetpackages.png?nolink| Maria GDK NuGet Packages.}}
+
+//
+
+<WRAP center round important>
+Make sure that the **Maria GDK version** downloaded matches the **Maria Services** you are using.
+</WRAP>

@@ -1,0 +1,16 @@
+====== Raster map setup ======
+Maria GDK raster map packages are used to setup and describe raster data. Although Maria GDK supports reading a large number of raster formats directly, the data should be converted to GeoPackage for optimal performance. Mappackages can be referenced from Maria GDK templates using the package mapsignature.
+
+
+===== The Raster Map packages XML =====
+
+[[.:raster:mappackages|Raster Map Packages XML]] - a detailed description of all the elements, parameters and values that make up the raster map package xml.
+
+===== Supported raster formats =====
+[[.:raster:formats|Supported formats]] - The GDAL formats which are included in the Raster Map Service
+
+===== Tutorials =====
+  * [[.:raster:resampling_methods|Interpolation and resampling methods]]
+  * [[.:raster:gdal_geopackage|Using GDAL to produce GeoPackages]]
+  * [[.:raster:maria_geopackage|Using MARIA command line tools to produce GeoPackages]]
+  * [[.:raster:tilemapbuilder|Using TileMapBuilder to produce tiled datasets]]

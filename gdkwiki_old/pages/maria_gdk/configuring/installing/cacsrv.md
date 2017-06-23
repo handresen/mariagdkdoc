@@ -1,0 +1,26 @@
+#  Map Cache Service
+
+The Map Cache Service builds a cache of map tiles for quicker retrieval of data and higher performance.
+
+In the application configuration there is an option to change the **Cache root path** where the cache files are stored. In the cache root path there will be one subfolder for each template in the Map Catalog Service.
+
+**discUsageThreshold** is only accesible from the config file. This parameter indicates the percentage of the harddrive the Cache Service is allowed to use.
+
+By default the **Service port** is set to 9007.
+
+{{:maria_gdk:mapcacheserviceinstallation.png?350|Maria 2012 Map Cache Service - Install Shield Wizard}}
+
+## Command line installation
+
+
+*  [Run installer using command line](./commandlineinstall)
+
+*  Supported [MSI property arguments](./propertyarguments)
+    * TPG_PATHTOSQLITEDBFILES
+    * TPGCATALOGSERVICEURL
+    * TPGSERVICEPORTEND
+    * TPGSERVICEPORT
+    * TPGREGISTERAS
+    * TPGLOGFILEPATH
+    * TPGMAXLLOGFILES
+    * TPGMAXLOGSIZE

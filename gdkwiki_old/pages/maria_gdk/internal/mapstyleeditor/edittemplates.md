@@ -1,0 +1,19 @@
+# Work with templates
+
+##  Group Templates
+
+The group templates defines drawing order, scale and label visibility of the layers/groups. Higher number on in the Draw Priority parameter equals earlier drawing.
+
+##  Multidataset Settings
+
+The multidataset settings defines scale and label visibility for the multidataset. Resource References points to where the styling files are stored. The Group Setting controls the default settings for the Group Templates (5.1).
+
+##  Thinning tab
+
+The thinning tab sets the default thinning for the groups. This is the recommended setting.
+
+##  Catalog Service Templates
+
+The Catalog Service Template is used by the Catalog Service to add vector and raster map packages. It also act as modification layers (i.e elevation shading) and placeholder layers (i.e. WMS and propagation). Open settings to locate, save or remove templates and add new or remove layers. The Map Style Editor is currently not supporting raster data. It is also possible to create new templates in the Catalog Service Template settings.
+
+{{..:MARIA2012_-_Map_Style_Editor_html_m1353edf0.png?403x186|Template settings}}

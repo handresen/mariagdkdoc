@@ -1,0 +1,24 @@
+====== ISerializeDrawObjects ======
+Create an instance using **new SerializeDrawObjects()**.
+
+The ISerializeDrawObjects interface uses C2525 to reduce the size of serialized data. 
+
+Draw objects without valid C2525 codes are still supported by completely serialize all attributes.
+
+
+==== Reducing size of serialized data ====
+If size of data is important, it is very important that all redundant attributes are reset before the objects are serialized. See [[maria_gdk:programming:functionality:drawobjects:serialize:bestpractises|Useful tips]] for more information.
+
+
+==== Serializing C2525 objects ====
+The draw object's hierarchy code is used to get the corresponding C2525 code. 
+
+A temporary draw object is created based on the C2525 code and only the differences from the actual draw object is serialized. 
+
+All wellknown-information, based on the C2525 code, is not transferred, but recreated when converting back to a draw object. This reduces the serialized data.
+
+
+==== Serializing unknown objects (not C2525) ====
+The draw object is completely serialized if the draw object's hierarchy code can not be mapped to any C2525. This ensures that all draw objects are serialized even if they cant be "compressed".
+
+There can be a mix of draw objects with and without known C2525 codes.

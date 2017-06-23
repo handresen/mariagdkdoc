@@ -45,11 +45,9 @@ entries:
     - title: Styling
       url: /core_styling.html
       output: web
-
     - title: Tracks
       url: /core_tracks.html
       output: web
-
     - title: Draw objects
       url: /core_draw_objects.html
       output: web, pdf

@@ -1,0 +1,38 @@
+====== Produksjon av Vector Baseline Norway til MARIA 5.4 (PIT Leveranse) 2014 ======
+
+
+
+
+===== Programvare =====
+
+
+FME m/GeoSOSI, PowerGUI Script Editor, OGR2OGR, OGRINFO, Maria M3, Diverse support tools
+
+===== N50 =====
+
+{{:maria_gdk:internal:maps:vbn1.png |}}
+
+I år fikk vi levert N50 SOSI-data for alle kommunene zippet fylkesvis, start med å pakke de ut til en lokal mappe. Bruk FME Quick Translator (ikke Workbench) for å konvertere fra SOSI til Shape. Sett Attribute validation level til «none» i Reader parameters, og velg «Separate destination for each source file» i hovedvinduet. Resultatet skal bli en mappe for hver SOSI fil med en Shape fil for hver egenskap. 
+
+ 
+
+Bruk scriptet MergeShpFilesOGR.ps1 for å merge shapefilene slik at man beholder alle egenskapsdata/attributter (VIKTIG). Sett opp scriptet med riktige filbaner (baseFolder, tmpFolder etc.) samt filbaner for OGR. Programmet PowerGUI Script Editor er bra til dette. Det kreves videre at man har en fungerende utgave av GDAL\OGR på maskinen. Resultatet blir da seende slik ut: 
+
+{{:maria_gdk:internal:maps:vbn2.png |}}
+
+
+Vi kan da benytte Maria M3 for å konvertere fra Shape til M4M. M3 funker dårlig på Windows 7/8/8.1. Vi bør derfor enten benytte en lokal VM med Windows XP eller VM parken https://tpn-vmlab.teleplan.no (Maria M3 Worker 1-5). I mappen Support Tools finnes det en M3 template og en batch-fil som kjører M3 i kommandovinduet. På denne måten kan man spre arbeidsmengden (for eksempel fylkesvis) utover de forskjellige VMene for å få det prosessert raskere. Etter at M3 har konvertert alle filene må vi benytte scriptet MoveAndRenameN50Files.ps1 for å flytte filene til riktig mappe samt og gi de nye navn. Dette gjøres slik at man kan bruke forrige template uten å måtte gjøre mange store endringer. 
+
+Navnefilene konverteres direkte fra SOSI til m4m i M3.
+
+===== FKB =====
+
+Først bruker man FME Quick Translator for å konvertere filene fra SOSI til Shape. Det beste er å benytte seg av batch valget, og en tcl-fil pr. fylke. Dette for å «tømme» FME mellom hvert fylke og frigjøre minne. Eksempler på dette ligger i supportmappen. Eiendomsgrenser måtte tas på nytt, da disse inneholdt noen kurver som skapte problemer. Dessverre tok jeg ikke vare på dette FME workspacet, men det var relativt enkelt å få til. Videre ble samme scriptet MergeShpFilesOGR.ps1 også brukt for å merge FKB data. Som for N50 data ble de mergede filene sortert fylkesvis for å kunne fordeles på de forskjellige virtuelle maskinene. Det tar likevel lang tid (hele FKB tar godt over 24 timer å prosessere) å konvertere FKB data fra Shape til M4M. Noen filer (blant annet Bygg og anlegg linjefilene for Oslo og Bergen) feilet ved første forsøk. Derfor ble de splittet i to forskjellige filer slik at M3 skal kunne håndtere datamengden. Dette gjorde jeg ved å splitte Shape mappen (f.eks 32_N5_0301_Bygg_og_Anlegg) i to forskjellige mapper, for så å merge de på nytt. De mindre filene blir da håndterlig av M3. Etter konvertering til m4m benyttes MoveAndRenameFKBFiles.ps1 for å flytte filene inn i riktig struktur samt å rename de. 
+
+===== Vbase =====
+
+Vbasen inneholder blant annet gatenavn. Vi benytter oss kun av egenskapen VEGSENTERLINJE, så man trenger ikke ta med de andre. Disse filene blir brukt for å vise labels. Om man laster ned Vbasen fylkesvis fra Norge Digitalt, er denne projisert i UTM sone 33. Dette funker bra unntatt i Finnmark. Vbase for Finnmark må man laste ned kommunevis for å få filene i UTM sone 35, gjøres ikke dette vil man få en offset i Øst Finnmark (grunnet lang avstand fra senter meridian). Vbasen konverteres fra SOSI til Shape i FME, og fra Shape til m4m i M3. Videre brukes Vbasen for å hente ut veinummer og veikategori (Europaveg, Riksveg og Fylkesveg) som vi også bruker som label. Dette kan gjøres ved å benytte seg av FME workspace vdataextVegKategori.fmw som konverterer fra SOSI til Shape. Bruk M3 og modulen NameExtractor (ikke bruk Optimizer, den får M3 til å feile på denne operasjonen) til å hente ut navn fra shapefil og konverterer til m4m.
+
+===== Kontroll av data =====
+
+For å kontrollere at man har fått med seg all data er det flere prosesser man kan benytte seg av. Det første er å bruke Resolve knappen i Maria 5.4 (Map Source). Denne sjekker at man har alle filene i templaten tilgjengelig. Dersom den mangler vises det et utropstegn i map editoren. Filnavnet må være likt i filstrukturen som i templaten for at Maria skal kunne finne den. Etter dette er gjort er det fornuftig å sammenlikne filstrukturene mellom årets og fjorårets mapper. Et bra verktøy å bruke til dette er programmet WinMerge, som grundig sammenlikner filer og mappestrukturer. Dersom det har kommet nye filer som ikke var med på fjorårets kartpakke, vil WinMerge lett finne dette.

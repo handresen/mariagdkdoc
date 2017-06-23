@@ -1,0 +1,31 @@
+#  Raster Map Service
+
+The Raster Map Service is dedicated to produce maps from raster data. 
+
+In the installation configuration, **Map root path** should be set to the folder containing the map files or a [links.xml](maria_gdk/maps/config/links) file to redirect the service to another folder. **Map recursion depth** indicates how many folders down from the main map folder the service will search for maps. **No. of Instances to Run** indicates how many instances of the Raster Map Service will run simultaneously.
+
+**maxMemorySize** and **multiThread** are only accesible from the config file. These parameters indicate the maximum number of bytes of memory to be used, and whether the service will utilize multithreading, respectively.
+
+If several instances of the service are run, each instance will pick the first available port in the **Service Port Range**. By default the **Service port range** is set to 9050-9099. 
+
+{{:maria_gdk:rastermapserviceinstallation.png?350|Maria 2012 Raster Map Service - Install Shield Wizard}}
+
+## Command line installation
+
+
+*  [Run installer using command line](./commandlineinstall)
+
+*  Supported [MSI property arguments](./propertyarguments)
+    * TPGMAPROOTPATH
+    * TPGCATALOGSERVICEURL
+    * TPGINSTANCES
+    * TPGRECURSIONDEPTH
+    * TPGSERVICEPORTEND
+    * TPGSERVICEPORT
+    * TPGREGISTERAS
+    * TPGLOGFILEPATH
+    * TPGMAXLLOGFILES
+    * TPGMAXLOGSIZE
+    * TPGLOGAPPENDER
+    * TPGMERGEDLOGFILEPATH
+

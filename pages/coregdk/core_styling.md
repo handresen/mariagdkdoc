@@ -12,26 +12,26 @@ summary: The Maria GDK features powerful mechanisms for controlling the appearan
 
 ## Overview
 
-Styles are defined using XML-data. The common style features will be explained by using Track styling as an example. For styling specific to tracks and draw objects, see [Styling draw objects](./styling/drawobject) and [Styling tracks](core_styling_track.html).
+Styles are defined using XML-data. The common style features will be explained by using Track styling as an example. For styling specific to tracks and draw objects, see [styling draw objects](core_styling_drawobject.html) and [styling tracks](core_styling_track.html).
 
 A very simple track style can be defined as follows:
 
-	:::xml
-	`<styleset name="Default">`
-	  `<stylecategory name="TrackSymbol">`
-	    `<style>`
-	      `<valueitem name="Visible"value="true"/>`
-	      `<compositeitem name="CoreSymbol">`
-	        `<valueitem name="Opacity"value="1.0"/>`
-	        `<valueitem name="Scale"value="1.5"/>`
-	        `<valueitem name="DynamicScale"value="false"/>`
-	        `<valueitem name="SymbolKeyField"value="symbol.2525code"/>`
-	        `<valueitem name="Symbology"value="MilStd2525"/>`
-	      `</compositeitem>`
-	    `</style>`
-	  `</stylecategory>`
-	`</styleset>`
-
+```xml
+<styleset name="Default">
+	<stylecategory name="TrackSymbol">
+		<style>
+			<valueitem name="Visible"value="true"/>
+			<compositeitem name="CoreSymbol">
+				<valueitem name="Opacity"value="1.0"/>
+				<valueitem name="Scale"value="1.5"/>
+				<valueitem name="DynamicScale"value="false"/>
+				<valueitem name="SymbolKeyField"value="symbol.2525code"/>
+				<valueitem name="Symbology"value="MilStd2525"/>
+			</compositeitem>
+		</style>
+	</stylecategory>
+</styleset>
+```  
 
 By using this style definition, all tracks are rendered using Mil standard 2525 symbology (`<valueitem name="Symbology" value="MilStd2525"/>`) and symbols are fixed size at all map scales (`<valueitem name="DynamicScale" value="false"/>`). In order to change symbology to NTDS, simply change the Symbology item to `<valueitem name="Symbology" value="NTDS"/>`
 
@@ -59,54 +59,54 @@ Each track or draw object contains a collection of resolved style items. The fin
 
 Each style category in the styleset contains one or more styles. When these are resolved, only concrete style items will remain. For a given track or draw object, each *style* entry in the definition is either included or not included based on the style condition.
 
-	:::xml
-	`<styleset name="Default">`
-	  `<stylecategory name="TrackSymbol">`
-	    `<style>`
-	AB    `<valueitem name="Visible"value="true"/>`
-	AB    `<compositeitem name="CoreSymbol">`
-	        `<valueitem name="Opacity"value="1.0"/>`
-	        `<valueitem name="Scale"value="[track.symbolscale]"/>`
-	        `<valueitem name="DynamicScale"value="false"/>`
-	        `<valueitem name="SymbolKeyField"value="symbol.2525code"/>`
-	        `<valueitem name="Symbology"value="MilStd2525"/>`
-	      `</compositeitem>`
-	      `<compositeitem name="SpeedVector">`
-	A,B1    `<valueitem name="Thickness"value="2.0"/>`
-	A,B1    `<valueitem name="Len"value="30.0"/>`
-	      `</compositeitem>`
-	    `</style>`
-	    `<style>`
-	>>>   `<speedcondition value="20kts"op="Gt"/>`
-	      `<compositeitem name="SpeedVector">`
+```xml
+<styleset name="Default">
+	<stylecategory name="TrackSymbol">
+		<style>
+AB    <valueitem name="Visible"value="true"/>
+AB    <compositeitem name="CoreSymbol">
+				<valueitem name="Opacity"value="1.0"/>
+				<valueitem name="Scale"value="[track.symbolscale]"/>
+				<valueitem name="DynamicScale"value="false"/>
+				<valueitem name="SymbolKeyField"value="symbol.2525code"/>
+				<valueitem name="Symbology"value="MilStd2525"/>
+			</compositeitem>
+			<compositeitem name="SpeedVector">
+A,B1    <valueitem name="Thickness"value="2.0"/>
+A,B1    <valueitem name="Len"value="30.0"/>
+			</compositeitem>
+		</style>
+		<style>
+>>>   <speedcondition value="20kts"op="Gt"/>
+			<compositeitem name="SpeedVector">
 
-	**B     `<valueitem name="Color" value="255,0,0,128"/>`
-	**B     `<valueitem name="Thickness" value="3.0"/>`
-	**B     `<valueitem name="Len" value="40.0"/>`
-	      `</compositeitem>`
-	    `</style>`
-	  `</stylecategory>`
-	`</styleset>`
-
+**B     <valueitem name="Color" value="255,0,0,128"/>
+**B     <valueitem name="Thickness" value="3.0"/>
+**B     <valueitem name="Len" value="40.0"/>
+			</compositeitem>
+		</style>
+	</stylecategory>
+</styleset>
+```
 
 Consider track A and B. Track A has speed 10 kts, B 25 kts. Using the style definition above, track A is assigned the “Visible”, “CoreSymbol” and “SpeedVector” items contained in the first “style” element. The resulting XML representation of the style elements are:
 
-	:::xml
-	`<compositeitem>`
-	  `<valueitem name="Visible"value="true"/>`
-	  `<compositeitem name="CoreSymbol">`
-	    `<valueitem name="Opacity"value="1.0"/>`
-	    `<valueitem name="Scale"value="1.1"/>`
-	    `<valueitem name="DynamicScale"value="false"/>`
-	    `<valueitem name="SymbolKeyField"value="symbol.2525code"/>`
-	    `<valueitem name="Symbology"value="MilStd2525"/>`
-	  `</compositeitem>`
-	  `<compositeitem name="SpeedVector">`
-	    `<valueitem name="Thickness"value="2.0"/>`
-	    `<valueitem name="Len"value="30.0"/>`
-	  `</compositeitem>`
-	`</compositeitem>`
-
+```xml
+<compositeitem>
+	<valueitem name="Visible"value="true"/>
+	<compositeitem name="CoreSymbol">
+		<valueitem name="Opacity"value="1.0"/>
+		<valueitem name="Scale"value="1.1"/>
+		<valueitem name="DynamicScale"value="false"/>
+		<valueitem name="SymbolKeyField"value="symbol.2525code"/>
+		<valueitem name="Symbology"value="MilStd2525"/>
+	</compositeitem>
+	<compositeitem name="SpeedVector">
+		<valueitem name="Thickness"value="2.0"/>
+		<valueitem name="Len"value="30.0"/>
+	</compositeitem>
+</compositeitem>
+```
 
 Note that `<valueitem name="Scale"value="[track.symbolscale]"/>`{xml} is resolved to: `<valueitem name="Scale"value="1.1"/>`{xml} Brackets are used to indicate external variables. These are substituted with actual values during resolution.
 
@@ -116,12 +116,12 @@ Track B satisfies the condition contained in the second style element: `<speedco
 
 Style items (`<valueitem>` and `<compositeitem>`) are by default “active”. To specify other states, include the attribute “state”:
 
-	:::xml
-	`<style>`
-	  `<speedcondition value="1kts"op="Lt"/>`
-	  `<compositeitem name="SpeedVector"state="suppress"/>`
-	`</style>`
-
+```xml
+<style>
+	<speedcondition value="1kts"op="Lt"/>
+	<compositeitem name="SpeedVector"state="suppress"/>
+</style>
+```
 
 Legal states are:
 
