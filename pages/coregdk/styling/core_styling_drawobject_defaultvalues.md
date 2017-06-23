@@ -13,7 +13,7 @@ At creation time, draw object field values, existing or non-existing, can be set
 
 This allows both fields defined by the Maria GDK, such as LineWidth, and custom fields defined by the user to be set using the same style. 
 
-A complete style set that targets the draw object fields defined by the Maria GDK can be found here: [DrawObjectDefaultValueStyle](./stylingdefaultvalues/DrawObjectDefaultValueStyle.xml) 
+A complete style set that targets the draw object fields defined by the Maria GDK can be found here: [DrawObjectDefaultValueStyle](core_styling_drawobject_defaultvalues_xml.html) 
 
 ## Style property map
 
