@@ -1,7 +1,0 @@
-# Filter by key word
-
-~~CLOUD~~
-
-# Filter by tag
-
-~~TAGCLOUD~~

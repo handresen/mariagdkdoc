@@ -102,7 +102,7 @@ pos.Value.Dump();
  | **IsValid**               | True | 
 
 “FormatStringToRegex” retrieves regular expression for format string and can be used to validate position strings or extract position strings from text documents without actually parsing. Another use is for debugging format strings:
-
+ 
 ```csharp
 IGenericPositionParser parser=new GenericPositionParser();
 

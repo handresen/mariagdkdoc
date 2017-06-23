@@ -1,3 +1,0 @@
-====== Continuous integration ======
-
-Maria uses [[http://tpg-build/project.html?projectId=Maria&tab=projectOverview|TeamCity]] to manage builds and [[.:ci:versioning|versioning]].

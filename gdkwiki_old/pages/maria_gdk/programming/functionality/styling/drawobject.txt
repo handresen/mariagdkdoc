@@ -1,8 +1,0 @@
-====== Draw Object Styling ======
-
-Maria GDK features powerful mechanisms for controlling the appearance of draw objects and the tools for editing the draw objects. In addition it is possible to use styling to define default values for draw object fields. 
-
-{{ drawobjects.png?400 | }} 
-
-  * For draw object appearance styling see: [[.:drawobject:stylingvisualappearance|Styling visual appearance]]
-  * For draw object default value styling see: [[.:drawobject:stylingdefaultvalues|Styling default values]]

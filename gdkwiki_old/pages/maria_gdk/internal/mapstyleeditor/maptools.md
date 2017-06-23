@@ -1,9 +1,0 @@
-# Map Tools
-
-##  Query
-
-The query function is used to query information from vectors in the map. When applied to the map, the Map Features will automatically open in the side view. In the Query Settings it is possible to select the specific geometry to query on.
-
-##  Bookmarks
-
-It is possible to use bookmarks in the Map Style Editor. This will allow the user to create a certain extent, using lat/lon and scale. For more information see the document MARIA2012_VectorMaps.docx.

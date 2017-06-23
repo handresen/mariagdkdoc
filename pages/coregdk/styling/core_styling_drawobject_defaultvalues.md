@@ -1,6 +1,15 @@
+---
+title: Drawobject default values
+keywords: drawobjects
+tags: [navigation]
+sidebar: core_sidebar
+permalink: core_styling_drawobject_defaultvalues.html
+summary: At creation time draw object field values, existing or non-existing, can be set by using the same styling mechanism as for controlling their appearance. This means that default values can be set based on styles with conditions, hence targeting draw objects with special characteristics.
+---
+
+
 # Styling default values
 
-At creation time draw object field values, existing or non-existing, can be set by using the same styling mechanism as for controlling their appearance. This means that default values can be set based on styles with conditions, hence targeting draw objects with special characteristics.
 
 This allows both fields defined by the Maria GDK, such as LineWidth, and custom fields defined by the user to be set using the same style. 
 

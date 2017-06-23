@@ -1,5 +1,0 @@
-====== Execution Engine ======
-The execution engine takes a given script and executes it. The execution engine's main responsibilities are:
-  * Executes each step in the script in sequence. Each step is executed in its own task making the service isolated from failures in steps.
-  * Detect failures in single steps and make the errors available to the service API.
-  * Make progress reported by each step available in an aggregated fashion.
