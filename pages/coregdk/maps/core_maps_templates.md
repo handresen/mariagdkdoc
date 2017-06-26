@@ -9,12 +9,12 @@ summary: Using map templates to create multilayered maps for Maria GDK.
 
 # Map templates
 
-Older Versions: [Maria GDK 1.5 and older](./olderversions/maptemplate1.5)
+Older Versions: [Maria GDK 1.5 and older](./core_maps_templates_v1.5.html)
 
 The map template xml joins together map data from different sources to create a multilayered, rich map for MariaGDK. A template can contain multiple layers referencing mapsignatures from both raster and vector mapservices. Layers can also act as modification layers (for example elevation shading effects) and placeholder layers (for special data like WMS and propagation).
 
 Map templates are provided to the MariaGDK client application via the MariaGDK Map Catalog service addin. Templates are searched for in the path specified in the "Templatesettings"-section of the TpgServiceHoster settings.json file. 
-[Links](./links)-files can be used to point to yet other folders containing templates.
+[Links](./core_maps_links.html)-files can be used to point to yet other folders containing templates.
 
 Example:
 
