@@ -8,13 +8,14 @@ summary: Using maps in Maria GDK
 ---
 
 ## Bookmarks
-*  [Using Bookmarks:](core_maps_bookmarks.html)
+*  [Using Bookmarks.](core_maps_bookmarks.html)
 
 ## Templates
 
 ## Metadata
 
 ## Link files
+*  [Using Links.](core_maps_links.html)
 
 ## Lookup tables
 
