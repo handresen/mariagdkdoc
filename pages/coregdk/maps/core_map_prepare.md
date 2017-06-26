@@ -18,6 +18,7 @@ summary: Using maps in Maria GDK
 *  [Using Links.](core_maps_links.html)
 
 ## Lookup tables
+*  [Using Lookuptables.](core_maps_lookuptables.html)
 
 
 
