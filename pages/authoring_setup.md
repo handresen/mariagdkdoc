@@ -36,10 +36,12 @@ $ apt update
 $ apt upgrade
 $ apt install make gcc
 $ apt install zlib1g-dev
+$ apt install nodejs
 ```  
+Note that nodejs is required in order to use its javascript engine.
 
 ### Install ruby  
-Note that the default ruby packages are outdated. It is necessary to set up an alternate package source in order to get a ruby that is more recent and able to run Jekyll.
+The default ruby packages are outdated. It is necessary to set up an alternate package source in order to get a ruby that is more recent and able to run Jekyll.
 
 ```
 $ apt-add-repository ppa:brightbox/ruby-ng
@@ -48,6 +50,8 @@ $ apt install ruby2.3 ruby2.3-dev ruby-switch
 $ ruby -v
 ```  
 
+The reported ruby version should be 2.3.xx. If another version is reported, jekyll may not run.
+
 ### Install Jekyll
 Cd to mariagdkdoc folder retrieved from github. The *Gemfile* in this directory is required to setup Jekyll correctly.
 
@@ -55,7 +59,6 @@ Cd to mariagdkdoc folder retrieved from github. The *Gemfile* in this directory 
 $ gem install jekyll
 $ apt install ruby-bundler
 $ bundle install
-$ apt install nodejs
 ```
 
 Exit sudo shell using ctrl-d, cd to mariagdkdoc dir.
