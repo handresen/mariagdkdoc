@@ -40,4 +40,4 @@ ogr2ogr.exe -f M6M MyDestinationDataDirectory\ MyShape.shp
 Note that MyDestinationDataDirectory has to exists before running the command. Also note the backslash after the destination data directory declaration.
 
 MyDestinationDataDirectory should now have one or more .m6m files. These are the input to the next step in the conversion pipeline, [M6M indexing](core_map_preprocess_m6m_indexing.html).
-{{tag>[OGR] [GDAL] [m6m] [convert] [shape]}}
+

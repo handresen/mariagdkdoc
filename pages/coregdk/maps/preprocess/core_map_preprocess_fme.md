@@ -54,12 +54,6 @@ The resulting m6m dataset will be created in the location set in the writer, or 
 
 
 
-{{tag>[Map] [FME] [convert] [m6m]}}
-
-
-
-
-
 
 
 

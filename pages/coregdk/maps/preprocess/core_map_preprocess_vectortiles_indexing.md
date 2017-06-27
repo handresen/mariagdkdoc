@@ -85,6 +85,5 @@ ToVectorTileset.exe -compact `<db filename>`
 ```
 Depending on data, this should compress the database to approximately 0.5-0.7 times the original size. Note that vector service shipped with MARIA GDK 2.1 or newer is required. Note that vacuuming and unused tile data removal is also performed as part of the compression.
 
-{{tag>[m6m] [m6mdataset] [indexing] [convert]}}
 
 

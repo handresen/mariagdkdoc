@@ -38,6 +38,6 @@ For detailed  documentation, please select wanted content from the "Content" men
 
 - Noen tabeller som ikke har header har fått generert header av første rad. 
 - Noen tabeller/avsnitt på bunnen av en side har av ukjente grunner ikke kommet med. Pass på å sammenligne ny side med gammel side i dokuwiki for å forsikre deg om at alt er med.
-
+- Autokonverterte tags gir feilmelding: "Liquid Warning: Liquid syntax error (line 29): Expected end_of_string but found comparison in {% raw %}"{{tag>[vector] [map] [m6m] [FME] [OGR] [GDAL]}}" {% endraw %} in pages/coregdk/maps/core_map_preprocess_vector.md". Fjernes fra bunnen av fila og legges inn i header.
 
 {% include links.html %}

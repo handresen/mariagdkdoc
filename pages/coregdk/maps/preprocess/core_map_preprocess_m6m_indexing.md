@@ -35,6 +35,3 @@ ToM6MDataset.exe C:\Data\Natural_earth\m6m C:\Data\Natural_earth\NaturalEarth -t
 This will index the m6m files in the \m6m folder and produce the files NaturalEarth.m6mdata and NaturalEarth.m6mindex, ready to be used in a map package.
 
 
-{{tag>[m6m] [m6mdataset] [indexing] [convert]}}
-
-
