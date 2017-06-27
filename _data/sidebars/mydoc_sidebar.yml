@@ -30,6 +30,10 @@ entries:
   - title: Producing documentation 
     output: web, pdf
     folderitems:
+    - title: Authoring environment setup
+      url: /authoring_setup.html
+      output: web, pdf
+   
     - title: Documentation theme
       url: /mydoc_introduction.html
       output: web, pdf

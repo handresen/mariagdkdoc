@@ -12,6 +12,12 @@ This documentation has been created using [Jekyll](http://jekyllrb.com/docs/home
 
 Instructions for authoring can be found [here](http://idratherbewriting.com/documentation-theme-jekyll/).
 
+### Document authoring setup
+Anyone producing or editing documents for Maria GDK need to set up an authoring environment. This will allow editing, document preview, styling changes and publishing.
+
+[Authoring system setup][authoring_setup]
+
+
 ### Document organization
 For detailed  documentation, please select wanted content from the "Content" menu.
 
@@ -22,8 +28,6 @@ For detailed  documentation, please select wanted content from the "Content" men
 | <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria Map Maker](mmm_landing_page.html) | Used to create and manage maps  |
 
 
-## Documentation server setup
-TODO: Write instructions on jekyll doc server and bash setup
 
 ## Converting from dokuwiki (tips and tricks)
 - Interne, autogenererte linker må være lowercase. F.eks. linken: core_vector_mappackages.html#Scalebase for å referere til kapittelet "Scalebase" vil ikke fungere. Bruk core_vector_mappackages.html#scalebase.
