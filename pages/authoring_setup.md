@@ -4,7 +4,7 @@ keywords: documentation authoring setup
 tags: [getting_started]
 sidebar: mydoc_sidebar
 permalink: authoring_setup.html
-summary: In order to work on the Maria GDK documentation, it is essential to setup the production environment correctly. This involves git and jekyll setup as well as simple editor setup. Note that the documentation is configured to produce a Jekyll-site that is compatible with github pages. If the reader wishes to setup Jekyll without using this document, he/she must take care to consider this when configuring Jekyll.
+summary: In order to work on the Maria GDK documentation, it is essential to setup the production environment correctly. This involves git and jekyll setup as well as simple editor setup. Note that the documentation is configured to produce a Jekyll-site that is compatible with github pages.
 ---
 
 # Initial setup
@@ -76,6 +76,8 @@ Visual studio code works well an both Linux and Windows [https://code.visualstud
 Once all the above steps are completed, the user should be ready to make changes and additions to the Maria GDK documentation.
 
 Start by opening Visual Studio code and open the documentation folder. This will display a structured overview of all the files in the left explorer pane.
+
+{% include image.html file="vscode_edit_example.png" caption="Working with documents in VS code" %}
 
 All documents except the top level ```index.md``` are located in the ```pages``` folder.
 
