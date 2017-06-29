@@ -14,3 +14,4 @@ summary: Maria GDK features powerful mechanisms for controlling the appearance o
 *  For draw object appearance styling see: [Styling visual appearance](core_styling_drawobject_visualappearance.html)
 
 *  For draw object default value styling see: [Styling default values](core_styling_drawobject_defaultvalues.html)
+
