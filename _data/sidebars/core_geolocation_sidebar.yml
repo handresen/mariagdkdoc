@@ -1,0 +1,38 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Maria GDK Core functionality
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Geolocation
+    output: web, pdf
+    folderitems:
+    - title: Geolocation convertion
+      url: /core_geolocation_convertion.html
+      output: web, pdf
+    - title: Geolocation readers
+      url: /core_geolocation_readers.html
+      output: web, pdf
+    - title: Geolocation service
+      url: /core_geolocation_service.html
+      output: web, pdf
+    - title: Geolocation web API
+      url: /core_geolocation_webapi.html
+      output: web, pdf
+

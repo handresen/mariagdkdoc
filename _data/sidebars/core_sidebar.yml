@@ -61,8 +61,8 @@ entries:
     - title: Geo fencing
       url: /core_geofencing.html
       output: web
-    - title: Location
-      url: /core_location.html
+    - title: Geolocation
+      url: /core_geolocation.html
       output: web
 
   - title: Technologies
