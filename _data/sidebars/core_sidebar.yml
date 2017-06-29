@@ -58,11 +58,14 @@ entries:
     - title: Point symbols
       url: /core_symbolpoint.html
       output: web
-    - title: Geo fencing
+    - title: Geofencing
       url: /core_geofencing.html
       output: web
     - title: Geolocation
       url: /core_geolocation.html
+      output: web
+    - title: Vector map legend
+      url: /core_maps_vectorlegend.html
       output: web
 
   - title: Technologies
