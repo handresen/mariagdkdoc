@@ -1,0 +1,41 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Maria GDK Core functionality
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Styling categories 
+    output: web, pdf
+    folderitems:
+    - title: Track cells
+      url: /core_styling_track_details_cell.html
+      output: web, pdf
+    - title: Track selection fan
+      url: /core_styling_track_details_selectionfan.html
+      output: web, pdf
+    - title: Track tooltips
+      url: /core_styling_track_details_tooltip.html
+      output: web, pdf
+    - title: Track clustering
+      url: /core_styling_track_details_clustering.html
+      output: web, pdf
+    - title: Track symbols
+      url: /core_styling_track_details_symbol.html
+      output: web, pdf
+

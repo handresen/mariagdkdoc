@@ -2,7 +2,7 @@
 title: Draw Object Styling
 keywords: styling
 tags: [navigation]
-sidebar: core_sidebar
+sidebar: core_styling_sidebar
 permalink: core_styling_drawobject.html
 summary: Maria GDK features powerful mechanisms for controlling the appearance of draw objects and the tools for editing the draw objects. In addition it is possible to use styling to define default values for draw object fields.  
 ---

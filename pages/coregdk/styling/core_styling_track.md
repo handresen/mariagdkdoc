@@ -2,7 +2,7 @@
 title: Track Styling
 keywords: styling
 tags: [navigation]
-sidebar: core_sidebar
+sidebar: core_styling_sidebar
 permalink: core_styling_track.html
 summary: MARIA 2012 features powerful mechanisms for controlling track appearance and styling. Several aspects of track visualisation can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. 
 ---
@@ -20,7 +20,7 @@ Styling elements include:
 
 *  Label contents, fonts, size and placement 
 
-*  [History](./track/historystyling) limits and appearance 
+*  [History](./core_styling_track_history.html) limits and appearance 
 
 *  Speed vector appearance 
 
@@ -28,7 +28,8 @@ Styling elements include:
 
 *  Visualisation of multi select 
 
-Style element details can be found [here](./track/stylingdetails).
+Style element details can be found [here](./core_styling_track_details.html).
+
 ## Background
 
 MARIA 2012 track styling is based on the styling core used in MARIA OMM (object management module). The style definitions have been simplified based on experience with OMM styling.
@@ -68,15 +69,17 @@ When drawing the actual track, the values in “valueitem”-elements are used a
 
 ## Styling and client trackstores
 
-The top-level item of the style definition is the “styleset”. A styleset contains a collection of style categories covering different aspects of track visualisation. See [categories](maria_gdk/programming/functionality/styling/track/stylingdetails/) for details.
+The top-level item of the style definition is the “styleset”. A styleset contains a collection of style categories covering different aspects of track visualisation. See [categories](core_styling_track_details.html) for details.
 
 The style set and categories are represented by interfaces as follows:
 
-{{Maria_2102_Track_Styling_html_m573ba0f5.png?427x73|IStyleSet}} \\ 
+{% include image.html file="./core/maria_2102_track_styling_html_m573ba0f5.png" %}
+
 Stylesets are used by a client side track store within the MARIA 2012 track core to perform track styling. The track stores are accessible through *ITrackLayerViewModel.ClientTrackStores*.
 
-\\ \\ {{Maria_2102_Track_Styling_html_m557004a4.png?612x175|IClientTrackStoreManager}} \\ 
-The styleset can be set either directly through //IClientTrackStoreManager.TrackStores[id].Styleset// or by calling *ITrackLayerViewModel.SetTracksStyle(id, xmlRep)*. The NGTester application uses the last method to set track styling.
+{% include image.html file="./core/maria_2102_track_styling_html_m557004a4.png" %}
+
+The styleset can be set either directly through *IClientTrackStoreManager.TrackStores[id].Styleset* or by calling *ITrackLayerViewModel.SetTracksStyle(id, xmlRep)*. The NGTester application uses the last method to set track styling.
 
 Note that the tracks contained in theclient trackstores are continuously updated by the Maria 2012 track core. This is done by fetching tracks from a track service and applying the service data packages to the client track store.
 

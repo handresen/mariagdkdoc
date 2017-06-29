@@ -2,7 +2,7 @@
 title: Drawobject default values
 keywords: drawobjects
 tags: [navigation]
-sidebar: core_sidebar
+sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_defaultvalues.html
 summary: Set default values for draw object fields based on styles with conditions to target objects with special characteristics.
 ---

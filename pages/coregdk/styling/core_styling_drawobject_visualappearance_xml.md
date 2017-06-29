@@ -2,7 +2,7 @@
 title: Drawobject visual appearance xml
 keywords: drawobjects
 tags: [navigation]
-sidebar: core_sidebar
+sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_visualappearance_xml.html
 summary: Complete style set targeting draw object visual appearance.
 ---
