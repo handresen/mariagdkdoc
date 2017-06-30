@@ -1,13 +1,11 @@
 ---
 title: Geolocation service
 keywords: geolocation
-tags: [navigation]
+tags: [geolocation, service]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation_service.html
 summary: WCF service providing geolocation functionality for Maria GDK.
 ---
-
-# Geolocation service
 
 The geolocation service is a WCF-service that provides functionality for placename searches via a sqlite/FTS database. 
 

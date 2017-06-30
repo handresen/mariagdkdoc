@@ -1,14 +1,11 @@
 ---
 title: Geofencing notifications
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, notifications, rules
+tags: [geofencing, track, drawobject, interface, service]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_notifications.html
 summary: Adding notifications when tracks interact with objects.
 ---
-
-
-## Notifications
 
 Notifications are added by the geofencing core when tracks interact with geo shapes according to predefined rules. Clients can read these notifications as well as append specific types of information to the notifications. Notifications are accessed through [INotificationHandlingServiceBase](http://support.teleplanglobe.com/MariaGDKDoc/html/754E0C07.htm).
 

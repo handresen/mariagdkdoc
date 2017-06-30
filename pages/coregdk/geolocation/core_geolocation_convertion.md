@@ -1,13 +1,11 @@
 ---
 title: Converting placename data
-keywords: geolocation
-tags: [navigation]
+keywords: geolocation, placenames, database
+tags: [geolocation]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation_convertion.html
 summary: Converting placename information to Maria GDK location databases.
 ---
-
-# Converting placename data
 
 When converting a file containing placename information to a Maria2012 location database, you need a reader for that specific fileformat. See chapter on [creating readers](./readers) for details.
 

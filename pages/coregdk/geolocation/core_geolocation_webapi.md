@@ -1,13 +1,11 @@
 ---
 title: Geolocation web API
 keywords: geolocation
-tags: [navigation]
+tags: [geolocation, api, interface, service]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation_webapi.html
 summary: Using the geolocation web API.
 ---
-
-# Geoloc Web API
 
 ## Database information (dbinfo)
 

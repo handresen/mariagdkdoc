@@ -1,13 +1,11 @@
 ---
 title: Geofencing
-keywords: styling
-tags: [navigation]
+keywords: geofencing, tracks, drawobjects, rules, fences
+tags: [geofencing]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing.html
 summary: Geofencing allows the user to define geographical shapes that acts as virtual "fences". 
 ---
-
-# Geofencing
 
 Geofencing allows the user to define geographical shapes that acts as virtual "fences". By defining interaction rules, it is possible to generate events based on how tracks interact with these shapes.
 

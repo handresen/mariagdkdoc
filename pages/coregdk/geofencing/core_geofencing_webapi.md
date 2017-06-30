@@ -1,13 +1,11 @@
 ---
 title: Geofencing web API
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, web
+tags: [geofencing, interface, service, api]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_webapi.html
 summary: Using the geofencing web API.
 ---
-
-# Geofencing web API
 
 Use [Fiddler](http://www.telerik.com/fiddler) to test http POST/DELETE.
 

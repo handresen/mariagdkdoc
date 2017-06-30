@@ -1,13 +1,11 @@
 ---
 title: Geolocation
-keywords: geolocation
-tags: [navigation]
+keywords: geolocation, placenames, database, sqlite, gns, geonames
+tags: [geolocation]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation.html
 summary: Using the Maria GDK Geolocation service for placename searches.
 ---
-
-#  Geolocation
 
 The Maria2012 Geolocation service allows fast, faceted freetext searches for partial or full placenames. General placename searches are supported, as well as street adress search.
 

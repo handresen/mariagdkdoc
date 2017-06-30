@@ -23,10 +23,7 @@ entries:
   - title: Geofencing 
     output: web, pdf
     folderitems:
-    - title: Geofencing service
-      url: /core_geofencing_service.html
-      output: web, pdf
-    - title: Data sources
+    - title: Datasources
       url: /core_geofencing_datasources.html
       output: web, pdf
     - title: Rules
@@ -37,6 +34,9 @@ entries:
       output: web, pdf
     - title: Track to track fences
       url: /core_geofencing_movingrange.html
+      output: web, pdf
+    - title: Geofencing service
+      url: /core_geofencing_service.html
       output: web, pdf
     - title: Web API
       url: /core_geofencing_webapi.html

@@ -1,13 +1,11 @@
 ---
-title: Geolocation
-keywords: geolocation
-tags: [navigation]
+title: Creating readers for location data
+keywords: geolocation, readers
+tags: [geolocation]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation_readers.html
 summary: Creating readers for converting placename information to Maria GDK databases.
 ---
-
-# Creating readers
 
 A Maria2012 GeoLoc placename data reader must be able to convert files with placename information to a Maria2012 
 readable sqlite databases. Teleplan Globe provides readers for f.ex. [GNS](http://earth-info.nga.mil/gns/html/), [GeoNames](http://www.geonames.org/) and [SSR](http://www.kartverket.no/Kart/Stedsnavn/).

@@ -1,13 +1,11 @@
 ---
 title: Sample geolocation reader code
-keywords: geolocation
-tags: [navigation]
+keywords: geolocation, readers, example
+tags: [geolocation]
 sidebar: core_geolocation_sidebar
 permalink: core_geolocation_readers_samplecode.html
 summary: Sample code for creating geolocation readers.
 ---
-
-# Sample geoloc reader code
 
 To start you need to create a file containing a reader class for your location data. This class must implement the IPlaceNameDataInterfacer.
 

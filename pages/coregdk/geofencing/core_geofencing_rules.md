@@ -1,13 +1,11 @@
 ---
 title: Geofencing rules
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, rules
+tags: [geofencing, track, drawobject, interface, service]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_rules.html
 summary: Defining geofencing rules.
 ---
-
-# Rules
 
 Rules define the circumstances that are required in order to trigger a geofencing event. In addition, a rule contains the information used to create the contents of the geofencing event. 
 

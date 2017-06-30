@@ -1,13 +1,11 @@
 ---
 title: Geofencing service
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, wcf, http
+tags: [geofencing, service]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_service.html
 summary: WCF service providing geofencing functionality.
 ---
-
-# Geofencing service
 
 The geofencing service is a WCF service that provides core geofencing functionality. The following service interfaces are provided:
 

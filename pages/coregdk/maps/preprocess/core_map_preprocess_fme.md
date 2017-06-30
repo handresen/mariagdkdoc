@@ -1,7 +1,7 @@
 ---
 title: Producing m6m files using FME
-keywords: maps GDK
-tags: [navigation]
+keywords: maps, vector, fme, m6m,
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_fme.html
 summary: Using Teleplan Globes FME plugin to translate map data to m6m-format

@@ -10,3 +10,32 @@ allowed-tags:
   - news
   - troubleshooting
   - mobile
+  - api
+  - drawobject
+  - feature
+  - featuregrouping
+  - geofencing
+  - geopackage
+  - geolocation
+  - interface
+  - legend
+  - m6m
+  - map
+  - mappackage
+  - multidataset
+  - performance
+  - placenames
+  - preparation
+  - raster
+  - service
+  - setup
+  - styling
+  - symbolization
+  - template
+  - tilemapbuilder
+  - track
+  - vector
+  - vectortiles
+  - wms
+
+

@@ -1,14 +1,11 @@
 ---
 title: Geofencing datasources
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, datasource, setup, tracks, drawobjects, services, interfaces
+tags: [geofencing, service, track, drawobject, interface]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_datasources.html
 summary: Setting up datasources for geofencing.
 ---
-
-
-## Data sources
 
 Data sources are set up using the [IDataManagerServiceBase](http://support.teleplanglobe.com/MariaGDKDoc/html/32457EC9.htm) interface. 
 

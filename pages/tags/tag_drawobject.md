@@ -1,12 +1,11 @@
 ---
-title: "Special layout pages"
-tagName: special_layouts
+title: "Draw objects"
+tagName: drawobject
 search: include
-permalink: tag_special_layouts.html
+permalink: tag_drawobject.html
 sidebar: mydoc_sidebar
 folder: tags
 ---
-
 {% include taglogic.html %}
 
 {% include links.html %}

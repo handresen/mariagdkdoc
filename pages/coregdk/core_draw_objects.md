@@ -15,4 +15,4 @@ Each draw object is of a specific type and has a hierarchy code that uniquely id
 The draw object module has a powerful mechanism for controlling the appearance of draw objects and its default data.
 
 
-*  [Draw Object Styling](maria_gdk/programming/functionality/styling/drawobject)
+*  [Draw Object Styling](./core_styling_drawobject.html)

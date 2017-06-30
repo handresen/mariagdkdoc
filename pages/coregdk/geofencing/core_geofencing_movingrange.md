@@ -1,13 +1,11 @@
 ---
 title: Track to track geofencing
-keywords: geofencing
-tags: [navigation]
+keywords: geofencing, services, tracks, fences, rules
+tags: [geofencing, service, track]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_movingrange.html
 summary: Create moving geo fences.
 ---
-
-## Track to track geofencing
 
 It is possible to create moving geo fences by adding a *moving range* object to the geofencing service and associating it with a track. The moving range will then behave in the same manner as other geo shapes, and can be set up to generate notification events by using rules.
 
