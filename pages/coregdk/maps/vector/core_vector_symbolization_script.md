@@ -1,7 +1,7 @@
 ---
 title: Vector map setup in Maria GDK
 keywords: vector, setup
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization_script.html
 summary: Setting up vector maps in Maria GDK 

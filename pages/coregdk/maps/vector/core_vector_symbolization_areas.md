@@ -1,7 +1,7 @@
 ---
 title: Vector map area feature symbolization.
 keywords: vector, symbolization, area
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization_areas.html
 summary: Setting up area feature symbolization for vector maps in Maria GDK 

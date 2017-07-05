@@ -1,7 +1,7 @@
 ---
 title: Producing m6m files using OGR
 keywords: maps GDK
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_ogr.html
 summary: Using Teleplan Globes OGR plugin to translate map data to m6m-format

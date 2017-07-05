@@ -1,7 +1,7 @@
 ---
 title: Vector map feature symbolization.
 keywords: vector, setup
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization.html
 summary: Setting up feature symbolization for vector maps in Maria GDK 

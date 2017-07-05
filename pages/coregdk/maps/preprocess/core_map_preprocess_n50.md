@@ -1,13 +1,11 @@
 ---
 title: N50 data translation
 keywords: maps GDK
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_n50.html
 summary: Using FME to translate the N50 vector dataset from Kartverket.
 ---
-
-# N50 data translation
 
 {% include callout.html content="Under construction." type="warning" %}
 

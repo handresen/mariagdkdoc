@@ -1,7 +1,7 @@
 ---
 title: "Geolocation"
 tagName: geolocation
-search: exclude
+search: include
 permalink: tag_geolocation.html
 sidebar: core_sidebar
 folder: tags

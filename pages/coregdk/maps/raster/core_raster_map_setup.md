@@ -1,7 +1,7 @@
 ---
 title: Raster map setup in Maria GDK
 keywords: raster, setup
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_map_setup.html
 summary: Setting up raster maps in Maria GDK 

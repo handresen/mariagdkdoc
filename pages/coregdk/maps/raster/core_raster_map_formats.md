@@ -1,7 +1,7 @@
 ---
 title: Raster Map Service map formats
 keywords: raster, formats
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_map_formats.html
 summary: The GDAL formats which are included in the Raster Map Service 

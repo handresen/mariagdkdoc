@@ -1,7 +1,7 @@
 ---
-title: Producing GeoPackages
+title: Producing GeoPackages with GDAL
 keywords: raster, gdal, geopackage
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_gdal_geopackage.html
 summary: Using GDAL to produce GeoPackages. 

@@ -1,14 +1,11 @@
 ---
 title: S-57 Hydrographic Data Translations
 keywords: maps GDK
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_s57.html
 summary: Using FME to translate S-57 data to m6m files
 ---
-
-# S-57 Hydrographic Data Translations
-
 
 ## Step 1
 

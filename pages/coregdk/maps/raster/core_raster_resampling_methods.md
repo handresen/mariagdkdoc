@@ -1,7 +1,7 @@
 ---
 title: Raster service resampling and interpolation methods.
 keywords: raster, resampling, interpolation
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_resampling_methods.html
 summary: Supported interpolation and resampling methods for reprojecting and scaling images.

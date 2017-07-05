@@ -1,13 +1,11 @@
 ---
 title: M6M indexing
 keywords: maps GDK
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_m6m_indexing.html
 summary: Using Teleplan Globes command line tool to index and convert m6m-files for use in Maria GDK.
 ---
-
-# M6M indexing
 
 *Applies to Maria GDK 1.5 and older*
 

@@ -1,7 +1,7 @@
 ---
 title: "Interfaces"
 tagName: interface
-search: exclude
+search: include
 permalink: tag_interface.html
 sidebar: mydoc_sidebar
 folder: tags

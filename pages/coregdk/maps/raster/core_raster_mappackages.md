@@ -1,7 +1,7 @@
 ---
 title: Raster mappackages
 keywords: raster, setup, xml
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_mappackages.html
 summary: Explaining the raster mappackages xml-files. 

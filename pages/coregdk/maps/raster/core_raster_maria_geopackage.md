@@ -1,7 +1,7 @@
 ---
 title: MARIA GeoPackage
 keywords: raster, geopackage
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_maria_geopackage.html
 summary: Producing GeoPackages using MARIA command line tools 

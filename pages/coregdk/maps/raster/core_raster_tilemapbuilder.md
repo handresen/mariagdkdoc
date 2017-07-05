@@ -1,7 +1,7 @@
 ---
 title: TileMapBuilder command line tool
 keywords: raster, mbtiles
-tags: [navigation]
+tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_tilemapbuilder.html
 summary: Producing MBTiles database from a Maria map template. 

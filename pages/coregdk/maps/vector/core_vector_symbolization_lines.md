@@ -1,7 +1,7 @@
 ---
 title: Vector map line feature symbolization.
 keywords: vector, symbolization, line
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization_lines.html
 summary: Setting up line feature symbolization for vector maps in Maria GDK 

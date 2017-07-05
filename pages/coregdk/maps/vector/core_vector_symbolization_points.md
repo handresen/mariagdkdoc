@@ -1,7 +1,7 @@
 ---
 title: Vector map point feature symbolization.
 keywords: vector, symbolization
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization_points.html
 summary: Setting up point feature symbolization for vector maps in Maria GDK 

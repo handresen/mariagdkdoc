@@ -1,7 +1,7 @@
 ---
 title: Vector mapackages setup in Maria GDK
 keywords: vector, setup
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_mappackages.html
 summary: Setting up vector mappackages in Maria GDK 

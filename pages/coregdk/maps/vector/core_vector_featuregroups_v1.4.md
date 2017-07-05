@@ -1,7 +1,7 @@
 ---
 title: Vector map featuregroups v1.4
 keywords: vector, setup, featuregroups
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_featuregroups_v1.4.html
 summary: Using featuregroups in vector maps (version 1.4). 

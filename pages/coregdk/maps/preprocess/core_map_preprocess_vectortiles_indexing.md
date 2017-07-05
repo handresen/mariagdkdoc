@@ -1,13 +1,11 @@
 ---
 title: Vector tile indexing
 keywords: maps GDK
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_vectortiles_indexing.html
 summary: Using Teleplan Globes command line tool to convert m6m files to vector tiles.
 ---
-
-# Vector tile indexing 
 
 The FME and OGR translation processes described in this wiki produce m6m files. These must be indexed and converted to datasets or vector tiles before they can be used in MARIA. Conversion to vector tiles is done with the command line tool "ToVectorTileset.exe", which is distributed by Teleplan Globe. 
 

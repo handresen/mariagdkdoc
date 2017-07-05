@@ -1,7 +1,7 @@
 ---
 title: Vector map label symbolization.
 keywords: vector, symbolization, label
-tags: [navigation]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_vector_symbolization_labels.html
 summary: Setting up label symbolization for vector maps in Maria GDK 
