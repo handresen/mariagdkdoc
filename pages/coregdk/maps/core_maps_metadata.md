@@ -1,7 +1,7 @@
 ---
 title: Metadata
 keywords: metadata
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_metadata.html
 summary: Provide map metadata using xml-files. 

@@ -1,7 +1,7 @@
 ---
 title: Track cell styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_cell.html
 summary: Track cell styling details. 

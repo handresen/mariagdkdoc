@@ -1,7 +1,7 @@
 ---
 title: Draw Objects
 keywords: drawobjects
-tags: [navigation]
+tags: [drawobject]
 sidebar: core_sidebar
 permalink: core_draw_objects.html
 summary: The draw object module contains a full set of tactical graphics objects from the MIL-STD-2525C standard. In addition it contains a number of generic objects, such as line, area and ellipse, to mention a few. All the draw objects can have as many user defined data fields as desired. 

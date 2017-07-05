@@ -1,7 +1,7 @@
 ---
 title: Track to track geofencing
 keywords: geofencing, services, tracks, fences, rules
-tags: [geofencing, service, track]
+tags: [geofencing, track]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_movingrange.html
 summary: Create moving geo fences.

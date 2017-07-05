@@ -1,7 +1,7 @@
 ---
 title: Lookuptables
 keywords: lookuptables
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_lookuptables.html
 summary: Use lookup tables to map feature attribute codes to readable text when performing feature queries. 

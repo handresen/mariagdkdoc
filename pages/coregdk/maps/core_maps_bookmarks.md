@@ -1,7 +1,7 @@
 ---
 title: Bookmarks
 keywords: bookmarks
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_bookmarks.html
 summary: Use bookmarks in maps to easily navigate between important locations in vector and raster maps. 

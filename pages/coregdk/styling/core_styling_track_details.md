@@ -1,7 +1,7 @@
 ---
 title: Track Style categories
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details.html
 summary: Style category details.

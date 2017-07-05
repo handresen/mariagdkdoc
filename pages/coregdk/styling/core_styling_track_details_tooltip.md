@@ -1,7 +1,7 @@
 ---
 title: Track tooltip styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_tooltip.html
 summary: Track tooltip styling details. 

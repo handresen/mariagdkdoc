@@ -1,7 +1,7 @@
 ---
 title: Track history styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track_history.html
 summary: Using track history visualisation controls in Maria GDK. 

@@ -1,7 +1,7 @@
 ---
 title: Geofencing datasources
 keywords: geofencing, datasource, setup, tracks, drawobjects, services, interfaces
-tags: [geofencing, service, track, drawobject, interface]
+tags: [geofencing, track, drawobject, interface]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_datasources.html
 summary: Setting up datasources for geofencing.

@@ -1,7 +1,7 @@
 ---
 title: Geofencing notifications
 keywords: geofencing, notifications, rules
-tags: [geofencing, track, drawobject, interface, service]
+tags: [geofencing, track, drawobject, interface]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_notifications.html
 summary: Adding notifications when tracks interact with objects.

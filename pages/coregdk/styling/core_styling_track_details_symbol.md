@@ -1,7 +1,7 @@
 ---
 title: Track symbol styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_symbol.html
 summary: Track symbol styling details. 

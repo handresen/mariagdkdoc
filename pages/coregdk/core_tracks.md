@@ -1,7 +1,7 @@
 ---
 title: Tracks
 keywords: tracks
-tags: [navigation]
+tags: [track]
 sidebar: core_sidebar
 permalink: core_tracks.html
 summary: Using tracks in Maria GDK.

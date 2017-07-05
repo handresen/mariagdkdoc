@@ -1,7 +1,7 @@
 ---
 title: Links
 keywords: links
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_links.html
 summary: Use links.xml-files to point to secondary file locations. 

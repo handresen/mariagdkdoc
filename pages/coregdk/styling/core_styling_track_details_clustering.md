@@ -1,7 +1,7 @@
 ---
 title: Track clustering styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_clustering.html
 summary: Track clustering styling details. 

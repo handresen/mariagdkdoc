@@ -1,7 +1,7 @@
 ---
 title: Drawobject default values xml
 keywords: drawobjects
-tags: [navigation]
+tags: [drawobject]
 sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_defaultvalues_xml.html
 summary: Complete style set targeting draw object fields.

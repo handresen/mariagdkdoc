@@ -1,7 +1,7 @@
 ---
 title: Track styling advanced topics
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track_advanced.html
 summary: Advanced track styling topics. 

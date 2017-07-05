@@ -1,7 +1,7 @@
 ---
 title: Vector map legend
 keywords: vector, legend
-tags: [vector]
+tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_maps_vectorlegend.html
 summary: Displaying legend for vector maps.

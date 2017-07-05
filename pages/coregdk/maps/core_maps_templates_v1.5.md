@@ -1,7 +1,7 @@
 ---
 title: Map templates MARIA GDK version 1.5
 keywords: templates, old, 1.5
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_templates_v1.5.html
 summary: Using map templates to create multilayered maps for Maria GDK. 

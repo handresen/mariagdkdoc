@@ -1,7 +1,7 @@
 ---
 title: Styling
 keywords: styling
-tags: [navigation]
+tags: [drawobject, track]
 sidebar: core_sidebar
 permalink: core_styling.html
 summary: The Maria GDK features powerful mechanisms for controlling the appearance of tracks and draw objects. Several aspects of track and draw object visualisation can be controlled using styling. Conditional styling allows styling based on track attributes or draw object fields, map attributes and external settings. 

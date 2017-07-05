@@ -1,7 +1,7 @@
 ---
 title: Track label decluttering styling
 keywords: styling
-tags: [navigation]
+tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track_labeldeclutter.html
 summary: How to layout track text labels in Maria GDK. 

@@ -1,7 +1,7 @@
 ---
 title: Track performance tips
 keywords: tracks
-tags: [navigation]
+tags: [track]
 sidebar: core_sidebar
 permalink: core_tracks_performance_tips.html
 summary: Misc performance tips for using tracks in Maria GDK.

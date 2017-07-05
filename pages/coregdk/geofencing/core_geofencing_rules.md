@@ -1,7 +1,7 @@
 ---
 title: Geofencing rules
 keywords: geofencing, rules
-tags: [geofencing, track, drawobject, interface, service]
+tags: [geofencing, track, drawobject, interface]
 sidebar: core_geofencing_sidebar
 permalink: core_geofencing_rules.html
 summary: Defining geofencing rules.

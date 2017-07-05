@@ -1,7 +1,7 @@
 ---
 title: Maps in Maria GDK
 keywords: maps GDK
-tags: [navigation]
+tags: [map]
 sidebar: core_sidebar
 permalink: core_map_prepare.html
 summary: Using maps in Maria GDK 
