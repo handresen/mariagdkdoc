@@ -30,18 +30,4 @@ For detailed  documentation, please select wanted content from the "Content" men
 | <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria Map Maker](mmm_landing_page.html) | Used to create and manage maps  |
 
 
-
-## Converting from dokuwiki (tips and tricks)
-- Interne, autogenererte linker må være lowercase. F.eks. linken: core_vector_mappackages.html#Scalebase for å referere til kapittelet "Scalebase" vil ikke fungere. Bruk core_vector_mappackages.html#scalebase.
-- Referanser til filnavn i f.eks. bildelinker må være lowercase.
-
-- Ekstra linjeskift før eller etter en tabell vil ofte ordne opp i tilfeller der tabellen ikke ser ut til å bli tolket slik den skal. Dette gjelder også overskrifter.
-- "Harde" linjeskift fra dokuwiki kan dukke opp som en "\\". Fjern der det ikke er behov (f.eks. i tomme tabell-ruter) eller bytt ut med "`<br/>`".
-
-- Noen tabeller som ikke har header har fått generert header av første rad. 
-- Noen tabeller/avsnitt på bunnen av en side har av ukjente grunner ikke kommet med. Pass på å sammenligne ny side med gammel side i dokuwiki for å forsikre deg om at alt er med.
-- Autokonverterte tags gir feilmelding: "Liquid Warning: Liquid syntax error (line 29): Expected end_of_string but found comparison in {% raw %}"{{tag>[vector] [map] [m6m] [FME] [OGR] [GDAL]}}" {% endraw %} in pages/coregdk/maps/core_map_preprocess_vector.md". Fjernes fra bunnen av fila og legges inn i header.
-
-- Bruk "`<img class="tableImage" src="images/core/trackcolorschemelight.png"/>`" for å inkludere bilder i tabeller og unngå automatisk linebreak etter bilde (se [eksempel](core_styling_track_details_symbol.html#colorscheme))
-
 {% include links.html %}
