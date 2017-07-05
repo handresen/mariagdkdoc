@@ -67,6 +67,9 @@ entries:
     - title: Vector map legend
       url: /core_maps_vectorlegend.html
       output: web
+    - title: Map layer export
+      url: /core_maps_export.html
+      output: web
 
   - title: Technologies
     output: web, pdf
