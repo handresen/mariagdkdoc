@@ -1,13 +1,11 @@
 ---
 title: Tracks
 keywords: tracks
-tags: [track]
+tags: [track, navigation]
 sidebar: core_sidebar
 permalink: core_tracks.html
 summary: Using tracks in Maria GDK.
 ---
-
-# Tracks
 
 For a vehicle, the classical interpretation of a track is the line of consecutive positions on the ground representing where the vehicle has moved. In relation to radars and radar displays, a track is created by correlating a set of raw observations (plots). The track is assigned an id, the best known current position and a position history based on the associated observations. Other information is typically also associated with the track, such as estimated course, speed and altitude.
 

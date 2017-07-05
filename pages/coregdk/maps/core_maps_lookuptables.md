@@ -1,13 +1,11 @@
 ---
-title: Lookuptables
-keywords: lookuptables
+title: Lookuptables for feature info
+keywords: lookuptables, featurequeries
 tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_lookuptables.html
 summary: Use lookup tables to map feature attribute codes to readable text when performing feature queries. 
 ---
-
-# Lookup tables for feature info
 
 {% include callout.html content="Available since Maria GDK 3.1." type="info" %}
 

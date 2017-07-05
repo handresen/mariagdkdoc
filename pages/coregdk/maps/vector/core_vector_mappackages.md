@@ -7,8 +7,6 @@ permalink: core_vector_mappackages.html
 summary: Setting up vector mappackages in Maria GDK 
 ---
  
-# Mappackages
-
 The mappackage-xml is used to setup and describe a collection of map datasets and thus enable the creation of a complete, complex map.
 
 Note that scalebase and/or nominalscalefactor specified in the mappackage-xml will override settings for scalebase and/or nominalscalefactor in the multidatasetfiles.

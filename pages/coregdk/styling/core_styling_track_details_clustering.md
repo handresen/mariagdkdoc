@@ -1,6 +1,6 @@
 ---
 title: Track clustering styling
-keywords: styling
+keywords: tracks, clustering, styling
 tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_clustering.html

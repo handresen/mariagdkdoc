@@ -7,8 +7,6 @@ permalink: core_raster_map_formats.html
 summary: The GDAL formats which are included in the Raster Map Service 
 ---
 
-# Supported formats
-
 The TPG Raster Map Service includes the [Geospatial Data Abstraction Library - GDAL](http://www.gdal.org/). The included version may be found by inspecting the gdal*.dll file in "C:\Program Files (x86)\TeleplanGlobe\TpgServiceHoster\AddInRoot\AddIns\RasterMapServiceAddIin\x64". 
 
 The following GDAL formats are included in the Raster Map Service. However, only formats in **bold** have been tested and verified to work in Maria GDK

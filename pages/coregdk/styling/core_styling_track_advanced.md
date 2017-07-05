@@ -1,13 +1,11 @@
 ---
 title: Track styling advanced topics
-keywords: styling
+keywords: tracks, styling
 tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track_advanced.html
 summary: Advanced track styling topics. 
 ---
-
-### Advanced topics
 
 #### Custom symbolizer parameters
 

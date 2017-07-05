@@ -1,13 +1,11 @@
 ---
 title: Drawobject styling visual appearance
-keywords: drawobjects
+keywords: drawobjects, visual appearance, styling
 tags: [drawobject]
 sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_visualappearance.html
 summary: Set default values for draw object fields based on styles with conditions to target objects with special characteristics.
 ---
-
-# Styling visual appearance
 
 The style set for the visual appearance has three style categories: DrawObjects, SelectionFan and Tooltip. Each category has a set of predefined styles. The name of the value items and composite value items in the styles have specific meaning and cannot be changed. Changing the value of the value items on the other hand will change the appearance of the draw objects. 
 

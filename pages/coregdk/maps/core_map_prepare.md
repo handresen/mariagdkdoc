@@ -7,8 +7,6 @@ permalink: core_map_prepare.html
 summary: Using maps in Maria GDK 
 ---
 
-# Preparing Map Packages
-
 
 This section is intended for Maria GDK users, primarily working with advanced map setup, as well as for Teleplan Globe internal use. The reader is assumed to be proficient in Maria map setup, xml and general programming.
 

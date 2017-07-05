@@ -1,13 +1,11 @@
 ---
 title: Track tooltip styling
-keywords: styling
+keywords: tracks, tooltips, styling
 tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_tooltip.html
 summary: Track tooltip styling details. 
 ---
-
-# Tooltip
 
 The tooltip category contains styling used for a tooltip that can be displayed when the mouse pointer is over a track.
 

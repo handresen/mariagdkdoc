@@ -1,6 +1,6 @@
 ---
 title: Drawobject visual appearance xml
-keywords: drawobjects
+keywords: drawobjects, xml, example, styling
 tags: [drawobject]
 sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_visualappearance_xml.html

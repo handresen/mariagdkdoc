@@ -1,7 +1,7 @@
 ---
 title: Position parsing and formatting
-keywords: styling
-tags: [navigation]
+keywords: position, parsing
+tags: [map]
 sidebar: core_sidebar
 permalink: core_posparsing.html
 summary: Utility for parsing and formatting geographical positions. Focus is on flexibility and generality over raw performance. 

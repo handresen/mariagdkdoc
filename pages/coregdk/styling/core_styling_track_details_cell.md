@@ -1,12 +1,11 @@
 ---
 title: Track cell styling
-keywords: styling
+keywords: tracks, cells, styling
 tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_cell.html
 summary: Track cell styling details. 
 ---
-# Cell styling
 
 Cell styling can be used for vsualising large amounts of track data. Cell styling is contained within a separate style category, "TrackCell".
 

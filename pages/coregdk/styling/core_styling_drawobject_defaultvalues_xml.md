@@ -1,6 +1,6 @@
 ---
 title: Drawobject default values xml
-keywords: drawobjects
+keywords: drawobjects, xml, example, styling
 tags: [drawobject]
 sidebar: core_styling_sidebar
 permalink: core_styling_drawobject_defaultvalues_xml.html

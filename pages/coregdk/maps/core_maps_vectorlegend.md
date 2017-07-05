@@ -7,8 +7,6 @@ permalink: core_maps_vectorlegend.html
 summary: Displaying legend for vector maps.
 ---
 
-# Vector map legend
-
 The vector map service can provide bitmaps representing all visible map themes in current view (S52 and themes with only label representations are ignored).
 
 {% include callout.html content="When running with multiple mapservices serving multiple instances of the same mappackage, make sure that all mappackages reference an identical set of setup files (featuregrouping.xml, mariner_settings.xml etc). If not - legend bitmaps might differ from what is visible in map view." type="info" %}

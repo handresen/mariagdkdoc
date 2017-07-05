@@ -1,13 +1,11 @@
 ---
 title: Track selection fan styling
-keywords: styling
+keywords: tracks, selectionfan, styling
 tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_selectionfan.html
 summary: Track selection fan styling details. 
 ---
-
-# Selection fan
 
 The selection fan category contains styling used for a selection fan that can be displayed when multiple tracks can be selected at the same point by clicking on the map.
 

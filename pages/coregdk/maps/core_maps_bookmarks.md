@@ -7,8 +7,6 @@ permalink: core_maps_bookmarks.html
 summary: Use bookmarks in maps to easily navigate between important locations in vector and raster maps. 
 ---
 
-# Bookmarks
-
 Bookmarks can be used to navigate easily between important locations in vector and raster maps. Each mappackage can have a separate bookmark-file. The file must have the same name as the mappackage, be located in the same folder and have a "bookmarks.xml"-extension. 
 If a template contains multiple mappackages, bookmarks will be merged.
 

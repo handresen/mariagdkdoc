@@ -7,8 +7,6 @@ permalink: core_maps_templates.html
 summary: Using map templates to create multilayered maps for Maria GDK. 
 ---
 
-# Map templates
-
 Older Versions: [Maria GDK 1.5 and older](./core_maps_templates_v1.5.html)
 
 The map template xml joins together map data from different sources to create a multilayered, rich map for MariaGDK. A template can contain multiple layers referencing mapsignatures from both raster and vector mapservices. Layers can also act as modification layers (for example elevation shading effects) and placeholder layers (for special data like WMS and propagation).

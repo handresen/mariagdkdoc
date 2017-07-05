@@ -7,8 +7,6 @@ permalink: core_vector_symbolization.html
 summary: Setting up feature symbolization for vector maps in Maria GDK 
 ---
 
-# Feature symbolization
-
 Symbols.xml is divided in seven parts contained inside the root element `<symbolizations>`.
 
 Overall structure of the symbols.xml file:

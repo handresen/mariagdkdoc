@@ -7,8 +7,6 @@ permalink: core_raster_resampling_methods.html
 summary: Supported interpolation and resampling methods for reprojecting and scaling images.
 ---
 
-# Resampling and interpolation methods
-
 The raster service supports various interpolation methods that are used when reprojecting and scaling images. The choice of resampling method may have huge impact on both the quality of the produced maps and the processing time of each map tile. These effects are linked, so that higher quality tiles also means higher processing time. 
 
 These methods can be specified per dataset in the raster map package XML by using the ''resampleMethod'' parameter, like this:

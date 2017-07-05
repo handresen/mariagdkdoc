@@ -7,8 +7,6 @@ permalink: core_maps_metadata.html
 summary: Provide map metadata using xml-files. 
 ---
 
-# Metadata
-
 Metadata is collected from xml-files. These files should be located together with the map data they relate to (mappackage, multidataset or dataset) and use the extension .metadata.xml (f.x. N5000.m6mmultidataset.metadata.xml).
 
 Example-xml:

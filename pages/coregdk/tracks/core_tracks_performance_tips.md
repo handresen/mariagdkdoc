@@ -1,13 +1,11 @@
 ---
 title: Track performance tips
-keywords: tracks
+keywords: tracks, performance
 tags: [track]
 sidebar: core_sidebar
 permalink: core_tracks_performance_tips.html
 summary: Misc performance tips for using tracks in Maria GDK.
 ---
-
-# Track performance tips
 
 ### Use typed track fields for AnyIn filters
 

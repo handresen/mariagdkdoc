@@ -1,13 +1,11 @@
 ---
 title: Track Styling
-keywords: styling
+keywords: tracks, styling
 tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track.html
 summary: MARIA 2012 features powerful mechanisms for controlling track appearance and styling. Several aspects of track visualisation can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. 
 ---
-
-# Track Styling
 
 ## Introduction
 

@@ -7,8 +7,6 @@ permalink: core_vector_featuregroups.html
 summary: Using featuregroups in vector maps. 
 ---
 
-# Feature grouping
-
 Older Versions: [1.4](./core_vector_featuregroups_v1.4.html)
 
 Featuregroups are used for grouping map themes into logical groups that are easy to control and style. Featuregroups is the only file that references the dataset and requires that you know what features are available.

@@ -7,8 +7,6 @@ permalink: core_vector_multidataset.html
 summary: Setting up vector map multidatasets in Maria GDK 
 ---
 
-# Multidatasets
-
 The multidataset-xml is used to setup and describe similar type datasets. A dataset is typically produced from the same source data/format.
 
 {% include callout.html content="Note that all entries in this file are treated as hints and may be overridden by the map renderer. Also, all \"limits\" refer to selected scalebase (nominal or actual) multiplied by nominalscalefactor. For \"nominal\", these do not usually match actual map scale." type="info" %}

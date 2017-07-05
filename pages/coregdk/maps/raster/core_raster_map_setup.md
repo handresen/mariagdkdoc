@@ -7,8 +7,6 @@ permalink: core_raster_map_setup.html
 summary: Setting up raster maps in Maria GDK 
 ---
 
-# Raster map setup
-
 Maria GDK raster map packages are used to setup and describe raster data. Although Maria GDK supports reading a large number of raster formats directly, the data should be converted to GeoPackage for optimal performance. Mappackages can be referenced from Maria GDK templates using the package mapsignature.
 
 

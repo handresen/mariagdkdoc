@@ -1,13 +1,11 @@
 ---
-title: Links
-keywords: links
+title: Using links-files
+keywords: links, setup, vector, raster
 tags: [map]
 sidebar: core_sidebar
 permalink: core_maps_links.html
 summary: Use links.xml-files to point to secondary file locations. 
 ---
-
-# Link files
 
 The Vector and Raster Map services searches for Maria GDK map files in the default folder provided at installation. Map packages can also be located in secondary locations using links.xml-files pointing to the data.
 

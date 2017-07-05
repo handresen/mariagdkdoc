@@ -1,13 +1,11 @@
 ---
 title: Track history styling
-keywords: styling
+keywords: tracks, history, styling
 tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track_history.html
 summary: Using track history visualisation controls in Maria GDK. 
 ---
-
-# Track history
 
 Track history visualisation controls how previous positions are displayed in the map. History styling includes amount of history to include as well as regular appearance styling. Track history belongs to the "TrackSymbol" style category.
 

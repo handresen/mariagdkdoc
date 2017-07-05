@@ -7,8 +7,6 @@ permalink: core_raster_gdal_geopackage.html
 summary: Using GDAL to produce GeoPackages. 
 ---
 
-# Using GDAL to produce GeoPackages
-
 [GeoPackage](http://www.geopackage.org/) is the preferred file format for rasters in Maria GDK. To produce GeoPackages you need GDAL 2.x. The general usage is explained in the [GDAL documentation](http://www.gdal.org/drv_geopackage_raster.html), but we want to expand on a few common use cases.
 
 ## Converting a file and building overviews

@@ -7,8 +7,6 @@ permalink: core_raster_tilemapbuilder.html
 summary: Producing MBTiles database from a Maria map template. 
 ---
 
-# TileMapBuilder
-
 The TileMapBuilder command line tool can be used to produce an MBTiles database from a Maria map template. 
 
 ### Usage:

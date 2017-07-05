@@ -1,13 +1,11 @@
 ---
 title: Track symbol styling
-keywords: styling
+keywords: tracks, symbol, styling
 tags: [track]
 sidebar: core_styling_track_sidebar
 permalink: core_styling_track_details_symbol.html
 summary: Track symbol styling details. 
 ---
-
-## Track symbol
 
 The track symbol category contains all styling used for standard track symbolization. Style items for specialized track display methods, such as cell display and clusters are not part of this category.
 

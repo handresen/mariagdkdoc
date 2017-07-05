@@ -7,8 +7,6 @@ permalink: core_vector_map_setup.html
 summary: Setting up vector maps in Maria GDK 
 ---
 
-# Vector map setup
-
 Multiple layers of xml-files work together with the [map template-xml](./core_maps_templates.html) to create a customized map for Maria GDK to display. 
 
 The mappackage-xml is a top level file that apply to the entire collection of datasets, while the multidataset-xml apply to specific datasets. For a complete vector map setup you will also need a set of styling-xmls per dataset (the featuregrouping-xml, the symbols-xml and the script.xml).
