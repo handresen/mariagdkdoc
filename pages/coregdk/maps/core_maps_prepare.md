@@ -3,7 +3,7 @@ title: Maps in Maria GDK
 keywords: maps GDK
 tags: [map]
 sidebar: core_sidebar
-permalink: core_map_prepare.html
+permalink: core_maps_prepare.html
 summary: Using maps in Maria GDK 
 ---
 

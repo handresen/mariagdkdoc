@@ -24,11 +24,11 @@ entries:
     output: web, pdf
     folderitems:
     - title: Preprocessing vector data
-      url: /core_map_preprocess_vector.html
+      url: /core_maps_preprocess_vector.html
       output: web, pdf
 
     - title: Preparing map packages
-      url: /core_map_prepare.html
+      url: /core_maps_prepare.html
       output: web, pdf
 
     - title: Vector map setup

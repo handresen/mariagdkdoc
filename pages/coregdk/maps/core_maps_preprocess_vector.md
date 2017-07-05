@@ -3,7 +3,7 @@ title: Preprocess Vector Data
 keywords: maps GDK
 tags: [map]
 sidebar: core_sidebar
-permalink: core_map_preprocess_vector.html
+permalink: core_maps_preprocess_vector.html
 summary: Preprocessing vector data for use in Maria GDK 
 ---
 
