@@ -74,8 +74,8 @@ entries:
   - title: Technologies
     output: web, pdf
     folderitems:
-    - title: Rest interfaces
-      url: /core_rest.html
+    - title: Maria GDK Rest interfaces
+      url: /core_tech_rest_maria.html
       output: web, pdf
 
     - title: Rest interfaces
