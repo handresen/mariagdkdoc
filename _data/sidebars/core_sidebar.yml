@@ -64,6 +64,9 @@ entries:
     - title: Point symbols
       url: /core_symbolpoint.html
       output: web
+    - title: Calculations
+      url: /core_calculations.html
+      output: web    
     - title: Vector map legend
       url: /core_maps_vectorlegend.html
       output: web
@@ -106,5 +109,14 @@ entries:
       url: /core_setup_service_discovery.html
       output: web, pdf
 
+  - title: Developing applications
+    output: web, pdf
+    folderitems:
+    - title: Overview
+      url: /core_develop_overview.html
+      output: web, pdf
+    - title: Getting started
+      url: /core_develop_gettingstarted.html
+      output: web, pdf
 
 
