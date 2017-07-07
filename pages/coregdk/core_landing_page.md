@@ -59,7 +59,4 @@ Performing bitmap [export](./core_maps_export.html) of a MARIA layer stack.
 ## Installation and setup
 Resources on service [installation](./core_setup_service_installation.md), [configuration](./core_setup_service_configuration.html) and [discovery](./core_setup_service_discovery.html).
 
-## Developing applications with Maria GDK
-Resources intended for MARIA GDK users developing map based client applications in the [MARIA GDK environment](./core_develop_overview.html). The reader is assumed to be proficient in .NET programming with C# and WPF.
-
 {% include links.html %}
