@@ -7,7 +7,7 @@ permalink: core_map_preprocess_s57.html
 summary: Using FME to translate S-57 data to m6m files
 ---
 
-## Step 1
+## Translation step 1
 
 ### ENC
 Start FME workbench and open the supplied "S-57.fmw" workspace. Included in the translation from S-57 ENC data to M6M are two FME transformers - a selection filter and a coordinate extractor. Their task is to extract depth values from geometries referenced by S-57 SOUNDG records and put these values in a seperate attribute field, ZDEPTH, added for the purpose.   
@@ -28,7 +28,7 @@ Click 'OK' and run the translation process.
 
 For AML data, the workspace "AML.fmw" is used instead of "S-57.fmw". Otherwise all instructions in this guide can be applied.
 
-## Step 2
+## Translation step 2
 
 Drawing of ENC charts is complex and needs specifically designed renderers. To assist drawing and minimize subsequent cross object lookups the output from the previous stage must pass through an additional filter. This is done with a separate command line utility "S57filter.exe". Do as follows:
 
@@ -37,7 +37,7 @@ Drawing of ENC charts is complex and needs specifically designed renderers. To a
 
 The `<source folder>` is the output folder from the previous stage. Use the '-r' option to traverse subdirectories.
 
-## Step 3
+## Translation step 3
 
 Create vectortiles. Use the script buildvectortiles_ENC.ps1 on each of the datasets. Use the following zoomlevels:
 

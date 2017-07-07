@@ -12,7 +12,7 @@ The FME and OGR translation processes described in this wiki produce m6m files. 
 Use as follows: Open a command-prompt and navigate to the folder where "ToVectorTileset.exe" is located. Type: 
 
 ```bash
-tovectortileset `<source folder>` `<target filename>` `<-level n>` [-recursive]
+tovectortileset <source folder> <target filename> <-level n> [-recursive]
 	[-zip][-attribs "a1,a2,..,an"]
 	[-lborder <value>][-aborder <value>]
 	[-pborder <value>] [-namedborder<i> <layer name> <value>]
@@ -42,7 +42,7 @@ The "level"-parameter is a number that describes the tile level and roughly corr
  | Level | Scale        | Comment                                | 
  | ----- | -----        | -------                                | 
  | 0     | 1:256M       | Whole earth between 85N and 85S        | 
- | 1     | 1:128M       | 256M/2`<sup>`level`</sup>`                 | 
+ | 1     | 1:128M       | 256M/2<sup>level</sup>                 | 
  | 2-18  | 1:64M-1:1000 | Level 18 roughly corresponds to 1:1000 | 
 
 The level parameter should be selected so that it matches typical display scales for the map data. If the same map data is to be used on several levels, it is possible to run multiple conversions with different level values in order to produce tilings for different levels.
@@ -60,7 +60,7 @@ As a rule of thumb, average tile size should range between 1000 bytes and 50000 
 ### Merging
 
 ```bash
-ToVectorTileset.exe -merge `<target filename>` `<source filename>`
+ToVectorTileset.exe -merge <target filename> <source filename>
 ```
 Merge tiles from database given by source filename into database given by target filename. Overlapped tiles are 
 supported.
@@ -71,7 +71,7 @@ Blob-compression is used only if target database uses blob-compression.
 Generate boundary:
 
 ```bash
-ToVectorTileset.exe -makebounds `<db filename>`
+ToVectorTileset.exe -makebounds <db filename>
 ```
 
 ### Compacting
@@ -79,7 +79,7 @@ ToVectorTileset.exe -makebounds `<db filename>`
 To compress geodata using zlib, call
 
 ```bash
-ToVectorTileset.exe -compact `<db filename>`
+ToVectorTileset.exe -compact <db filename>
 ```
 Depending on data, this should compress the database to approximately 0.5-0.7 times the original size. Note that vector service shipped with MARIA GDK 2.1 or newer is required. Note that vacuuming and unused tile data removal is also performed as part of the compression.
 

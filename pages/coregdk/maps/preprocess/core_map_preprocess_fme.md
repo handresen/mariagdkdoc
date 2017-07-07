@@ -4,13 +4,9 @@ keywords: maps, vector, fme, m6m,
 tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_fme.html
-summary: Using Teleplan Globes FME plugin to translate map data to m6m-format
+summary: Using Teleplan Globes FME plugin to translate map data to m6m-format.
 ---
-
-# FME
-
-Translating map data to m6m-format using FME is accomplished using a Teleplan Globe developed plugin. It is used to output spatial data as MARIA m6m-files from all the input formats supported by FME. M6MFormat is a writer-only plugin, and it is available for both 32 and 64 bit versions of FME. Teleplan Globe also provides a small executable for indexing and converting m6m-files to datasets.
-
+Translating map data to m6m-format using FME is accomplished using a Teleplan Globe developed plugin. It is used to output spatial data as MARIA m6m-files from all the input formats supported by FME. M6MFormat is a writer-only plugin, and available for both 32 and 64 bit versions of FME. Teleplan Globe also provides a small executable for indexing and converting m6m-files to datasets.
 
 ## Setup
 

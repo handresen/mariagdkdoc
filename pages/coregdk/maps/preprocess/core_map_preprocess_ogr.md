@@ -4,11 +4,8 @@ keywords: maps GDK
 tags: [map, vector]
 sidebar: core_sidebar
 permalink: core_map_preprocess_ogr.html
-summary: Using Teleplan Globes OGR plugin to translate map data to m6m-format
+summary: Using Teleplan Globes OGR plugin to translate map data to m6m-format.
 ---
-
-# OGR
-
 OGR is part of the well known Open Source library GDAL. For general documentation on OGR go to [www.gdal.org](http://www.gdal.org).
 
 Translating map data to m6m-format using the OGR set of tools is accomplished using a Teleplan Globe developed plugin. It is used to output spatial data as MARIA m6m-files from all the input formats supported by OGR. Teleplan Globe also provides a small executable for indexing and converting m6m-files to datasets.
