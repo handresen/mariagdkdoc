@@ -6,19 +6,17 @@ sidebar: core_sidebar
 permalink: core_raster_mappackages.html
 summary: Explaining the raster mappackages xml-files. 
 ---
-
-## Raster map packages XML
-
 This page contains documentation on the parameters and names which make up a raster map packages xml file.
 
 Datasets are evaluated from top to bottom in the xml-file, so if you have multiple datasets that cover the same area and scale/resolution range, the last dataset will cover the first.
 
-The raster map packages file should be named ''*.rastermappackages.xml'' or (versions post 2.0.1) ''*.rastermappackage.xml''. The latter is equivalent to ''*.mappackage.xml'' for vector maps and contains only one mappackage where as the ''*.rastermappackage**s**.xml'' can contain multiple mappackages.
+## Example XML's
 
+The raster map packages file should be named ''*.rastermappackages.xml'' or (versions post 2.0.1) ''*.rastermappackage.xml''. The latter is equivalent to ''*.mappackage.xml'' for vector maps and contains only one mappackage where as the ''*.rastermappackage**s**.xml'' can contain multiple mappackages.
 
 {% include callout.html content="Note that all elements and attributes in the xml-files should be lowercase unless otherwise noted." type="info" %}
 
-### Example rastermappackages.xml
+Example rastermappackage**s**.xml:
 
 ```xml
 <mappackages>
@@ -71,7 +69,7 @@ The raster map packages file should be named ''*.rastermappackages.xml'' or (ver
 </mappackages>
 ```
 
-### Example rastermappackage.xml (versions newer than 2.0.1)
+Example rastermappackage.xml (versions newer than 2.0.1):
 
 ```xml
 <mappackage signature="NE2_HR_87a0eec4-0fe3-48cc-84f6-38bf9d0f755b" name="NE_background">

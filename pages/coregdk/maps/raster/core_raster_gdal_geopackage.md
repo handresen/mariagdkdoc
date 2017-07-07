@@ -67,7 +67,7 @@ Both Maria and other GIS systems are optimized for a Google maps compatible tili
 
     gdal_translate -of GPKG world_panorama_v15.vrt world_panorama_v15.gpkg -co TILING_SCHEME=GoogleMapsCompatible -co QUALITY=95
     
-This global dataset will be reprojected to EPSG:3857 (Google Mercator) and tiled according to the Google Maps scheme: http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/
+This global dataset will be reprojected to EPSG:3857 (Google Mercator) and tiled according to the Google Maps scheme: [Tiles à la Google Maps](http://www.maptiler.org/google-maps-coordinates-tile-bounds-projection/)
 
 
 

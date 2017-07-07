@@ -1,15 +1,15 @@
 ---
-title: MARIA GeoPackage
+title: Producing GeoPackages with commandline tools
 keywords: raster, geopackage
 tags: [map, raster]
 sidebar: core_sidebar
 permalink: core_raster_maria_geopackage.html
-summary: Producing GeoPackages using MARIA command line tools 
+summary: Using MARIA Command line tools to produce GeoPackages.
 ---
 
-# Using MARIA Command line tools to produce GeoPackages
+## Producing GeoPackages
 
-For general raster image data you can usually use [GDAL](gdal_geopackage) to produce GeoPackages for use in Maria GDK. 
+For general raster image data you can usually use [GDAL](core_raster_gdal_geopackage.html) to produce GeoPackages for use in Maria GDK. 
 
 However, there are certain cases where which are not supported by GDAL, such as:
 
@@ -38,13 +38,13 @@ Some useful links:
 The Maria elevation tools support the following resampling methods via the ''--resamp'' command line parameter.
 
 
-*  ''\-\-resamp nearest'' - Nearest point interpolation
+*  `--resamp nearest` - Nearest point interpolation
 
-*  ''\-\-resamp average'' - 2x2 Average resampling
+*  `--resamp average` - 2x2 Average resampling
 
-*  ''\-\-resamp min'' - minimum value
+*  `--resamp min` - minimum value
 
-*  ''\-\-resamp max'' - maximum value
+*  `--resamp max` - maximum value
 
 
 ### Tile formats
@@ -52,13 +52,13 @@ The Maria elevation tools support the following resampling methods via the ''--r
 The geopackage elevation extension supports two tile formats for elevation data, TIFF with floating point samples and PNG with 16-bits unsigned int samples. This can be controlled with the ''--format'' command line option
 
 
-*  ''\-\-format elev32f'' - Floating point TIFF
+*  `--format elev32f` - Floating point TIFF
 
-*  ''\-\-format elev16'' - 16-bits PNG (default)
+*  `--format elev16` - 16-bits PNG (default)
 
 ### Vertcal resolution
 
-For integer samples, the vertical resolution of the samples can be controlled with the ''\-\-precision'' command line option. This is given with a floating point value indicating the vertical resolution in meters of the samples, for example ''\-\-precision 0.1'' will give a 10cm resolution. This is done by applying a scale and an offset to each sample. You may not get the full resolution in all tiles, it depends on the range of values in the tile. For example, if you specify 0.1m resolution and the tile contains both sea level samples and mountains above 6554m you do not have enough resolution in a 16-bits integer, and the resolution will automatically be adjusted to accomodate this.
+For integer samples, the vertical resolution of the samples can be controlled with the `--precision` command line option. This is given with a floating point value indicating the vertical resolution in meters of the samples, for example `--precision 0.1` will give a 10cm resolution. This is done by applying a scale and an offset to each sample. You may not get the full resolution in all tiles, it depends on the range of values in the tile. For example, if you specify 0.1m resolution and the tile contains both sea level samples and mountains above 6554m you do not have enough resolution in a 16-bits integer, and the resolution will automatically be adjusted to accomodate this.
 
 ## GPKG Elevation tool
 
@@ -68,14 +68,14 @@ This tool operates on a single input file, so for datsets consisting of multiple
 
 ### Options:
 
- | ''\-\-elevation''         | Elevation data mode (default)                                                                                                                        |  
- | ''\-\-normals''           | Normal map mode                                                                                                                                      | 
- | ''\-\-tilesize''          | Tile size in pixels (height == width)                                                                                                                | 
- | ''\-\-resamp <method>   | Resampling method: average,nearest,min,max (default is average)                                                                                      | 
- | ''\-\-format <fmt>      | Tile image format: ''any, png, jpeg, elev16 or elev32f.'' (png and jpeg are for normal maps).<br/> Default is elev16 for elevations, and png for normals. | 
- | ''\-\-quality <integer> | JPEG quality (0-100). Default 85                                                                                                                     | 
- | ''\-\-precision''         | Vertical resolution in meters                                                                                                                        | 
- | ''\-\-compress''          | Use LZW compression for TIFF tiles                                                                                                                   | 
+ | `--elevation`         | Elevation data mode (default)                                                                                                                        |  
+ | `--normals`           | Normal map mode                                                                                                                                      | 
+ | `--tilesize`          | Tile size in pixels (height == width)                                                                                                                | 
+ | `--resamp <method>`   | Resampling method: average,nearest,min,max (default is average)                                                                                      | 
+ | `--format <fmt>`      | Tile image format: `any, png, jpeg, elev16 or elev32f` (png and jpeg are for normal maps). Default is elev16 for elevations, and png for normals. | 
+ | `--quality <integer>` | JPEG quality (0-100). Default 85                                                                                                                     | 
+ | `--precision`         | Vertical resolution in meters                                                                                                                        | 
+ | `--compress`          | Use LZW compression for TIFF tiles                                                                                                                   | 
 
 
 ### Example 1: Simple conversion of elevation data
@@ -96,20 +96,20 @@ The usage of this tool is described by running it with no input parameters. Howe
 
 ### Options:
 
- | ''\-\-elevation''                                | Elevation data mode (default)                                                                                                                        | 
- | -------------------                                | -----------------------------                                                                                                                        | 
- | ''\-\-normals''                                  | Normal map mode                                                                                                                                      | 
- | ''\-\-tilesize''                                 | Tile size in pixels (height == width)                                                                                                                | 
- | ''\-\-resamp <method>                          | Resampling method: average,nearest,min,max (default is average)                                                                                      | 
- | ''\-\-bounds <min_lat,min_lon,max_lat,max_lon> | Bounding box. Only include tiles that intersect this area.                                                                                           | 
- | ''\-\-minlevel <level>                         | Minimum quad tree level. Default is 0.                                                                                                               | 
- | ''\-\-maxlevel <level>                         | Maximum quad tree level. Default is 0                                                                                                                | 
- | ''\-\-format <fmt>                             | Tile image format: ''any, png, jpeg, elev16 or elev32f.'' (png and jpeg are for normal maps). Default is elev16 for elevations, and png for normals. | 
- | ''\-\-quality <integer>                        | JPEG quality (0-100). Default 85                                                                                                                     | 
- | ''\-\-precision''                                | Vertical resolution in meters                                                                                                                        | 
- | ''\-\-compress''                                 | Use LZW compression for TIFF tiles                                                                                                                   | 
- | ''\-\-map <signature>                          | Use a specific map signature from the raster map package.                                                                                            | 
- | ''\-\-nodata <value>                           | Set value to indicate missing data.                                                                                                                  | 
+ | `--elevation`                                | Elevation data mode (default)                                                                                                                        | 
+ | -------------------                          | -----------------------------                                                                                                                        | 
+ | `--normals`                                  | Normal map mode                                                                                                                                      | 
+ | `--tilesize`                                 | Tile size in pixels (height == width)                                                                                                                | 
+ | `--resamp <method>`                          | Resampling method: average,nearest,min,max (default is average)                                                                                      | 
+ | `--bounds <min_lat,min_lon,max_lat,max_lon>` | Bounding box. Only include tiles that intersect this area.                                                                                           | 
+ | `--minlevel <level>`                         | Minimum quad tree level. Default is 0.                                                                                                               | 
+ | `--maxlevel <level>`                         | Maximum quad tree level. Default is 0                                                                                                                | 
+ | `--format <fmt>`                             | Tile image format: `any, png, jpeg, elev16 or elev32f.` (png and jpeg are for normal maps). Default is elev16 for elevations, and png for normals. | 
+ | `--quality <integer>`                        | JPEG quality (0-100). Default 85                                                                                                                     | 
+ | `--precision`                                | Vertical resolution in meters                                                                                                                        | 
+ | `--compress`                                 | Use LZW compression for TIFF tiles                                                                                                                   | 
+ | `--map <signature>`                          | Use a specific map signature from the raster map package.                                                                                            | 
+ | `--nodata <value>`                           | Set value to indicate missing data.                                                                                                                  | 
 
 ### Example 1: Simple raster image map
 
