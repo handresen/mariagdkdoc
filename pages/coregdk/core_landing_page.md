@@ -59,4 +59,27 @@ Performing bitmap [export](./core_maps_export.html) of a MARIA layer stack.
 ## Installation and setup
 Resources on service [installation](./core_setup_service_installation.md), [configuration](./core_setup_service_configuration.html) and [discovery](./core_setup_service_discovery.html).
 
+## Maria GDK Releases
+This is an overview of the available releases of the Maria 2012 GDK
+
+ | Version | Released    | Changes   | Notes | Approved By | 
+ | ------- | --------    | -------  | ----- | -----------  | 
+ |1.0.0| 27 May 2012 |[Changes](http://issues.teleplanglobe.com/releaseNotes/M?q=version%3A+1.0.0&title=Change+log+Maria+GDK+Release&token=1BCFDEB82AE6833DA890D9438CCDF843&showDescription=false&showComments=false) | Incomplete list. | Pål Ulvenes | 
+ | 1.1.0   | 16 Jan 2014 | [Changes](http://issues.teleplanglobe.com/releaseNotes/M?q=version%3A+1.1.0&title=Change+log+Maria+GDK+Release&token=1BCFDEB82AE6833DA890D9438CCDF843&showDescription=false&showComments=false)| | Pål Ulvenes         | 
+ | 1.2.0   | 17 Jun 2014 | [Changes](http://issues.teleplanglobe.com/releaseNotes/M?q=version%3A+1.2.0&title=Change+log+Maria+GDK+Release&token=1BCFDEB82AE6833DA890D9438CCDF843&showDescription=false&showComments=false)|  | Thomas Martin Dørum | 
+ | 1.3.0   | 17 Oct 2014 | [Changes](http://issues.teleplanglobe.com/releaseNotes/M?q=version%3A+1.3.0&title=Change+log+Maria+GDK+Release&token=1BCFDEB82AE6833DA890D9438CCDF843&showDescription=false&showComments=false)|  | Pål Ulvenes         | 
+ | 1.4.0   | 26 Feb 2015 | [Changes](http://issues.teleplanglobe.com/releaseNotes/M?q=version%3A+1.4.0&title=Change+log+Maria+GDK+Release&token=1BCFDEB82AE6833DA890D9438CCDF843&showDescription=false&showComments=false) | Propagation service is not updated,<br/>version 1.3 is included in this release.| Pål Ulvenes|
+ | 1.4.1   | 14 Apr 2015 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+1.4.1&title=Release+Note+Maria+GDK+version+1.4.1&token=wo63rm3u40ne24n7986unn4e&showDescription=false&showComments=false)  | Important bug fixes for version 1.4.0 | Pål Ulvenes | 
+ | 1.5.0   | 10 Jul 2015 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+1.5.0&title=Release+Note+Maria+GDK+version+1.5.0&token=wo63rm3u40ne24n7986unn4e&showDescription=false&showComments=false)  | Propagation service is not updated,<br/>version 1.3 is included in this release. | Pål Ulvenes | 
+ | 2.0.0   | 29 Jan 2016 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+2.0.0&title=Release+Note+Maria+GDK+version+2.0.0&token=1evk53dsqyomgsl3ok94fxw11&showDescription=false&showComments=false) | | Thomas Martin Dørum | 
+ | 2.0.1   | 01 Apr 2016 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+2.0.1&title=Release+Note+Maria+GDK+version+2.0.1&token=1evk53dsqyomgsl3ok94fxw11&showDescription=false&showComments=false) | MariaToolbox is not updated,<br/>version 1.0.0 is included in this release. | Thomas Martin Dørum | 
+ | 2.1.1   | 14 Sep 2016 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+2.1.1&title=Release+Note+Maria+GDK+version+2.1.1&token=1evk53dsqyomgsl3ok94fxw11&showDescription=false&showComments=false) |  | Thomas Martin Dørum | 
+ | 3.1.0   | 01 Jun 2017 | [ Changes](http://issues.teleplanglobe.com:8080/releaseNotes/M?q=Fix+versions%3A+3.1.0&title=Release+Note+Maria+GDK+version+3.1.0&token=1evk53dsqyomgsl3ok94fxw11&showDescription=false&showComments=false) | | Thomas Martin Dørum | 
+
+
+
+
+Nightly builds are available for early adaption and testing purposes.
+
+
 {% include links.html %}
