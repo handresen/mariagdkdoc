@@ -12,9 +12,8 @@ This document is intended for Maria2012 developers and system integrators.
 
 LinqPad ([www.linqpad.net](http://www.linqpad.net)) was used to run the examples in this document. Alternatively, a standard VS c# project can be used to run the sample code. “TPG.GeoUnits.dll” contains the required definitions. Make sure also to add namespaces (TPG.GeoUnits and TPG.GeoUnits.Contracts). Press “F4” to add assembly reference in LINQpad.
 
-{{Maria2012_GenericPositionParseFormat_html_m4da2012a.png?598x166|Formatting}}
-
-{{Maria2012_GenericPositionParseFormat_html_m26a0c82d.png?589x166| Parsing}}
+{% include image.html file="core/maria2012_genericpositionparseformat_html_m4da2012a.png" caption="Formatting" %}
+{% include image.html file="core/maria2012_genericpositionparseformat_html_m26a0c82d.png" caption="Parsing" %}
 
 Position formats can vary significantly depending on user preferences and input sources. The same position can be represented in multiple ways. For instance, the position 60N10E can be written as:
 

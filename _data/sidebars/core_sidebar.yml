@@ -100,10 +100,10 @@ entries:
     output: web, pdf
     folderitems:
     - title: Service installation
-      url: /core_setup_installation.html
+      url: /core_setup_service_installation.html
       output: web, pdf
     - title: Service configuration
-      url: /core_setup_configuration.html
+      url: /core_setup_service_configuration.html
       output: web, pdf
     - title: Service discovery
       url: /core_setup_service_discovery.html
