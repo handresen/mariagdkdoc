@@ -2,7 +2,7 @@
 title: Maria GDK service addin installation
 keywords: service addin installation
 tags: [service]
-sidebar: core_sidebar
+sidebar: core_setup_sidebar
 permalink: core_setup_service_installation_addins.html
 summary: Installing the Maria GDK service addins. 
 ---

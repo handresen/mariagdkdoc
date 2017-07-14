@@ -2,7 +2,7 @@
 title: Maria GDK service installation
 keywords: service installation
 tags: [service]
-sidebar: core_sidebar
+sidebar: core_setup_sidebar
 permalink: core_setup_service_installation.html
 summary: Maria GDK documentation is primarily intended for development teams using the Maria GDK platform and for members of the Maria GDK development team. 
 ---

@@ -2,7 +2,7 @@
 title: Maria GDK service discovery
 keywords: service addin installation
 tags: [service]
-sidebar: core_sidebar
+sidebar: core_setup_sidebar
 permalink: core_setup_service_discovery.html
 summary: Using WCF UDP discovery with Maria GDK services. 
 ---

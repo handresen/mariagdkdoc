@@ -1,0 +1,40 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Maria GDK Installation and configuration
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Installation and configuration
+    output: web, pdf
+    folderitems:
+    - title: Service installation
+      url: /core_setup_service_installation_addins.html
+      output: web, pdf
+
+    - title: Service configuration
+      url: /core_setup_service_configuration.html
+      output: web, pdf
+
+    - title: Service discovery
+      url: /core_setup_service_discovery.html
+      output: web, pdf
+
+
+
+
