@@ -1,0 +1,55 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Maria GDK Client API functionality
+  version: 
+  folders:
+
+  - title: Overview
+    output: web, pdf
+    type: frontmatter
+    
+  - title: Creating Applications
+    output: web, pdf
+    folderitems:
+    - title: Very Simple Map Client
+      url: /clientapi_verysimpleclient.html
+      output: web, pdf
+
+    - title: Basic Map Client
+      url: /clientapi_basicmapclient.html
+      output: web, pdf
+
+    - title: Map Interaction Client
+      url: /clientapi_mapinteraction.html
+      output: web, pdf
+
+    - title: Windows Forms Client
+      url: /clientapi_winformsclient.html
+      output: web, pdf
+    
+    - title: Custom Layer Client
+      url: /clientapi_customclient.html
+      output: web, pdf
+
+    - title: Elevation Profile Client
+      url: /clientapi_elevationprofile.html
+      output: web, pdf
+      
+    - title: Elevation Analysis Client
+      url: /clientapi_elevationanalysis.html
+      output: web, pdf
+      
+    - title: Search Client
+      url: /clientapi_search.html
+      output: web, pdf
+      
+    - title: Geo Fencing Client
+      url: /clientapi_geofencing.html
+      output: web, pdf
+      
+    - title: Track Editor
+      url: /clientapi_trackserviceeditor.html
+      output: web, pdf

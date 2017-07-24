@@ -25,8 +25,8 @@ For detailed  documentation, please select wanted content from the "Content" men
 
 |  | Name | Description |
 |:---:|:---|:---|
-| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Core GDK functionality][core_landing_page] | Detailed description of layers, functionality and services |
-| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria client API](mariaapi_landing_page.html) | Maria API presents simplified interface for working with the GDK services and client layers. Contains sample applications using the Maria API.  |
+| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Core GDK functionality](core_landing_page.html) | Detailed description of layers, functionality and services |
+| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria client API](clientapi_landing_page.html) | Maria API presents simplified interface for working with the GDK services and client layers. Contains sample applications using the Maria API.  |
 | <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria Map Maker](mmm_landing_page.html) | Used to create and manage maps  |
 
 
