@@ -1,7 +1,7 @@
 ---
 title: Geo Fencing Client
 keywords: GDK
-tags: [geofencing]
+tags: [geofencing, sampleapplication, wpf, custom_layer]
 sidebar: clientapi_sidebar
 permalink: clientapi_geofencing.html
 summary: This section describes how to create a map client utilizing Maria geo fencing functionality.
@@ -12,7 +12,7 @@ summary: This section describes how to create a map client utilizing Maria geo f
 Maria provides Geo Fence functionality, which allows the user to define geographical shapes (lines and areas) that acts as virtual “fences”.
 This sample application will illustrate Geo Fence management through data source specification, rule management and notification handling.
 
-For more information see [Developer Reference, Geofencing](xxx.html)!
+For more information see [Developer Reference, Geofencing](core_geofencing.html)!
  
 * The example is based on a map component corresponding to 
 [Maria Basic Map Client](maria_gdk/programming/getting_started/mariabasicmapclient), with 

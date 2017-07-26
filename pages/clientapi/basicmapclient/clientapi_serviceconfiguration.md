@@ -1,7 +1,7 @@
 ---
 title: Service Configuration
 keywords: 
-tags: 
+tags: [service]
 sidebar: clientapi_sidebar
 permalink: clientapi_serviceconfiguration.html
 summary: This section describes how to specify service connection info from app.config.

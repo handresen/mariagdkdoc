@@ -18,7 +18,7 @@ The Maria GDK services is organized in a service addin infrastructure. You can r
 Installation of the service addins and the required hosting mechanism is done with a single setup.exe (Maria GDK Services Suite). 
 
 Progressing through the installation wizard, you will be able to either choose which addins to install (Custom), or install all addins (Complete). In the last step you can choose to change some advanced settings:
-{{ :maria_gdk:configuring:servicessuie-advancedsettings.png?450 |}}
+{% include image.html file="core/servicessuie_advancedsettings.png" caption="Maria GDK Service Suite, Installation" %}
 
 *  **Geo data root directory:** The addins will search this directory for geodata on startup. However, if you import map data using Maria Toolbox or the Preparation Service, this data will be stored in ''C:\ProgramData\TeleplanGlobe\MariaGDK\GeoData\Maps''. This can be changed after installation in the *settings.json* file, located at ''C:\ProgramData\TeleplanGlobe\TpgServiceHoster\Config''
 

@@ -1,8 +1,8 @@
 ---
-title: "Troubleshooting pages"
-tagName: troubleshooting
+title: "NuGet packages"
+tagName: nuget
 search: include
-permalink: tag_troubleshooting.html
+permalink: tag_nuget.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

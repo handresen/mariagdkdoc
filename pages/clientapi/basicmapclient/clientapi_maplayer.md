@@ -1,7 +1,7 @@
 ---
 title: Map Layer
 keywords: 
-tags: 
+tags: [map]
 sidebar: clientapi_sidebar
 permalink: clientapi_maplayer.html
 summary: This section describes how to create a map layer with connection to the Maria Map services.

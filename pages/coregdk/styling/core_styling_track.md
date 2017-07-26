@@ -4,7 +4,7 @@ keywords: tracks, styling
 tags: [track]
 sidebar: core_styling_sidebar
 permalink: core_styling_track.html
-summary: MARIA 2012 features powerful mechanisms for controlling track appearance and styling. Several aspects of track visualisation can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. 
+summary: Maria GDK features powerful mechanisms for controlling track appearance and styling. Several aspects of track visualisation can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. 
 ---
 
 ## Introduction
@@ -30,7 +30,7 @@ Style element details can be found [here](./core_styling_track_details.html).
 
 ## Background
 
-MARIA 2012 track styling is based on the styling core used in MARIA OMM (object management module). The style definitions have been simplified based on experience with OMM styling.
+Maria GDK track styling is based on the styling core used in MARIA OMM (object management module). The style definitions have been simplified based on experience with OMM styling.
 
 ## Styling overview
 
@@ -73,13 +73,13 @@ The style set and categories are represented by interfaces as follows:
 
 {% include image.html file="./core/maria_2102_track_styling_html_m573ba0f5.png" %}
 
-Stylesets are used by a client side track store within the MARIA 2012 track core to perform track styling. The track stores are accessible through *ITrackLayerViewModel.ClientTrackStores*.
+Stylesets are used by a client side track store within the Maria GDK track core to perform track styling. The track stores are accessible through *ITrackLayerViewModel.ClientTrackStores*.
 
 {% include image.html file="./core/maria_2102_track_styling_html_m557004a4.png" %}
 
 The styleset can be set either directly through *IClientTrackStoreManager.TrackStores[id].Styleset* or by calling *ITrackLayerViewModel.SetTracksStyle(id, xmlRep)*. The NGTester application uses the last method to set track styling.
 
-Note that the tracks contained in theclient trackstores are continuously updated by the Maria 2012 track core. This is done by fetching tracks from a track service and applying the service data packages to the client track store.
+Note that the tracks contained in theclient trackstores are continuously updated by the Maria GDK track core. This is done by fetching tracks from a track service and applying the service data packages to the client track store.
 
 ### Style evaluation and display tracks
 

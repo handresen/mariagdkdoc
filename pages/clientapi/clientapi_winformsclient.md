@@ -1,7 +1,7 @@
 ---
 title: Windows Forms Client
 keywords: GDK
-tags: 
+tags: [sampleapplication, win_forms]
 sidebar: clientapi_sidebar
 permalink: clientapi_winformsclient.html
 summary: This section describes how to create a map client hosted in a Windows Forms window.

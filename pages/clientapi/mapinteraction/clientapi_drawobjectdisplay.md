@@ -119,7 +119,7 @@ Zoom to the added tactical graphic objects, and add some plain objects as well. 
 
 ## Draw Object style XML
 
-The main mechanisms for controlling draw object appearance and styling is by providing draw object style information (draw object style xml). Several aspects of draw object visualization can be controlled using styling. Conditional styling allows styling based on draw object attributes, map attributes and external settings. For details on how to create and maintain draw object style xml, see “MARIA 2012 Draw Object Default Value Styling”.
+The main mechanisms for controlling draw object appearance and styling is by providing draw object style information (draw object style xml). Several aspects of draw object visualization can be controlled using styling. Conditional styling allows styling based on draw object attributes, map attributes and external settings. For details on how to create and maintain draw object style xml, see [Draw Object Styling](core_styling_drawobject.html).
 
 The style xml is accessed through the draw object layer interface ***StyleXml*** property.
 

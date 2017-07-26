@@ -110,7 +110,7 @@ Where A points to a symbol definition and B points to a line definition.
 | margin | Placement margin in pixels. | O |
 | closestduplicate | Distance in pixels. Label will be suppressed if duplicate labels exists inside the range specified by closestduplicate. | O |
 | placementalongline | True/false. If true, label will be placed along line if possible. | O |
-| backgroundtag | Name of label background style. This is a fixed set of styles, contact MARIA 2012 support team for a list of available background style values. | O |
+| backgroundtag | Name of label background style. This is a fixed set of styles, contact Maria GDK support team for a list of available background style values. | O |
 | placements | Valid placements for label. Values are TL (top left), TC (top center), TR (top right), CL (center left), CC (center center), CR (center right), BL (bottom left), BC (bottom center) and BR (bottom right). If not set, all placements are valid. | O |
 
 Example:

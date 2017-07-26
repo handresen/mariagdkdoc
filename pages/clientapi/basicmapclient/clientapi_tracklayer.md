@@ -1,7 +1,7 @@
 ---
 title: Track Layer
 keywords: 
-tags: 
+tags: [service, track]
 sidebar: clientapi_sidebar
 permalink: clientapi_tracklayer.html
 summary: This section describes how to create a track layer with connection to the Maria Track service.

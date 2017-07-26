@@ -14,7 +14,7 @@ This section gives an example of visualization of Geo Fence information, from *G
 The following are to be visualized :
 
  * **Notification elements** <br>
-   Line between first- and last- track position. Color according to notification level. ((See [NotificationDef](http://support.teleplanglobe.com/MariaGDKDoc/html/D5E9F28E.htm))) <br>
+   Line between first- and last- track position. Color according to notification level. <br>
    Ledger line to current track possition, for selected tracks or notifications only. 
 
  * **Moving Ranges**<br>

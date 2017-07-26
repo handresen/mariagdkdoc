@@ -1,7 +1,7 @@
 ---
 title: Very Simple Map Client
 keywords: GDK
-tags: 
+tags: [sampleapplication, wpf]
 sidebar: clientapi_sidebar
 permalink: clientapi_verysimpleclient.html
 summary: This section describes how to create a very simple Maria GDK map client. 

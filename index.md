@@ -23,11 +23,41 @@ Anyone producing or editing documents for Maria GDK need to set up an authoring 
 ### Document organization
 For detailed  documentation, please select wanted content from the "Content" menu.
 
-|  | Name | Description |
-|:---:|:---|:---|
-| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Core GDK functionality](core_landing_page.html) | Detailed description of layers, functionality and services |
-| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria client API](clientapi_landing_page.html) | Maria API presents simplified interface for working with the GDK services and client layers. Contains sample applications using the Maria API.  |
-| <img class="tableImage" src="images/logo/marialogo_small.png"/> | [Maria Map Maker](mmm_landing_page.html) | Used to create and manage maps  |
+<table>
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="70%" />
+</colgroup>
 
+<thead>
+<tr class="header">
+<th> </th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td markdown="span">[{% include image.html file="logo/marialogo_small.png" %}](clientapi_landing_page.html)</td>
+<td markdown="span">[Core GDK functionality](core_landing_clientapi_landing_pagepage.html)</td>
+<td markdown="span">Detailed description of layers, functionality and services</td>
+</tr>
+
+<tr>
+<td markdown="span">[{% include image.html file="logo/marialogo_small.png" %}](core_landing_page.html)</td>
+<td markdown="span">[Maria client API](clientapi_landing_page.html)</td>
+<td markdown="span">Maria API presents simplified interface for working with the GDK services and client layers. Contains sample applications using the Maria API</td>
+</tr>
+
+<tr>
+<td markdown="span">[{% include image.html file="logo/marialogo_small.png" %}](mmm_landing_page.html)</td>
+<td markdown="span">[Maria Map Maker](mmm_landing_page.html)</td>
+<td markdown="span">Used to create and manage maps</td>
+</tr>
+
+</tbody>
+</table>
 
 {% include links.html %}

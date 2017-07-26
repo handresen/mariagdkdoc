@@ -1,7 +1,7 @@
 ---
 title: Map Interaction
 keywords: 
-tags: 
+tags: [map]
 sidebar: clientapi_sidebar
 permalink: clientapi_maplayerinteraction.html
 summary: This section describes how to interact with Maria User control and Maria map layer functionality.

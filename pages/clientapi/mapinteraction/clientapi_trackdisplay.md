@@ -51,7 +51,7 @@ You should now be switching between showing all the tracks and tracks wit speed 
 ## Track style XML
 
 The main mechanisms for controlling track appearance and styling is by providing track style information (track style xml). <br> 
-Several aspects of track visualization can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. For details on how to create and maintain track style xml, see “Maria 2012 Track Styling”.
+Several aspects of track visualization can be controlled using styling. Conditional styling allows styling based on track attributes, map attributes and external settings. For details on how to create and maintain track style xml, see [Track Styling](core_styling_track.html).
 
 The style xml is accessed through the track layer interface ***StyleXml*** property.
 

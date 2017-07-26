@@ -1,7 +1,7 @@
 ---
 title: Elevation Profile Client
 keywords: GDK
-tags: 
+tags: [elevationprofile, sampleapplication, wpf]
 sidebar: clientapi_sidebar
 permalink: clientapi_elevationprofile.html
 summary: This section describes how to create a map client utilizing Maria elevation profile functionality.
@@ -68,7 +68,7 @@ public MariaWindowViewModel()
     _mapLayer = new TPG.Maria.MapLayer.MapLayer();
 
     MapViewModel = new MapViewModel(_mapLayer);
-    ElevationProfileViewModel = new ElevationProfileViewModel _mapLayer);
+    ElevationProfileViewModel = new ElevationProfileViewModel (_mapLayer);
 
     Layers.Add(_mapLayer);
 }

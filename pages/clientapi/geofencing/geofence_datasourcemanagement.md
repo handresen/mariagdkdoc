@@ -16,7 +16,7 @@ Please note that Data Source Management will have effect for all clients connect
 In a multi-client environment, Data Source Management will typically be a task performed by administrators only.
 
 
-For additional information, see [GeoFencing, Data sources](maria_gdk/programming/functionality/geofencing/datasources).
+For additional information, see [Developer Reference, GeoFencing - Data sources](core_geofencing_datasources.html).
 
 ## Connect to service
  

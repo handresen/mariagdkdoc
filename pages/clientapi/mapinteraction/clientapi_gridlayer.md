@@ -1,10 +1,10 @@
 ---
 title: Grid
 keywords: 
-tags: 
+tags: [grid]
 sidebar: clientapi_sidebar
 permalink: clientapi_gridlayer.html
-summary: This section describes how to add grids to your map application.
+summary: This section describes how to add grids to your map application. 
 ---
 
 ## Creating the grid layer
@@ -46,6 +46,7 @@ _gridLayer = new TPG.Maria.GridLayer.GridLayer();
 GridViewModel = new GridViewModel(_gridLayer);
 Layers.Add(_gridLayer);
 ```
+
 ## Changing grid display
 
 To change the grid settings, add a pushbutton to your main window -- and bind it to the *GridViewModel.*

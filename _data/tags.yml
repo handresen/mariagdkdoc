@@ -1,40 +1,50 @@
 allowed-tags:
-  - getting_started
-  - content_types
-  - navigation
-  - formatting
-  - publishing
-  - single_sourcing
-  - special_layouts
-  - collaboration
-  - news
-  - troubleshooting
-  - mobile
   - api
+  - collaboration
+  - content_types
+  - custom_layer
   - drawobject
+  - elevationprofile
+  - elevationanalysis
   - feature
   - featuregrouping
+  - formatting
+  - getting_started
   - geofencing
   - geopackage
   - geolocation
+  - geosearch
+  - grid
   - interface
   - legend
   - m6m
   - map
   - mappackage
+  - mobile
   - multidataset
+  - navigation
+  - news
+  - nuget
   - performance
   - preparation
+  - publishing
   - raster
+  - requirements
+  - sampleapplication
+  - single_sourcing
   - service
   - setup
+  - special_layouts
   - styling
   - symbolization
   - template
   - tilemapbuilder
   - track
+  - troubleshooting
   - vector
   - vectortiles
+  - win_forms
   - wms
+  - wpf
 
 

@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting
 keywords: GDK
-tags: 
+tags: [troubleshooting, nuget ]
 sidebar: clientapi_sidebar
 permalink: clientapi_troubleshooting.html
 summary: This section describes how to proceed when things go wrong when developing Maria GDK applications.
@@ -11,7 +11,7 @@ summary: This section describes how to proceed when things go wrong when develop
 
 ##  MariaUserControl not found.
 
-*  Check projects *Target framework*, Properties⇒Application. See  [Prerequisites](maria_gdk/programming/prerequisites) 
+*  Check projects *Target framework*, Properties⇒Application. See  [Development Requirements](clientapi_development_requirements.html) 
 
 ## Map info not displayed
 
@@ -19,7 +19,7 @@ summary: This section describes how to proceed when things go wrong when develop
 
 *  Check endpoint definitions in app.config. 
 
-*  Verify proper version of *SlimDx*. See [Prerequisites](maria_gdk/programming/prerequisites) 
+*  Verify proper version of *SlimDx*. See [Development Requirements](clientapi_development_requirements.html) 
 
 ## FileLoadException unhandled
 
@@ -49,7 +49,7 @@ This is fixed by adding a redirection statement for the assembly in the “app.c
 
 ## Memory leaks in MariaUserControl.
 
-Memory leaks are quite common in WPF applications. Maria 2012 is tested for memory problems before every release, but many of the problems can be caused by WPF usage outside of Maria 2012. Below are some pointers to common mistakes.
+Memory leaks are quite common in WPF applications. Maria GDK is tested for memory problems before every release, but many of the problems can be caused by WPF usage outside of Maria GDK. Below are some pointers to common mistakes.
 
     * Timers in own view model has to be disposed/stopped.
     * Events that has been subscribed in your own view models needs to be unsubscribed.

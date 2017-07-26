@@ -13,7 +13,7 @@ Geo Fence Rules are accessed programmatically through the
 Please note that defined rules will have effect for all clients connected to the  service. <br>
 In a multi-client environment, Rule Management will typically be a task performed by administrators.
 
-For additional information, see [GeoFencing, Rules](xxx.html).
+For additional information, see [Developer Reference, GeoFencing - Rules](core_geofencing_rules.html).
 
 ## Connect to services
  
@@ -256,9 +256,6 @@ In the sample code you find examples of how to create single or composite condit
 </tbody>
 </table>
 
-
 {% include image.html file="clientapi\geofencing\fenceruleconditions.png" caption="Fence Rule Conditions" %}
-{{ :maria_gdk:programming:getting_started:mariageofencing:fenceruleconditions-.png?direct |Fence Rule Conditions }}
-
 
 {% include links.html %}

@@ -1,7 +1,7 @@
 ---
 title: Draw Object Interaction
 keywords: 
-tags: 
+tags: [draw object]
 sidebar: clientapi_sidebar
 permalink: clientapi_drawobjectlayerinteraction.html
 summary: This section describes how to interact with Maria draw object layer functionality.

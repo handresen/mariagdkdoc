@@ -12,7 +12,7 @@ OBSOLETE????
 The labels layer provides display of dynamic layer information.
 ###  Labels layer interaction
 
-Create an view model class (//LabelsLayerViewModel.cs//) for interaction with the label layer, inheriting ViewModelBase. 
+Create an view model class (*LabelsLayerViewModel.cs*) for interaction with the label layer, inheriting ViewModelBase. 
 
 Implement public property access to the map layer, and add an event handler for the map layer *LayerInitialized*event.
 
@@ -65,7 +65,7 @@ private void RefreshProperties()
 }
 ```
 
-Create the labels layer and include the *LabelsLayerViewModel* in the declarations and constructor of the main view model (//MariaWindowViewModel//).
+Create the labels layer and include the *LabelsLayerViewModel* in the declarations and constructor of the main view model (*MariaWindowViewModel*).
 
 ```csharp
 public LabelsLayerViewModel LabelsLayerViewModel { get; set; }

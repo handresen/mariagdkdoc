@@ -1,7 +1,7 @@
 ---
 title: Search Client
 keywords: GDK
-tags: 
+tags: [geolocation, geosearch, sampleapplication, wpf]
 sidebar: clientapi_sidebar
 permalink: clientapi_search.html
 summary: This section describes how to create a map client utilizing Maria search layer and location service functionality.

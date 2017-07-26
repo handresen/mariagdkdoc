@@ -1,7 +1,7 @@
 ---
 title: Basic Map Client
 keywords: GDK 
-tags: 
+tags: [sampleapplication, wpf, map, track]
 sidebar: clientapi_sidebar
 permalink: clientapi_basicmapclient.html
 summary: This section describes how to create a basic map application, with fixed map type - displaying tracks from a track service.

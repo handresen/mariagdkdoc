@@ -1,7 +1,7 @@
 ---
 title: Custom Layer Client
 keywords: GDK
-tags: 
+tags: [sampleapplication, wpf, custom_layer]
 sidebar: clientapi_sidebar
 permalink: clientapi_customclient.html
 summary: This section describes how to create a map client utilizing custom layers.

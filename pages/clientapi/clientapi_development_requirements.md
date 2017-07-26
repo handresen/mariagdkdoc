@@ -1,7 +1,7 @@
 ---
 title: Development Requirements
 keywords: GDK overview
-tags:
+tags: [nuget, requirements, service ]
 sidebar: clientapi_sidebar
 permalink: clientapi_development_requirements.html
 summary: This section describes the development envirement prerequisites for creating applications with Maria GDK. 
@@ -23,7 +23,7 @@ summary: This section describes the development envirement prerequisites for cre
 * Access to desired ***Maria GDK Services*** <br>
   Installation and maintenance of the services is described in ***[Maria GDK core documentation](core_landing_page.html#services).***
 
-## Maria 2012 Nuget Packages
+## Maria GDK Nuget Packages
 To be able to create applications utilizing the features of Maria GDK, you need to download one or more of the **Maria GDK NuGet packages**, using the **NuGet Package manager**
 
 ### Installing NuGet Package manager

@@ -10,7 +10,7 @@ summary: This section describes how to ...
 Geo Fence Nottifications are accessed through 
 [INotificationHandlingService Interface] of the Geo Fencing Service.
 
-For additional information, see [Notifications](xxx/notifications.html)
+For additional information, see [Developer Reference, GeoFencing - Notifications](core_geofencing_notifications.html)
 
 ## Connect to service
  

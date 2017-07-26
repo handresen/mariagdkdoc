@@ -1,8 +1,8 @@
 ---
-title: "Troubleshooting pages"
-tagName: troubleshooting
+title: "Development Requirements"
+tagName: requirements
 search: include
-permalink: tag_troubleshooting.html
+permalink: tag_requirements.html
 sidebar: mydoc_sidebar
 folder: tags
 ---

@@ -1,7 +1,7 @@
 ---
 title: Elevation Analysis Client
 keywords: GDK
-tags: 
+tags: [elevationanalysis, sampleapplication, wpf]
 sidebar: clientapi_sidebar
 permalink: clientapi_elevationanalysis.html
 summary: This section describes how to create a map client utilizing Maria elevation analysis functionality.
@@ -387,14 +387,14 @@ private void OnToggleSelectedColorsCommand()
             freesightObserver.VisibleColor = Colors.PowderBlue;
         }
     }
+    
     _elevationAnalysisLayer.UpdateObserver(_selectedObserver);
 }
 ```
 
-By pressing the button, the hidden/visible will change between the two sets of colors ( and the default colors (Pink/PowderBlue and LightGray/DimGray) and the default colors.
+By pressing the button, the hidden/visible will change between the two sets of colors (and the default colors (Pink/PowderBlue and LightGray/DimGray) and the default colors.
 
 {% include image.html file="clientapi/elevationanalysis/elevationobserverfslteration.png" caption="Changing free sight properties" %}
-{{maria_gdk:programming:maria_2012_tutorial_html_m1ffabb63.png?direct|Free sight properties}}
 
 ### Max/min observers
 

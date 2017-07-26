@@ -1,7 +1,7 @@
 ---
 title: Map Interaction Client
 keywords: GDK
-tags: 
+tags: [sampleapplication, wpf, map, track, drawobject, grid]
 sidebar: clientapi_sidebar
 permalink: clientapi_mapinteraction.html
 summary: This section describes how to create a map client interacting with different Maria Layers and Tools.
