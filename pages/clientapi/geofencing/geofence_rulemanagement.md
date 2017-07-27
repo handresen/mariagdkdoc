@@ -229,32 +229,11 @@ In real life, you will probably need to customise the fence rules by specifying 
 
 In the sample code you find examples of how to create single or composite conditions. Include the track layer (*IMariaTrackLayer*) and the draw object layer (*IMariaDrawObjectLayer*) as constructor parameters to the ***GeoFenceRuleViewModel***
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="60%" />
-</colgroup>
-
-<tbody>
-<tr>
-<td markdown="span">Geo Fence Condition</td>
-<td markdown="span">Single/Composite</td>
-<td markdown="span">Affecting selected geo shapes and/or tracks, by adding user fields to the selected shapes/tracks, matching the field condition.</td>
-</tr>
-
-<tr>
-<td markdown="span">Track Conditions</td>
-<td markdown="span">Single</td>
-<td markdown="span">Affecting track with identity hostile.</td>
-</tr>
-
-<td markdown="span"> - </td>
-<td markdown="span">Composite</td>
-<td markdown="span">Affecting track with identity neutral and speeed > 27.7777 ms.</td>
-</tr>
-</tbody>
-</table>
+| Condtition | Type | Description |
+| :--- | :--- | :--- |
+| Geo Fence Condition | Single/Composite |Affecting selected geo shapes and/or tracks, by adding user fields to the selected shapes/tracks, matching the field condition. |
+| Track Conditions | Single |Affecting track with identity hostile. |
+| - | Composite | Affecting track with identity neutral and speeed > 27.7777 ms. |
 
 {% include image.html file="clientapi\geofencing\fenceruleconditions.png" caption="Fence Rule Conditions" %}
 

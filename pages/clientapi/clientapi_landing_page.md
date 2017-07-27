@@ -19,118 +19,19 @@ Maria Geo Development Kit (GDK) consists of libraries with components, tools, in
 *  For tips and tricks when things go wrong, see ***[Troubleshooting](clientapi_troubleshooting.html)***
 
 ### Sample applications
- 
-<table>
-<colgroup>
-<col width="15%" />
-<col width="15%" />
-<col width="70%" />
-</colgroup>
 
-<thead>
-<tr class="header">
-<th align="left"></th>
-<th align="left">Title and Project</th>
-<th align="left">Description</th>
-</tr>
-</thead>
+||Title and Project|Description|
+|:---:|:---|:---|
+| [<img class="tableImage" src="images/clientapi/verysimpleclient/verysimpleclient.png" style="width: 150px;"/>](clientapi_verysimpleclient.html) | [Very Simple Map Client](clientapi_verysimpleclient.html)<br> MariaVerySimpleClient | Minimum version for map display {::nomarkdown}<br> <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Under construction </b> {:/} | 
+| [ <img class="tableImage" src="images/clientapi/basicmap/basicmapclient.png" style="width: 150px;"/>](clientapi_basicmapclient.html) | [Basic Map Client](clientapi_basicmapclient.html) MariaBasicMapClient | Basic map client, with fixed map type, displaying tracks from a track service. Maria GDK 2.0 |
+| [ <img class="tableImage" src="images/clientapi/mapinteraction/mapinteractionclient.png" style="width: 150px;"/>](clientapi_mapinteraction.html) | [Map Interaction Client](clientapi_mapinteraction.html) MariaMapInteractionClient | Map client interacting with different Maria Layers and Tools. |
+| [ <img class="tableImage" src="images/clientapi/winformsclient/winformsclient.png" style="width: 150px;"/>](clientapi_winformsclient.html) | [Windows Forms Client](clientapi_winformsclient.html) MariaWindowsFormsClient | Map client hosted in a Windows Forms window. |
+| [ <img class="tableImage" src="images/clientapi/customclient/customclient.png" style="width: 150px;"/>](clientapi_customclient.html) | [Custom Layer Client](clientapi_customclient.html) MariaCustomLayerClient | Map client utilizing cusom layers. |
+| [ <img class="tableImage" src="images/clientapi/elevationprofile/elevationprofileclient.png" style="width: 150px;"/>](clientapi_elevationprofile.html) | [Elevation Profile Client](clientapi_elevationprofile.html) MariaElevationProfile | Map client utilizing Maria elevation profiles functionality. |
+| [ <img class="tableImage" src="images/clientapi/elevationanalysis/elevationanalysisclient.png" style="width: 150px;"/>](clientapi_elevationanalysis.html) | [Elevation Analysis Client](clientapi_elevationanalysis.html) MariaElevationAnalysis | Map client utilizing Maria elevation analysis functionality. |
+| [ <img class="tableImage" src="images/clientapi/search/mariasearch.png" style="width: 150px;"/>](clientapi_search.html) | [Search Client](clientapi_search.html) MariaSearch | Map client utilizing Maria search layer and location service functionality. |
+| [ <img class="tableImage" src="images/clientapi/geofencing/geofencingclient.png" style="width: 150px;"/>](clientapi_geofencing.html) | [Geo Fencing Client](clientapi_geofencing.html) MariaGeoFencing | Map client utilizing Maria geo fencing functionality. |
+| [ <img class="tableImage" src="images/clientapi/trackserviceeditor/trackserviceeditor.png" style="width: 150px;"/>](clientapi_trackserviceeditor.html) | [Track Editor](clientapi_trackserviceeditor.html) MariaTrackEditor_Forms | Application interacting with the Maria GDK Track Service. |
 
-<tbody>
-<tr>
-<td align="left" markdown="1"> 
-[{% include image.html file="clientapi/verysimpleclient/verysimpleclient.png" max-width="150" %}](clientapi_verysimpleclient.html)
-</td>
-<td align="left" markdown="1"> [Very Simple Map Client](clientapi_verysimpleclient.html) MariaVerySimpleClient
-</td>
-<td align="left" markdown="1"> Minimum version for map display.
-
-<i class="fa fa-exclamation-circle  fa-lgx"></i> Under construction
-
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/basicmap/basicmapclient.png" max-width="150" %}](clientapi_basicmapclient.html)
-</td>
-<td align="left" markdown="1"> [Basic Map Client](clientapi_basicmapclient.html) MariaBasicMapClient
-</td>
-<td align="left" markdown="1"> Basic map client, with fixed map type, displaying tracks from a track service. Maria GDK 2.0 
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/mapinteraction/mapinteractionclient.png" max-width="150" %}](clientapi_mapinteraction.html)
-</td>
-<td align="left" markdown="1"> [Map Interaction Client](clientapi_mapinteraction.html) MariaMapInteractionClient
-</td>
-<td align="left" markdown="1"> Map client interacting with different Maria Layers and Tools.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/winformsclient/winformsclient.png" max-width="150" %}](clientapi_winformsclient.html)
-</td>
-<td align="left" markdown="1"> [Windows Forms Client](clientapi_winformsclient.html) MariaWindowsFormsClient
-</td>
-<td align="left" markdown="1"> Map client hosted in a Windows Forms window.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/customclient/customclient.png" max-width="150" %}](clientapi_customclient.html)
-</td>
-<td align="left" markdown="1"> [Custom Layer Client](clientapi_customclient.html) MariaCustomLayerClient
-</td>
-<td align="left" markdown="1"> Map client utilizing cusom layers.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/elevationprofile/elevationprofileclient.png" max-width="150" %}](clientapi_elevationprofile.html)
-</td>
-<td align="left" markdown="1"> [Elevation Profile Client](clientapi_elevationprofile.html) MariaElevationProfile
-</td>
-<td align="left" markdown="1"> Map client utilizing Maria elevation profiles functionality.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/elevationanalysis/elevationanalysisclient.png" max-width="150" %}](clientapi_elevationanalysis.html)
-</td>
-<td align="left" markdown="1"> [Elevation Analysis Client](clientapi_elevationanalysis.html) MariaElevationAnalysis
-</td>
-<td align="left" markdown="1"> Map client utilizing Maria elevation analysis functionality.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/search/mariasearch.png" max-width="150" %}](clientapi_search.html)
-</td>
-<td align="left" markdown="1"> [Search Client](clientapi_search.html) MariaSearch
-</td>
-<td align="left" markdown="1"> Map client utilizing Maria search layer and location service functionality.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/geofencing/geofencingclient.png" max-width="150" %}](clientapi_geofencing.html)
-</td>
-<td align="left" markdown="1"> [Geo Fencing Client](clientapi_geofencing.html) MariaGeoFencing
-</td>
-<td align="left" markdown="1"> Map client utilizing Maria geo fencing functionality.
-</td>
-</tr>
-
-<tr>
-<td align="left" markdown="1"> [{% include image.html file="clientapi/trackserviceeditor/trackserviceeditor.png" max-width="150" %}](clientapi_trackserviceeditor.html)
-</td>
-<td align="left" markdown="1"> [Track Editor](clientapi_trackserviceeditor.html) MariaTrackEditor_Forms
-</td>
-<td align="left" markdown="1"> Application interacting with the Maria GDK Track Service.
-</td>
-</tr>
-
-</tbody>
-</table>
  
  {% include links.html %}

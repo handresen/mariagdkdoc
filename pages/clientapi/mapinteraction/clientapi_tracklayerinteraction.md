@@ -125,7 +125,7 @@ The sample project contains example code for selecting and de-selecting tracks.
 
 {% include image.html file="clientapi/mapinteraction/trackselect.png" caption="Track selection in map area" %}
 
-## Remove tracks
+## Remove tracks {#removetracks}
 
 The ***DeleteTrackData*** method in the track layer interface is used to remove tracks from the track store.
 

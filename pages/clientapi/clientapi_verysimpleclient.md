@@ -9,7 +9,7 @@ summary: This section describes how to create a very simple Maria GDK map client
 
 <div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
 <b>Under construction</b><br>
-This page is under construction!<br>
+This section is under construction!<br>
 Description of Minimum version map display will be added soon.
 </div>
 

@@ -69,59 +69,12 @@ public MariaWindowViewModel()
 
 Add the following to your application window:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="60%" />
-</colgroup>
-
-<thead>
-<tr class="header">
-<th>Function</th>
-<th>GUI element</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td markdown="span">Add</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Add track, e.g. at random position within the screen area.<br>
-See [Map Interaction Client](clientapi_tracklayerinteraction.html#createtracks), or MariaGeoFencing sample project.
-</td>
-</tr>
-
-<tr>
-<td markdown="span">Update</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Update all tracks to new position.<br>
-See [Map Interaction Client](clientapi_tracklayerinteraction.html#updatetracks), or  MariaGeoFencing sample project.
-</td>
-</tr>
-
-<tr>
-<td markdown="span">Remove</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Remove all selected tracks.<br>
-See [Map Interaction Client](clientapi_tracklayerinteraction.html#removeobject), or  MariaGeoFencing sample project.
-</td>
-</tr>
-
-<tr>
-<td markdown="span">Track Move</td>
-<td markdown="span">Check box</td>
-<td markdown="span">
-Activate the Track Move tool.<br>
-See [Map Interaction Client](clientapi_toolsinteraction.html), or  MariaGeoFencing sample project.
-</td>
-</tr>
-</tbody>
-</table>
+| Function | GUI element | Description |
+|:---|:---|:---|
+| Add | Button | Add track, e.g. at random position within the screen area. <br> See [Create tracks](clientapi_tracklayerinteraction.html#createtracks) in Map Interaction Client. |
+| Update | Button | Update all tracks to new position. <br> See [Update tracks](clientapi_tracklayerinteraction.html#updatetracks) in Map Interaction Client. |
+| Remove | Button | Remove all selected tracks. <br> See [Remove tracks](clientapi_tracklayerinteraction.html#removetracks) in Map Interaction Client. |
+| Track Move | Check box | Activate the Track Move tool. <br> See [Tools](clientapi_toolsinteraction.html) in Map Interaction Client. |
 
 {% include image.html file="clientapi/geofencing/geofencetrackmngt.png" max-width=400 caption="Track Management" %}
 
@@ -210,47 +163,11 @@ public MariaWindowViewModel()
 
 Add the following to your Application window:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="60%" />
-</colgroup>
-
-<thead>
-<tr class="header">
-<th>Function</th>
-<th>GUI element</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td markdown="span">Add</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Add draw object, e.g. at random position within the screen area. See [Map Interaction Client](clientapi_drawobjectlayerinteraction.html#createdrawobjectsprogramatically), or MariaGeoFencing sample project.
-</td>
-</tr>
-
-<tr>
-<td markdown="span">Pt.Edit</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Point edit mode for selected draw object. See [Map Interaction Client](clientapi_drawobjectlayerinteraction.html#editpoints), or  MariaGeoFencing sample project.
-</td>
-</tr>
-
-<tr>
-<td markdown="span">Remove</td>
-<td markdown="span">Button</td>
-<td markdown="span">
-Remove selected draw objects. See [Map Interaction Client](clientapi_drawobjectlayerinteraction.html#removeobject), or  MariaGeoFencing sample project.
-</td>
-</tr>
-</tbody>
-</table>
+| Function | GUI element | Description |
+|:---|:---|:---|
+| Add | Button | Add draw object, e.g. at random position within the screen area. See [Create draw objects programmatically](clientapi_drawobjectlayerinteraction.html#createdrawobjectsprogramatically) in Map Interaction Client. |
+| Pt.Edit | Button | Point edit mode for selected draw object. See [Edit points mode](clientapi_drawobjectlayerinteraction.html#editpoints) in Map Interaction Client. |
+| Remove | Button | Remove selected draw objects. See [Remove draw objects](clientapi_drawobjectlayerinteraction.html#removeobject) in Map Interaction Client. |
 
 {% include image.html file="clientapi/geofencing/geofencedrawobjectmngt.png" max-width=400 caption="Draw object management" %}
 
