@@ -21,8 +21,7 @@ Create track layer and *TrackViewModel* as described in [Basic Map Client](clien
 
 Then, in *TrackViewModel*, implement an event handler for the ServiceConnected event in addition to the LayerInitialized event. The constructor and event handlers will be looking something like this:
  
-
-```csharp
+```c#
 public TrackViewModel(IMariaTrackLayer trackLayer)
 {
     _trackLayer = trackLayer;
@@ -36,7 +35,7 @@ private void OnTrackServiceConnected(object sender, MariaServiceEventArgs args)
         var activeName = "MariaGeoFence.Sample";
         _trackLayer.ActiveTrackService = _trackLayer.TrackServices[0];
 
-        _trackLayer.TrackLists = new ObservableCollection`<string>`(_trackLayer.GetTrackLists());
+        _trackLayer.TrackLists = new ObservableCollection<string>(_trackLayer.GetTrackLists());
 
         if (!_trackLayer.TrackLists.Contains(activeName))
             _trackLayer.TrackLists.Add(activeName);
@@ -46,24 +45,9 @@ private void OnTrackServiceConnected(object sender, MariaServiceEventArgs args)
 }
 private void OnTrackLayerInitialized()
 {
-    _trackLayer.TrackServices = new ObservableCollection`<IMariaService>` { new MariaService("TrackService")};
+    _trackLayer.TrackServices = new ObservableCollection<IMariaService> { new MariaService("TrackService")};
 }
-```
-
-Make sure that your *App.config* file contains an end point specification for the Track Service. See [Service Configuration.](clientapi_serviceconfiguration.html)
-
-Then, define and instansiate the TrackViewModel in the declarations and constructor of the main view model (*MariaWindowViewModel*).
-
-```csharp
-public TrackViewModel TrackViewModel { get; set; }
-. . .
-public MariaWindowViewModel()
-{
-    . . .
-    TrackViewModel = new TrackViewModel();
-    . . .
-}
-```
+``` 
 
 ### Track Management
 
@@ -86,11 +70,26 @@ The draw objects we are working with should belong to the ***MariaGeoFence.Sampl
 
 Create draw layer and *DrawObjectViewModel* as described in [Map Interaction Client](clientapi_drawobjectlayerinteraction.html#createdrawobjectlayer).
 
+As we now are using objects in draw object service, we need to cahange the draw layer service parameter in *MariaWindowViewModel* accordingly:
+
+```c#
+_drawObjectLayer = new DrawObjectLayer(
+    new DefaultDrawObjectTypeDefinitionProvider(), 
+    useDrawObjectService: true)
+{
+    InitializeCreationWorkflows = true
+};
+
+DrawObjectViewModel = new DrawObjectViewModel(_drawObjectLayer);
+Layers.Add(_drawObjectLayer);
+
+```
+
 Then, in *DrawObjectViewModel*, implement an event handler for the ServiceConnected event in addition to the LayerInitialized event. Add service connection when the layer is initialized, and creation/selection of draw object store when the service is connected. 
 
-The constructor and event handlers will be looking something like this:
+The constructor and event handlers will now be looking something like this:
 
-```csharp
+```c#
 public DrawObjectViewModel(IMariaDrawObjectLayer drawObjectLayer, MariaWindowViewModel parent)
 {
     _parent = parent;
@@ -104,9 +103,9 @@ public DrawObjectViewModel(IMariaDrawObjectLayer drawObjectLayer, MariaWindowVie
 }
 private void DrawObjectLayerOnLayerInitialized()
 {
-    _drawObjectLayer.DefaultStyleXml = "`<styleset>``<stylecategory name=\"DrawObjects\"/>``</styleset>`";
+    _drawObjectLayer.DefaultStyleXml = "<styleset><stylecategory name=\"DrawObjects\"/></styleset>";
 
-    DrawObjectServices = new ObservableCollection`<IMariaService>`
+    DrawObjectServices = new ObservableCollection<IMariaService>
     {
         new MariaService("DrawObjectService")
     };
@@ -130,7 +129,7 @@ private void OnDrawObjectLayerServiceConnected(object sender, MariaServiceEventA
         ActiveDrawObjectService = DrawObjectServices[0];
 
         DrawObjectServiceStores =
-            new ObservableCollection`<string>`(_drawObjectLayer.GetDrawObjectServiceStores());
+            new ObservableCollection<string>(_drawObjectLayer.GetDrawObjectServiceStores());
 
 
         if (!DrawObjectServiceStores.Contains(activeName))
@@ -144,20 +143,6 @@ private void OnDrawObjectLayerServiceConnected(object sender, MariaServiceEventA
 ```
 
 Make sure that your *App.config* file contains an end point specification for the Draw Object Service. See [Service Configuration Setup.](clientapi_serviceconfiguration.html)
-
-Then, define and instansiate the DrawObjectViewModel in the declarations and constructor of the main view model (MariaWindowViewModel).
-
-```csharp
-public DrawObjectViewModel DrawObjectViewModel { get; set; }
-. . .
-public MariaWindowViewModel()
-{
-    . . .
-    DrawObjectViewModel = new DrawObjectViewModel();
-    . . .
-}
-```
-
 
 ### Draw Object Management
 

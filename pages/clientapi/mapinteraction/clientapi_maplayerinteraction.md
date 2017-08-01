@@ -84,31 +84,58 @@ Observe that the forward/backward navigation buttons are disabled until you have
 When several map templates are available, you can include selection of map to use by adding the following properties to *MapViewModel*
 
 ```csharp
-public ReadOnlyObservableCollection<string> ActiveMapNames
+private Dictionary<string, MapTemplate> _availableMapTemplateDictionary = new Dictionary<string, MapTemplate>();
+public IEnumerable<string> AvailableMapTemplateNames
 {
-    get { return _mapLayer.ActiveMapNames; }
+    get
+    {
+        return _availableMapTemplateDictionary.Keys.ToList();
+    }
 }
-public string ActiveMapName
+
+public string ActiveMapTemplateName
 {
-    get { return _mapLayer.ActiveMapName; }
+    get
+    {
+        if (_mapLayer?.ActiveMapTemplate != null)
+            return _mapLayer.ActiveMapTemplate.Name;
+        return "";
+    }
     set
     {
-        _mapLayer.ActiveMapName = value;
-        MiniMapLayer.ActiveMapName = value;
-        
-        NotifyPropertyChanged(() => ActiveMapName);
+        MapTemplate template = null;
+
+        if (_availableMapTemplateDictionary.ContainsKey(value))
+        {
+            template = _availableMapTemplateDictionary[value];
+        }
+        else if (_availableMapTemplateDictionary.Any())
+        {
+            template = _availableMapTemplateDictionary.Values.First();
+        }
+
+        _mapLayer.ActiveMapTemplate = template;
+        MiniMapLayer.ActiveMapTemplate = template;
+        NotifyPropertyChanged(() => ActiveMapTemplateName);
     }
 }
 ```
 
-Then add a combo box to your main window
+Initialize *AvailableMapTemplateNames* before setting the *ActiveMapTemplate*, in *OnMapLayerInitialized*:
 
-```xml
- <ComboBox Name="cmbActiveMap" 
-           ItemsSource="{Binding MapViewModel.ActiveMapNames}" 
-           SelectedItem="{Binding MapViewModel.ActiveMapName}"
-           IsSynchronizedWithCurrentItem="true"
-           Width="Auto" />
+```csharp
+private void OnMapLayerInitialized()
+{
+    . . . 
+
+    foreach (var template in _mapLayer.ActiveMapTemplates)
+    {
+        _availableMapTemplateDictionary.Add(template.Name, template);
+    }
+    NotifyPropertyChanged(() => AvailableMapTemplateNames);
+
+    _mapLayer.ActiveMapTemplate = PreferredMapTemplate();
+}
 ```
 
 You should now be able to switch between available map templates.
@@ -148,7 +175,7 @@ Then, add a list box with check items your XAML:
 To ensure that the sub layer display is updated when a new map source is selected, add the following line to the active map name setter:
 
 ```csharp
-public string ActiveMapName
+public string ActiveMapTemplate
 {
     . . .
     set
@@ -187,7 +214,7 @@ public MapViewModel(IMariaMapLayer mapLayer)
 }
 ```
 
-Set ActiveMapName = "No Template" in OnMapLayerInitialized.
+Set ActiveMapTemplate = "No Template" in OnMapLayerInitialized.
 
 “Virtual Earth” and “Open Street” sub-layers should now be available for all map templates -- including no template.
 
@@ -249,12 +276,12 @@ public ICommand AddBookmark { get { return new DelegateCommand(x => OnAddBookmar
 private void OnAddBookmark()
 {
     _mapLayer.Bookmarks.Add(new Bookmark
-                {
-                    Name = "Bookmark-" + _cnt++,
-                    Pos = new Tuple<double, double>(CenterPosition.Lat, CenterPosition.Lon),
-                    Scale = CenterScale,
-                    MapSig = ActiveMapName
-                });
+    {
+        Name = "Bookmark-",
+        Position = new Tuple<double, double>(CenterPosition.Lat, CenterPosition.Lon),
+        Scale = CenterScale,
+        MapSignature = ActiveMapTemplate.Name
+    });
 }   
 ```
 

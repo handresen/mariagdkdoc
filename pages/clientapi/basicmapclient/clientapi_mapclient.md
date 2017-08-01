@@ -77,11 +77,11 @@ private void WindowClosing(object sender, System.ComponentModel.CancelEventArgs 
 In the main view model class, *MariaWindowViewModel*, create an auto property to hold a list of Maria layers, *Layers*, and add a constructor, initializing the propery.
 
 ```csharp
-public ObservableCollection`<IMariaLayer>`Layers { get; set; }
+public ObservableCollection<IMariaLayer>Layers { get; set; }
 
 internal MariaWindowViewModel()
 {
-    Layers = new ObservableCollection`<IMariaLayer>`();
+    Layers = new ObservableCollection<IMariaLayer>();
 }
 ```
 Then, bind the Layers property of the MariaUserControl to this list.

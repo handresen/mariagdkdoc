@@ -6,11 +6,7 @@ entries:
   product: Maria GDK Client API functionality
   version: 
   folders:
-
-  - title: Overview
-    output: web, pdf
-    type: frontmatter
-    
+  
   - title: Creating Applications
     output: web, pdf
     folderitems:

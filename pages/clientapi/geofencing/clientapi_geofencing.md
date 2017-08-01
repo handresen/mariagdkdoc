@@ -15,12 +15,13 @@ This sample application will illustrate Geo Fence management through data source
 For more information see [Developer Reference, Geofencing](core_geofencing.html)!
  
 * The example is based on a map component corresponding to 
-[Maria Basic Map Client](maria_gdk/programming/getting_started/mariabasicmapclient), with 
-[additional map selection](maria_gdk/programming/getting_started/mariamapinteractionclient/maplayerinteraction#changing_map_source) and  
-[tools](maria_gdk/programming/getting_started/mariamapinteractionclient/toolsinteraction).
+[Maria Basic Map Client](clientapi_basicmapclient.html), with additional 
+[map interaction](clientapi_maplayerinteraction.html) and  
+[tools](clientapi_toolsinteraction.html).
 
-* You will need to add the following NuGet packages:
-  *  ***TPG.GeoFramework.GeoFencingClient***((Currently available from the "TPG Nightly" repository only))
+* You will need to include the following NuGet packages:
+  *  ***TPG.GeoFramework.GeoFencingClient*** (Currently available from the "TPG Nightly" repository only)
+  *  ***TPG.Maria.MapLayer***
   *  ***TPG.Maria.DrawObjectLayer***
   *  ***TPG.Maria.TrackLayer***
   *  ***TPG.Maria.CustomLayer***

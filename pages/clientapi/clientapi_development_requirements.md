@@ -23,7 +23,7 @@ summary: This section describes the development envirement prerequisites for cre
 * Access to desired ***Maria GDK Services*** <br>
   Installation and maintenance of the services is described in ***[Maria GDK core documentation](core_landing_page.html#services).***
 
-## Maria GDK Nuget Packages
+## Maria GDK Nuget Packages {#mariagdkpackages}
 To be able to create applications utilizing the features of Maria GDK, you need to download one or more of the **Maria GDK NuGet packages**, using the **NuGet Package manager**
 
 ### Installing NuGet Package manager
@@ -55,10 +55,8 @@ To access the packages, you need to define the Maria GDK package source (if not 
 
 The Maria GDK Nuget packages are loaded from the Teleplan Globe support site. Use the following source:
 
-*  Release builds: http://support.teleplanglobe.com/NuGetReleases/nuget ***NB Check path***
-
-*  Nightly builds: [http://support.teleplanglobe.com/NuGetNightly/nuget](http://support.teleplanglobe.com/NuGetNightly/nuget) ***NB Check path***<br>
-   *Not guaranteed to be compatible with the released service installations.* 
+| Maria GDK Release | https://www.myget.org/F/maria-gdk/api/v3/index.json |
+| Maria GDK Nightly | https://www.myget.org/F/maria-gdk-nightly/api/v3/index.json |
 
 Here you will find the available Maria GDK Nuget packages for download to your project(s), and also available updates when already installed.
 

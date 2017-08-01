@@ -53,7 +53,7 @@ public class DrawObjectViewModel
 
 ```csharp
 public DrawObjectViewModel DrawObjectViewModel { get; set; }
-        private readonly IMariaDrawObjectLayer _drawObjectLayer;
+private readonly IMariaDrawObjectLayer _drawObjectLayer;
 . . .
 _drawObjectLayer = new DrawObjectLayer(new DefaultDrawObjectTypeDefinitionProvider(),
                                        useDrawObjectService: false)
@@ -91,7 +91,7 @@ obj.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
 
 obj.GenericDataFields.LineColor = Colors.Green;
 obj.GenericDataFields.LineWidth = 4;
-obj.GenericDataFields.LineDashStyle = new List`<double>`(); // DashStyles.Solid
+obj.GenericDataFields.LineDashStyle = new List<double>(); // DashStyles.Solid
 
 obj.GenericDataFields.Fill = true;
 obj.GenericDataFields.FillStyle = FillStyle.Solid;
@@ -167,7 +167,7 @@ if (obj.GenericDataFields.Fill)
         obj.GenericDataFields.Fill = true;
         obj.GenericDataFields.LineColor = Colors.DarkGoldenrod;
         obj.GenericDataFields.LineWidth = 3;
-        obj.GenericDataFields.LineDashStyle = new List`<double>`(); // DashStyles.Solid
+        obj.GenericDataFields.LineDashStyle = new List<double>(); // DashStyles.Solid
         obj.GenericDataFields.Fill = true;
         obj.GenericDataFields.FillStyle = FillStyle.Solid;
         obj.GenericDataFields.FillForegroundColor = Colors.Gold;

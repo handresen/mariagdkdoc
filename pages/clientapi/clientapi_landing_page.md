@@ -22,7 +22,7 @@ Maria Geo Development Kit (GDK) consists of libraries with components, tools, in
 
 ||Title and Project|Description|
 |:---:|:---|:---|
-| [<img class="tableImage" src="images/clientapi/verysimpleclient/verysimpleclient.png" style="width: 150px;"/>](clientapi_verysimpleclient.html) | [Very Simple Map Client](clientapi_verysimpleclient.html)<br> MariaVerySimpleClient | Minimum version for map display {::nomarkdown}<br> <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Under construction </b> {:/} | 
+| [<img class="tableImage" src="images/clientapi/verysimpleclient/verysimpleclient.png" style="width: 150px;"/>](clientapi_verysimpleclient.html) | [Very Simple Map Client](clientapi_verysimpleclient.html)<br> MariaVerySimpleClient | Minimum version map display | 
 | [ <img class="tableImage" src="images/clientapi/basicmap/basicmapclient.png" style="width: 150px;"/>](clientapi_basicmapclient.html) | [Basic Map Client](clientapi_basicmapclient.html) MariaBasicMapClient | Basic map client, with fixed map type, displaying tracks from a track service. Maria GDK 2.0 |
 | [ <img class="tableImage" src="images/clientapi/mapinteraction/mapinteractionclient.png" style="width: 150px;"/>](clientapi_mapinteraction.html) | [Map Interaction Client](clientapi_mapinteraction.html) MariaMapInteractionClient | Map client interacting with different Maria Layers and Tools. |
 | [ <img class="tableImage" src="images/clientapi/winformsclient/winformsclient.png" style="width: 150px;"/>](clientapi_winformsclient.html) | [Windows Forms Client](clientapi_winformsclient.html) MariaWindowsFormsClient | Map client hosted in a Windows Forms window. |

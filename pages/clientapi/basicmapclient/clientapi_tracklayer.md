@@ -44,8 +44,8 @@ For the TrackList value, use a track list available in your Track Service.
 ```csharp
 private void OnTrackLayerInitialized()
 {  
-    _trackLayer.TrackLists = new ObservableCollection`<string>` { "ais.test" };
-    _trackLayer.TrackServices = new ObservableCollection`<IMariaService>`
+    _trackLayer.TrackLists = new ObservableCollection<string> { "ais.test" };
+    _trackLayer.TrackServices = new ObservableCollection<IMariaService> 
           {
               new MariaService("TrackService")
           };
