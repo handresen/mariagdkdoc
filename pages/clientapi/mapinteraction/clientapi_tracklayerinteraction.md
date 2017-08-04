@@ -23,7 +23,7 @@ We will now perform further interactions towards the track layer through the tra
 
 ##  Create tracks {#createtracks}
 
-Use the ***TrackData*** class to create a new track object, apply desired track info, and pass it to the track service with the ***SetTrackData*** method.
+Use the ***TrackData*** class to create new track objects. Apply desired track info, and pass it to the track service with the ***SetTrackData*** method.
 
 ```csharp
 string list = . . . // e.g. “MyList” or  _trackLayer.ActiveTrackList;
@@ -40,7 +40,7 @@ trackData.SetTrackDataField("name", strId);
 _trackLayer.SetTrackData(trackData);
 ```
 
-For your convinience, here is a method adding a new track at the center of the screen:
+For your convinience, here is a method adding a basic track at the center of the screen:
 
 ```csharp
 private int _trackCnt = 0;

@@ -8,10 +8,12 @@ summary: This section describes how to ...
 ---
 
 Geo Fence Rules are accessed programmatically through the
-[IGeoFencingRuleService interface] of the Geo Fencing Service.
+[***IGeoFencingRuleService***](http://maria.support2.teleplan.no/MariaGDKDoc/html/42C43787.htm) interface.
 
+<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> <b> Note:</b><br> 
 Please note that defined rules will have effect for all clients connected to the  service. <br>
 In a multi-client environment, Rule Management will typically be a task performed by administrators.
+</div>
 
 For additional information, see [Developer Reference, GeoFencing - Rules](core_geofencing_rules.html).
 

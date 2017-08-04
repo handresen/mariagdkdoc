@@ -6,14 +6,13 @@ sidebar: clientapi_sidebar
 permalink: clientapi_tracklayer.html
 summary: This section describes how to create a track layer with connection to the Maria Track service.
 ---
+Key information:
+
+* The track layer is accessed programmatically through the track layer interface [***IMariaTrackLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/B2FB03E9.htm) 
+and the extended track layer interface [***IMariaExtendedTrackLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/AA8CECEC.htm).
+*  For this part you will need to add the ***TPG.Maria.TrackLayer*** NuGet package.
 
 ## Creating Track Layer with Track Service Connection {#createtracklayerandconnect}
-
-The track layer is accessed programmatically through the track layer interface ***IMariaTrackLayer*** (*_trackLayer*) 
-and the extended track layer interface ***IMariaExtendedTrackLayer*** (*_trackLayer.ExtendedTrackLayer*).
-
-*  For this part you will need ***TPG.Maria.TrackLayer*** NuGet package in addition to the previously added packages.
-
 Create a view model class (*TrackViewModel*) for the track layer:
 
 ```csharp
@@ -76,7 +75,9 @@ TrackViewModel = new TrackViewModel(_trackLayer);
 Layers.Add(_trackLayer);
 ```
 
-In addition to map information and mini map, the application should now include tracks from the specified track list of a Track Service -- and you should be able to select tracks!
+<div class="alert alert-success" role="alert"><i class="fa fa-arrow-circle-right"></i><b> Run:</b><br> 
+In addition to map information and mini map, the application should now include tracks from the specified track list of a Track Service, and you should be able to select tracks!
+</div>
 
 {% include image.html file="clientapi/basicmap/basicmapclient.png" max-width=500 caption="Map area with track information" %}
 

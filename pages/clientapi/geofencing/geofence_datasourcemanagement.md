@@ -7,14 +7,13 @@ permalink: geofence_datasourcemanagement.html
 summary: This section describes how to ...
 ---
 
-***Check this!!!***
-Geo Fence Data Sources are accessed programmatically through the
-[IDataManagerService](http://support.teleplanglobe.com/MariaGDKDoc/html/41274E03.htm) interface of the Geo Fencing Service.
+Geo Fence Data Sources are accessed programmatically through the [***IDataManagerService***](http://maria.support2.teleplan.no/MariaGDKDoc/html/41274E03.htm) interface.
 
-**Note!**<br>
-Please note that Data Source Management will have effect for all clients connected to the  service.
+
+<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> <b> Note:</b><br> 
+Please note that Data Source Management will have effect for all clients connected to the  service.<br>
 In a multi-client environment, Data Source Management will typically be a task performed by administrators only.
-
+</div>
 
 For additional information, see [Developer Reference, GeoFencing - Data sources](core_geofencing_datasources.html).
 

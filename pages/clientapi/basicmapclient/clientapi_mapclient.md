@@ -96,7 +96,10 @@ Then, bind the Layers property of the MariaUserControl to this list.
                                    />
 ```
 
+<div class="alert alert-success" role="alert"><i class="fa fa-arrow-circle-right"></i><b> Run:</b><br> 
 Building and running your application, the window area should now show an empty area including navigation controls according to your specifications!
+</div>
+
 
 {% include image.html file="clientapi/basicmap/emptymapwithcontrols.png" caption="Empty map with controls" %}
 
@@ -110,9 +113,9 @@ For each of the desired layers (will be described in detail for each layer type)
 
 The layers are accessed programmatically from your application  through the different GDK layer interfaces.
 
-**Note:** 
-
-*  Rendering of the layers will be in the same order as they are in the Layers property.
-*  No access should be performed against the layer until the *LayerInitialized* event has been called.
+<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> <b> Note:</b><br> 
+-  Rendering of the layers will be in the same order as they are in the Layers property.<br>
+-  No access should be performed against the layer until the <b>LayerInitialized</b> event has been called.
+</div>
 
 {% include links.html %}

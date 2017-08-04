@@ -4,33 +4,29 @@ keywords:
 tags: [draw object]
 sidebar: clientapi_sidebar
 permalink: clientapi_drawobjectlayerinteraction.html
-summary: This section describes how to interact with Maria draw object layer functionality.
+summary: This section describes how to interact with Maria draw objects and draw object layer functionality.
 ---
-##  Draw Object Layer preparations
+Key information:
 
-We will now perform interactions towards the draw object layer.
+* The draw object layer is accessed programmatically through the [***IMariaDrawObjectLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/376EB49A.htm) and [***IMariaExtendedDrawObjectLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/B305C33C.htm).
+
+* Primitives and types for accessing the draw objects are found in  [***ISimpleDrawObject***](http://maria.support2.teleplan.no/MariaGDKDoc/html/5AF7A675.htm) interface.
 
 * For this part you will need to add the ***TPG.Maria.DrawObjectLayer*** NuGet package.
-* The draw layer can be internal to each client, or connected to a draw object service.<br>
-  **In this example we will use internal draw layer!**
 
-Please note that when connected to a draw object service, creating, updating and removing draw objects is performed towards the connected service, while selecting draw objects is performed locally on your client.
+## Using draw object service or client internal draw objects
+The draw objects displayed can be internal to each client, or connected to a draw object service.<br>
+**In the following example we will use client internal draw objects!**
 
-Example of draw object layer connected to a draw object service, see sample project 
-[Geo Fencing Client](clientapi_geofencing.html)
+<div class="alert alert-info" role="alert"><i class="fa fa-exclamation-circle"></i> <b> Note:</b><br> 
+When connected to a draw object service, creating, updating and removing draw objects is performed towards the connected service, while selecting draw objects is performed locally on your client.
+</div>
 
-Primitives and types for draw accessing the draw object layer are found in ***TPG.DrawObjects.Contracts.SimpleDrawObjectAPI***.
+Example of draw object layer connected to a draw object service is found in the sample project [Geo Fencing Client](clientapi_geofencing.html)
 
-The layer is accessed programmatically through the draw object layer interfaces:
+##  Creating the draw object layer {#createdrawobjectlayer}
 
- | Interface                                                                          | Accesed through | 
- | ---------                                                                          | --------------- | 
- | *IMariaDrawObjectLayer*     | *_drawObjectLayer.DrawObjectLayer* |            
- | *IMariaExtendedDrawObjectLayer* | *_drawObjectLayer.ExtendedDrawObjectLayer* |
-
-###  Create draw object layer {#createdrawobjectlayer}
-
-Create an view model class (*DrawObjectViewModel*) for the draw object layer, inheriting ViewModelBase, implementing the initialization event handler and a “DrawObjectLayer” field for access to the Draw Object Layer.
+Create an view model class, *DrawObjectViewModel*, for the draw object layer, inheriting ViewModelBase, implementing the initialization event handler and a “DrawObjectLayer” field for access to the Draw Object Layer.
 
 ```csharp
 public class DrawObjectViewModel
@@ -65,42 +61,64 @@ DrawObjectViewModel = new DrawObjectViewModel(_drawObjectLayer);
 Layers.Add(_drawObjectLayer);
 ```
 
-##  Create draw objects programmatically {#createdrawobjectsprogramatically}
+##  Creating draw objects programmatically {#createdrawobjectsprogramatically}
 
 Use the ***DrawObjectFactory*** property of the draw object layer interface to create your objects; ellipses, poly lines, poly areas (including triangles, rectangles) text objects, tactical objects etc.! The returned objects are subtypes of ***ISimpleDrawObject*** and available in ***SimpleDrawObjectAPI Primitives.***
 
 After updating the object properties, use the ***UpdateStore*** method to add the objects to the draw object layer.
 
-Example:
+Here are two examples of how to generate objects within the map view:
 
 ```csharp
-var obj = _drawObjectLayer.DrawObjectFactory.CreateFanArea();
+private void AddPolyArea()
+{
+    var polyArea = _drawObjectLayer.DrawObjectFactory.CreatePolyAreaInView();
 
-if (obj.GetType().IsSubclassOf(typeof(IFanArea)))
-    return;
+    polyArea.DataFields.Name = "Poly Area";
+    polyArea.DataFields.DrawDepth = 4;
+    polyArea.DataFields.RotationAngle = 0;
+    polyArea.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
 
-var fan = (IFanArea)obj;
-fan.VertexPoint = new GeoPoint { Latitude = 60.0, Longitude = 11.0 };
-fan.MaximumRange = 20000;
-fan.MinimumRange = 5000;
+    polyArea.GenericDataFields.LineColor = Colors.MediumVioletRed;
+    polyArea.GenericDataFields.LineWidth = 4;
+    polyArea.GenericDataFields.LineDashStyle = new List<double>(); // DashStyles.Solid
 
-obj.DataFields.Name = "Fan Object";
-obj.DataFields.DrawDepth = 4;
-obj.DataFields.RotationAngle = 0;
-obj.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
+    _drawObjectLayer.UpdateStore(polyArea);
+}
 
-obj.GenericDataFields.LineColor = Colors.Green;
-obj.GenericDataFields.LineWidth = 4;
-obj.GenericDataFields.LineDashStyle = new List<double>(); // DashStyles.Solid
+private void AddRecttangle()
+{
+    var centerPosition = _drawObjectLayer.GeoContext.CenterPosition;
+    var viewportMetersRect = _drawObjectLayer.GeoContext.Viewport.MetersRect;
+    var range = Math.Min(viewportMetersRect.Height, viewportMetersRect.Width) / 4;
 
-obj.GenericDataFields.Fill = true;
-obj.GenericDataFields.FillStyle = FillStyle.Solid;
-obj.GenericDataFields.FillForegroundColor = Colors.LawnGreen;
+    var pt1 = Earth.BearingRangeToPos(centerPosition, new BearingRange(90, range));
+    var pt2 = Earth.BearingRangeToPos(centerPosition, new BearingRange(-90, range));
+    var pt3 = Earth.BearingRangeToPos(centerPosition, new BearingRange(180, range));
+    
+    var rect = _drawObjectLayer.DrawObjectFactory.CreatePolyArea();
+    rect.Points = new[]
+    {
+        new GeoPoint {Latitude = pt1.Lat, Longitude = pt1.Lon},
+        new GeoPoint {Latitude = pt2.Lat, Longitude = pt2.Lon},
+        new GeoPoint {Latitude = pt3.Lat, Longitude = pt2.Lon},
+        new GeoPoint {Latitude = pt3.Lat, Longitude = pt1.Lon}
+    };
+    
+    rect.DataFields.Name = "Recttangle Object";
+    rect.DataFields.DrawDepth = 4;
+    rect.DataFields.RotationAngle = 0;
+    rect.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
 
-_drawObjectLayer.UpdateStore(obj);
+    rect.GenericDataFields.LineColor = Colors.DeepPink;
+    rect.GenericDataFields.LineWidth = 4;
+    rect.GenericDataFields.LineDashStyle = new List<double>();
+
+    _drawObjectLayer.UpdateStore(rect);
+}
 ```
 
-The sample project contains example code for programmatically adding objects (***AddSimpleDrawObjects***) in the startup sequence, as soon as the draw layer is ready for interaction (from *DrawObjectLayerOnLayerInitialized*).
+In the sample project you will fine additional examples. The objects are ctreated when pressing the *Add Object* button.
 
 {% include image.html file="clientapi/mapinteraction/drawobjcreate.png" caption="Programatically created draw objects" %}
 
@@ -108,17 +126,13 @@ The sample project contains example code for programmatically adding objects (**
 
 The extended draw object layer interface contains various methods and properties for making draw object enquiries.
 
-Example:
+Examples:
 
-*  ***ItemDrawObjectIds***\\ Get instance IDs of all objects in the layer.
-
-*  ***GetVisibleObjectCount()***\\ Get number of visible objects.
-
-*  ***GetVisibleObjectIds()***\\ Get instance IDs of visible objects.
-
-*  ***GetClickedDrawObjects(point);***\\ Get instance IDs at clicked point.
-
-*  ***SelectedDrawObjectIds*** \\ Get instance IDs of all selected objects.
+| ***ItemDrawObjectIds*** | Get instance IDs of all objects in the layer.|
+| ***GetVisibleObjectCount()*** | Get number of visible objects.|
+| ***GetVisibleObjectIds()*** | Get instance IDs of visible objects.|
+| ***GetClickedDrawObjects(point)*** | Get instance IDs for pbjects at speciffic point.|
+| ***SelectedDrawObjectIds*** | Get instance IDs of all selected objects.|
 
 The sample project contains examples on how these are used.
 

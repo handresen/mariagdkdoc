@@ -48,7 +48,7 @@ Create properties in the main view model class (*MariaWindowViewModel*) for the 
 *  State of tools (for desired tools)
 
 ``` csharp
-public ObservableCollection`<IGeoTool>` Tools { private get; set; }
+public ObservableCollection<IGeoTool> Tools { private get; set; }
 
 private IGeoTool _activeTool;
 public IGeoTool ActiveTool

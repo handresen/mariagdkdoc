@@ -55,12 +55,14 @@ Add the following to your application window:
 
 | Function | GUI element | Description |
 |:---|:---|:---|
-| Add | Button | Add track, e.g. at random position within the screen area. <br> See [Create tracks](clientapi_tracklayerinteraction.html#createtracks) in Map Interaction Client. |
+| Add | Button | Add track, e.g. at the center position of the screen area. <br> See [Create tracks](clientapi_tracklayerinteraction.html#createtracks) in Map Interaction Client. |
 | Update | Button | Update all tracks to new position. <br> See [Update tracks](clientapi_tracklayerinteraction.html#updatetracks) in Map Interaction Client. |
 | Remove | Button | Remove all selected tracks. <br> See [Remove tracks](clientapi_tracklayerinteraction.html#removetracks) in Map Interaction Client. |
 | Track Move | Check box | Activate the Track Move tool. <br> See [Tools](clientapi_toolsinteraction.html) in Map Interaction Client. |
 
-{% include image.html file="clientapi/geofencing/geofencetrackmngt.png" max-width=400 caption="Track Management" %}
+You should now be able to add, move and remove tracks from the map window.
+
+{% include image.html file="clientapi/geofencing/geofencetrackmngt.png" max-width=700 caption="Track Management" %}
 
 ## Geo Shape Information
 
@@ -73,71 +75,52 @@ Create draw layer and *DrawObjectViewModel* as described in [Map Interaction Cli
 As we now are using objects in draw object service, we need to cahange the draw layer service parameter in *MariaWindowViewModel* accordingly:
 
 ```c#
-_drawObjectLayer = new DrawObjectLayer(
-    new DefaultDrawObjectTypeDefinitionProvider(), 
-    useDrawObjectService: true)
+_drawObjectLayer = new DrawObjectLayer(true)
 {
     InitializeCreationWorkflows = true
 };
 
 DrawObjectViewModel = new DrawObjectViewModel(_drawObjectLayer);
 Layers.Add(_drawObjectLayer);
-
 ```
+
+Remember that the layers will be rendered in the same order as they are added to the main view models *Layers* property. Make sure that your draw object layer is rendred before (under) your track layer.
 
 Then, in *DrawObjectViewModel*, implement an event handler for the ServiceConnected event in addition to the LayerInitialized event. Add service connection when the layer is initialized, and creation/selection of draw object store when the service is connected. 
 
 The constructor and event handlers will now be looking something like this:
 
 ```c#
-public DrawObjectViewModel(IMariaDrawObjectLayer drawObjectLayer, MariaWindowViewModel parent)
+public DrawObjectViewModel(IMariaDrawObjectLayer drawObjectLayer)
 {
-    _parent = parent;
-
     _drawObjectLayer = drawObjectLayer;
-    _drawObjectLayer.LayerInitialized += DrawObjectLayerOnLayerInitialized;
-    _drawObjectLayer.ServiceConnected += OnDrawObjectLayerServiceConnected;
 
-    _drawObjectLayer.ExtendedDrawObjectLayer.ActiveCreationWorkflowCompleted += 
-      OnExtendedDrawObjectLayerActiveCreationWorkflowCompleted;
+    _drawObjectLayer.LayerInitialized += OnDrawObjectLayerInitialized;
+    _drawObjectLayer.ServiceConnected += OnDrawObjectServiceConnected;
 }
-private void DrawObjectLayerOnLayerInitialized()
-{
-    _drawObjectLayer.DefaultStyleXml = "<styleset><stylecategory name=\"DrawObjects\"/></styleset>";
 
-    DrawObjectServices = new ObservableCollection<IMariaService>
+private void OnDrawObjectLayerInitialized()
+{
+    _drawObjectLayer.DrawObjectServices = new ObservableCollection<IMariaService>
     {
         new MariaService("DrawObjectService")
     };
-
-    _parent.DisplayFilters.Add(_drawObjectLayer.DisplayFilter);
-
-    if (_drawObjectLayer != null &&
-        _drawObjectLayer.GenericCreationWorkflows != null &&
-        _drawObjectLayer.GenericCreationWorkflows.Count > 0)
-    {
-        foreach (var gwf in _drawObjectLayer.GenericCreationWorkflows.Reverse())
-            _drawObjectLayer.CreationWorkflows.Insert(0, gwf);
-    }
 }
-
-private void OnDrawObjectLayerServiceConnected(object sender, MariaServiceEventArgs args)
+private void OnDrawObjectServiceConnected(object sender, MariaServiceEventArgs args)
 {
-    if (DrawObjectServices.Count > 0)
+    if (_drawObjectLayer.DrawObjectServices.Any())
     {
-        var activeName = _parent.StoreId;
-        ActiveDrawObjectService = DrawObjectServices[0];
+        var activeName = "MariaGeoFence.Sample";
 
-        DrawObjectServiceStores =
+        _drawObjectLayer.ActiveDrawObjectService = _drawObjectLayer.DrawObjectServices[0];
+
+        _drawObjectLayer.DrawObjectServiceStores =
             new ObservableCollection<string>(_drawObjectLayer.GetDrawObjectServiceStores());
 
+        if (!_drawObjectLayer.DrawObjectServiceStores.Contains(activeName))
+            _drawObjectLayer.DrawObjectServiceStores.Add(activeName);
 
-        if (!DrawObjectServiceStores.Contains(activeName))
-        {
-            DrawObjectServiceStores.Add(activeName);
-        }
-
-        ActiveDrawObjectServiceStore = activeName;
+        _drawObjectLayer.ActiveDrawObjectServiceStore = activeName;
     }
 }
 ```
@@ -154,6 +137,8 @@ Add the following to your Application window:
 | Pt.Edit | Button | Point edit mode for selected draw object. See [Edit points mode](clientapi_drawobjectlayerinteraction.html#editpoints) in Map Interaction Client. |
 | Remove | Button | Remove selected draw objects. See [Remove draw objects](clientapi_drawobjectlayerinteraction.html#removeobject) in Map Interaction Client. |
 
-{% include image.html file="clientapi/geofencing/geofencedrawobjectmngt.png" max-width=400 caption="Draw object management" %}
+You should now be able to add, move and remove draw objects from the map window.
+
+{% include image.html file="clientapi/geofencing/geofencedrawobjectmngt.png" max-width=700 caption="Draw object management" %}
 
 {% include links.html %}

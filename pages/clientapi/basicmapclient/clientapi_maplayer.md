@@ -8,7 +8,8 @@ summary: This section describes how to create a map layer with connection to the
 ---
 ## Creating a Map Layer with Map Service Connection
 
-The map layer is accessed programmatically through the map layer interface, ***IMariaMapLayer***.
+The map layer is accessed programmatically through the map layer interface, [***IMariaMapLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/C8909007.htm),
+and the extended map layer interface [***IMariaExtendedMapLayer***](http://maria.support2.teleplan.no/MariaGDKDoc/html/BA316F90.htm) .
 
 * For this part you will need to include ***TPG.Maria.MapLayer*** NuGet package.
 
@@ -108,8 +109,9 @@ Update MariaUserControl binding
                                    />
 />
 ```
-
+<div class="alert alert-success" role="alert"><i class="fa fa-arrow-circle-right"></i><b> Run:</b><br> 
 Running your application, the window area should now include map information and mini map - and you should be able to navigate the map!
+</div>
 
 {% include image.html file="clientapi/basicmap/basicmapclientmap.png" caption="Map area with map information" %}
 
