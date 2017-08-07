@@ -115,7 +115,7 @@ private void AddTgObjects()
 
 Zoom to the added tactical graphic objects, and add some plain objects as well. You should now be able to toggle between display of all objects, and display of friendly objects and objects with no identity.
 
-{% include image.html file="clientapi/mapinteraction/drawobjfiltering.png" caption="Draw Object Filtering" %}
+{% include image.html file="clientapi/interactionclient/drawobjfiltering.png" caption="Draw Object Filtering" %}
 
 ## Draw Object style XML
 
@@ -188,8 +188,8 @@ Then, add a combo box for selection of color scheme, and a slider and a text box
 
 You should now be able to switch between different symbol scales and color schemes.
 
-{% include image.html file="clientapi/mapinteraction/drawobjsymbolscales.png" caption="Draw object symbol scales" %}
+{% include image.html file="clientapi/interactionclient/drawobjsymbolscales.png" caption="Draw object symbol scales" %}
 
-{% include image.html file="clientapi/mapinteraction/drawobjcolorschemes.png" caption="Draw object color schemes" %}
+{% include image.html file="clientapi/interactionclient/drawobjcolorschemes.png" caption="Draw object color schemes" %}
 
 {% include links.html %}

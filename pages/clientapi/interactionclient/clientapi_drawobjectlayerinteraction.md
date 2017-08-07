@@ -67,60 +67,65 @@ Use the ***DrawObjectFactory*** property of the draw object layer interface to c
 
 After updating the object properties, use the ***UpdateStore*** method to add the objects to the draw object layer.
 
-Here are two examples of how to generate objects within the map view:
+Here are two examples of how to generate objects at random positions within the diaplayed map area (using the *RandomProvider* class described for [track creation](clientapi_tracklayerinteraction.html#createtracks)):
 
 ```csharp
-private void AddPolyArea()
+private void AddPolyLine()
 {
-    var polyArea = _drawObjectLayer.DrawObjectFactory.CreatePolyAreaInView();
+    var rect = _drawObjectLayer.GeoContext.Viewport.GeoRect;
+    ISimpleDrawObject obj = _drawObjectLayer.DrawObjectFactory.CreatePolyLine();
+    obj.Points = new[]
+    {
+        RandomProvider.GetRandomGeoPoint(rect),
+        RandomProvider.GetRandomGeoPoint(rect),
+        RandomProvider.GetRandomGeoPoint(rect)
+    };
 
-    polyArea.DataFields.Name = "Poly Area";
-    polyArea.DataFields.DrawDepth = 4;
-    polyArea.DataFields.RotationAngle = 0;
-    polyArea.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
+    obj.DataFields.Name = "PolyLineObject-" + DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+    obj.DataFields.DrawDepth = 4;
+    obj.DataFields.RotationAngle = 0;
 
-    polyArea.GenericDataFields.LineColor = Colors.MediumVioletRed;
-    polyArea.GenericDataFields.LineWidth = 4;
-    polyArea.GenericDataFields.LineDashStyle = new List<double>(); // DashStyles.Solid
-
-    _drawObjectLayer.UpdateStore(polyArea);
+    obj.GenericDataFields.LineColor = Colors.Brown;
+    obj.GenericDataFields.LineWidth = 4;
+    obj.GenericDataFields.LineDashStyle = null; // DashStyles.Solid
+    _drawObjectLayer.UpdateStore(obj);
 }
 
-private void AddRecttangle()
+private void AddEllipse()
 {
-    var centerPosition = _drawObjectLayer.GeoContext.CenterPosition;
-    var viewportMetersRect = _drawObjectLayer.GeoContext.Viewport.MetersRect;
-    var range = Math.Min(viewportMetersRect.Height, viewportMetersRect.Width) / 4;
+    var rect = _drawObjectLayer.GeoContext.Viewport.GeoRect;
+    rect.Center = RandomProvider.GetRandomPosition(rect);
+    rect.InflateRelative(0.1);
 
-    var pt1 = Earth.BearingRangeToPos(centerPosition, new BearingRange(90, range));
-    var pt2 = Earth.BearingRangeToPos(centerPosition, new BearingRange(-90, range));
-    var pt3 = Earth.BearingRangeToPos(centerPosition, new BearingRange(180, range));
-    
-    var rect = _drawObjectLayer.DrawObjectFactory.CreatePolyArea();
-    rect.Points = new[]
-    {
-        new GeoPoint {Latitude = pt1.Lat, Longitude = pt1.Lon},
-        new GeoPoint {Latitude = pt2.Lat, Longitude = pt2.Lon},
-        new GeoPoint {Latitude = pt3.Lat, Longitude = pt2.Lon},
-        new GeoPoint {Latitude = pt3.Lat, Longitude = pt1.Lon}
-    };
-    
-    rect.DataFields.Name = "Recttangle Object";
-    rect.DataFields.DrawDepth = 4;
-    rect.DataFields.RotationAngle = 0;
-    rect.DataFields.ExtraFields.Add("MyTag", "MyTagValue");
+    var obj = _drawObjectLayer.DrawObjectFactory.CreateEllipse();
 
-    rect.GenericDataFields.LineColor = Colors.DeepPink;
-    rect.GenericDataFields.LineWidth = 4;
-    rect.GenericDataFields.LineDashStyle = new List<double>();
+    if (obj.GetType().IsSubclassOf(typeof(IEllipse)))
+        return;
 
-    _drawObjectLayer.UpdateStore(rect);
+    var ellipse = (IEllipse)obj;
+    ellipse.CentrePoint = RandomProvider.GetRandomGeoPoint(rect);
+    ellipse.FirstConjugateDiameterPoint = RandomProvider.GetRandomGeoPoint(rect);
+    ellipse.SecondConjugateDiameterPoint = RandomProvider.GetRandomGeoPoint(rect);
+
+    obj.DataFields.Name = "EllipsisObject-" + DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+    obj.DataFields.DrawDepth = 4;
+    obj.DataFields.RotationAngle = 0;
+
+    obj.GenericDataFields.LineColor = Colors.DarkOrange;
+    obj.GenericDataFields.LineWidth = 4;
+    obj.GenericDataFields.LineDashStyle = new List<double>();
+    obj.GenericDataFields.Fill = true;
+    obj.GenericDataFields.FillStyle = FillStyle.Cross;
+    obj.GenericDataFields.FillBackgroundColor = Colors.Gold;
+    obj.GenericDataFields.FillForegroundColor = Colors.Yellow;
+
+    _drawObjectLayer.UpdateStore(obj);
 }
 ```
 
-In the sample project you will fine additional examples. The objects are ctreated when pressing the *Add Object* button.
+In the sample project you will fine additional examples. The objects are created, one at the time, when pressing the *Add Object* button.
 
-{% include image.html file="clientapi/mapinteraction/drawobjcreate.png" caption="Programatically created draw objects" %}
+{% include image.html file="clientapi/interactionclient/drawobjcreate.png" caption="Programatically created draw objects" %}
 
 ##  Draw objects enquiries
 
@@ -155,7 +160,7 @@ else
 
 The sample project contains selection example code, toggling selection status for all visible objects, and monitoring selection status changes.
 
-{% include image.html file="clientapi/mapinteraction/drawobjselect.png" caption="Selecting draw objects" %}
+{% include image.html file="clientapi/interactionclient/drawobjselect.png" caption="Selecting draw objects" %}
 
 ##  Updating draw objects
 
@@ -194,7 +199,7 @@ Object changes can also be monitored by implementing the ***LayerChanged*** dele
 
 The sample project contains example code for programmatically updating selected objects (***ModifyDrawObjects***), and monitoring object changes.
 
-{% include image.html file="clientapi/mapinteraction/drawobjupdate.png" caption="Updating draw objects" %}
+{% include image.html file="clientapi/interactionclient/drawobjupdate.png" caption="Updating draw objects" %}
 
 ##  User created draw objects in map (draw object tools) {#drawobjecttools}
 
@@ -236,7 +241,7 @@ private void OnActiveCreationWorkflowCompleted(object sender,
 
 The sample project contains code to activate user created draw objects of different types.
 
-{% include image.html file="clientapi/mapinteraction/drawobjmapcreate.png" caption="Creating draw objects in map" %}
+{% include image.html file="clientapi/interactionclient/drawobjmapcreate.png" caption="Creating draw objects in map" %}
 
 ##  Edit points mode {#editpoints}
 
@@ -260,7 +265,7 @@ else
 
 The sample project contains code to activate draw object “edit points mode” by edit points command and EditPoints/EndEditPoint for specific draw objects.
 
-{% include image.html file="clientapi/mapinteraction/drawobjedit.png" caption="Edit draw objects" %}
+{% include image.html file="clientapi/interactionclient/drawobjedit.png" caption="Edit draw objects" %}
 
 ##  Remove draw objects {#removeobject}
 
@@ -280,6 +285,6 @@ _drawObjectLayer.ExtendedDrawObjectLayer.DeleteSelected();
 
 The sample project contains code to activate removal of objects by delete command and removing specific draw objects.
 
-{% include image.html file="clientapi/mapinteraction/drawobjremove.png" caption=" Removing draw objects" %}
+{% include image.html file="clientapi/interactionclient/drawobjremove.png" caption=" Removing draw objects" %}
 
 {% include links.html %}

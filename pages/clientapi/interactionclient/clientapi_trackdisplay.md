@@ -46,7 +46,7 @@ NotifyPropertyChanged(() => FilterActive);
 
 You should now be switching between showing all the tracks and tracks wit speed > 15 knots only.
 
-{% include image.html file="clientapi/mapinteraction/trackfiltering.png" caption="Track Filtering" %}
+{% include image.html file="clientapi/interactionclient/trackfiltering.png" caption="Track Filtering" %}
 
 ## Track style XML
 
@@ -145,11 +145,11 @@ Then, add to your main window (xaml), a combo box for selection of color scheme,
 
 You should now be able to switch between different symbol scales, color schemes and normal/simplified rendering.
 
-{% include image.html file="clientapi/mapinteraction/tracksymbscale.png" caption="Track Symbol Scale" %}
+{% include image.html file="clientapi/interactionclient/tracksymbscale.png" caption="Track Symbol Scale" %}
 
-{% include image.html file="clientapi/mapinteraction/trackcolorscheme.png" caption="Track Color Scheme" %}
+{% include image.html file="clientapi/interactionclient/trackcolorscheme.png" caption="Track Color Scheme" %}
 
-{% include image.html file="clientapi/mapinteraction/tracksimplerendering.png" caption="Simplified rendering" %}
+{% include image.html file="clientapi/interactionclient/tracksimplerendering.png" caption="Simplified rendering" %}
 
 ##  Track Clustering
 
@@ -248,12 +248,17 @@ Then, add two combo boxes for selection of mode and algorithm and a slider and a
 
 You should now be able to switch between different clustering modes, algorithms and sizes.
 
-{% include image.html file="clientapi/mapinteraction/trackmodes.png" caption="Cluster modes and algorithms" %}
+{% include image.html file="clientapi/interactionclient/trackmodes.png" caption="Cluster modes and algorithms" %}
 
-{% include image.html file="clientapi/mapinteraction/trackclustersize.png" caption="Cluster sizes" %}
+{% include image.html file="clientapi/interactionclient/trackclustersize.png" caption="Cluster sizes" %}
 
 ##  Track history
 
-Not yet described… 
+<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
+<b>Under construction</b><br>
+This section is under construction!<br>
+Description will be added soon.
+</div>
+
 
 {% include links.html %}

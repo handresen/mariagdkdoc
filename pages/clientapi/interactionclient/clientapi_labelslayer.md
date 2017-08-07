@@ -89,6 +89,6 @@ Then, add a checkbox and a slider with bindings to the view model properties:
 
 Running your application, You should now be able to view labels when the selected map type supports it.
 
-{% include image.html file="clientapi/mapinteraction/labels.jpg" caption="Labels at different scales and opacity" %}
+{% include image.html file="clientapi/interactionclient/labels.jpg" caption="Labels at different scales and opacity" %}
 
 {% include links.html %}

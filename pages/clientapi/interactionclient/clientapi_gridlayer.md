@@ -81,6 +81,6 @@ You should now be able to step through the different grid types.
 
 * This is a very simple example. In a real application you would probably use a drop down button or another control allowing multiple selection of grid types.
 
-{% include image.html file="clientapi/mapinteraction/mapgrid.png" caption=" Map area with grids" %}
+{% include image.html file="clientapi/interactionclient/mapgrid.png" caption=" Map area with grids" %}
 
 {% include links.html %}

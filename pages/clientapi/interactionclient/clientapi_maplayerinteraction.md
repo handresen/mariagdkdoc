@@ -29,7 +29,7 @@ To enable/disable navigation controls, add four check boxes (Ruler, Pan Navigati
 
 You should now be able to toggle the display of the navigation tools.
 
-{% include image.html file="clientapi/mapinteraction/managenavigationctrls.png" caption="Manage built in navigation controls" %}
+{% include image.html file="clientapi/interactionclient/managenavigationctrls.png" caption="Manage built in navigation controls" %}
 
 ##  Navigating the map
 
@@ -77,7 +77,7 @@ Then, add pushbuttons (Navigate Backward and Navigate Forward) for stepping betw
 You should now be able to navigate the map by selecting your own buttons.<br>
 Observe that the forward/backward navigation buttons are disabled until you have panned or zoomed to have views to go to.
 
-{% include image.html file="clientapi/mapinteraction/mapareanavigation.png" caption="Map area navigation" %}
+{% include image.html file="clientapi/interactionclient/mapareanavigation.png" caption="Map area navigation" %}
 
 ## Changing map source {#mapsourcechange}
 
@@ -141,7 +141,7 @@ private void OnMapLayerInitialized()
 You should now be able to switch between available map templates.
 Please note that the map templates above are displayed in different scales.
 
-{% include image.html file="clientapi/mapinteraction/changingmapsource.png" caption="Changing map source" %}
+{% include image.html file="clientapi/interactionclient/changingmapsource.png" caption="Changing map source" %}
 
 ##  Selecting map sub layers
 The map templates may be defined with several sub-layers, e.g. the map information itself, and additional elevation shading.
@@ -188,7 +188,7 @@ public string ActiveMapTemplate
 
 You should now be able to select between different sub layers in your map templates.
 
-{% include image.html file="clientapi/mapinteraction/changingmapsublayers.png" caption="Selecting map sub layers" %}
+{% include image.html file="clientapi/interactionclient/changingmapsublayers.png" caption="Selecting map sub layers" %}
 
 ##  Adding Web Maps
 
@@ -218,7 +218,7 @@ Set ActiveMapTemplate = "No Template" in OnMapLayerInitialized.
 
 “Virtual Earth” and “Open Street” sub-layers should now be available for all map templates -- including no template.
 
-{% include image.html file="clientapi/mapinteraction/webmaplayers.png" caption="Web Map Layers" %}
+{% include image.html file="clientapi/interactionclient/webmaplayers.png" caption="Web Map Layers" %}
 
 ##  Bookmarks
 
@@ -248,11 +248,11 @@ Then, add a list box with bookmark items for display and selection of bookmarks:
 
 You should now be able to display different map sections by selecting different bookmarks.
 
-{% include image.html file="clientapi/mapinteraction/bookmarknavigation.png" caption="Bookmark navigation" %}
+{% include image.html file="clientapi/interactionclient/bookmarknavigation.png" caption="Bookmark navigation" %}
 
 Note that different map sources may have different bookmarks.
 
-{% include image.html file="clientapi/mapinteraction/bookmarksdifferentsources.png" caption="Bookmarks for different map sources" %}
+{% include image.html file="clientapi/interactionclient/bookmarksdifferentsources.png" caption="Bookmarks for different map sources" %}
 
 Bookmarks can be added or removed *locally* for the map client in runtime.
 
@@ -287,6 +287,6 @@ private void OnAddBookmark()
 
 You should now be able to add and remove your own bookmarks!
 
-{% include image.html file="clientapi/mapinteraction/bookmarksmanagement.png" caption="Adding and removing bookmarks" %}
+{% include image.html file="clientapi/interactionclient/bookmarksmanagement.png" caption="Adding and removing bookmarks" %}
 
 {% include links.html %}

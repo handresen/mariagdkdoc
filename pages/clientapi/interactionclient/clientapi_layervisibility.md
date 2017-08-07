@@ -36,6 +36,6 @@ Then, add a list box with check items your XAML:
 
 Running your application, you should be able to turn the different layers on/off !
 
-{% include image.html file="clientapi/mapinteraction/layervisibility.png" caption="Layer visibility" %}
+{% include image.html file="clientapi/interactionclient/layervisibility.png" caption="Layer visibility" %}
 
 {% include links.html %}

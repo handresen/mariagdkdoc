@@ -180,13 +180,13 @@ private void RefreshTools()
 
  You should now be able to change between the different Maria tools!
 
-{% include image.html file="clientapi/mapinteraction/toolzoom.png" caption="Zoom tool" %}
+{% include image.html file="clientapi/interactionclient/toolzoom.png" caption="Zoom tool" %}
 
-{% include image.html file="clientapi/mapinteraction/tooldist.png" caption="Distance tool" %}
+{% include image.html file="clientapi/interactionclient/tooldist.png" caption="Distance tool" %}
 
-{% include image.html file="clientapi/mapinteraction/tooltrackselect.png" caption="Track selection tool" %}
+{% include image.html file="clientapi/interactionclient/tooltrackselect.png" caption="Track selection tool" %}
 
-{% include image.html file="clientapi/mapinteraction/tooltrackmove.png" caption="Move track tool" %}
+{% include image.html file="clientapi/interactionclient/tooltrackmove.png" caption="Move track tool" %}
 
 
 {% include links.html %}

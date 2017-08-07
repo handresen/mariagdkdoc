@@ -84,9 +84,9 @@ Add a button with binding to the command handler:
 
 Running the application and pressing the Export button, a bitmap image of the current map display will be created, and may be saved.
 
-{% include image.html file="clientapi/mapinteraction/snapshotall.png" caption="Snap shot, all layers" %}
+{% include image.html file="clientapi/interactionclient/snapshotall.png" caption="Snap shot, all layers" %}
 
-{% include image.html file="clientapi/mapinteraction/snapshotselected.png" caption="Snap shot, selected layers" %}
+{% include image.html file="clientapi/interactionclient/snapshotselected.png" caption="Snap shot, selected layers" %}
 
 Note that information from all visible layers are included in the snap-shot, but the map components (mini map, ruler, pan navigation and Scale bar) are not.
 
