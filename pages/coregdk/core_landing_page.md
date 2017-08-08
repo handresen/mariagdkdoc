@@ -47,7 +47,9 @@ Maria GDK [Geolocation](./core_geolocation.html) service allows fast, faceted, f
 Maria GDK has support for fast terrain/elevation based calculations and visualization:
 
 * [Elevation Analysis](core_elevationanalysis.html)
-* [Elevation Profiles](core_elevationprofiles.html)
+* Elevation Profiles 
+  * [Local Elevation Profile](core_localelevationprofile.html)
+  * [Enhanced Elevation Profile](core_enhancedelevationprofile.htm)
 * [Radio Propagation and Coverage](core_radiocalculations.html)
  
 ### Vector map legend
