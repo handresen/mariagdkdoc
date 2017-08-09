@@ -1,7 +1,7 @@
 ---
 title: Map templates
-keywords: templates
-tags: [map]
+keywords: templates, dynamic, elevation, composite, overlay
+tags: [map, template]
 sidebar: core_sidebar
 permalink: core_maps_templates.html
 summary: Using map templates to create multilayered maps for Maria GDK. 
@@ -159,7 +159,7 @@ and a global SRTM dataset as fallback.
 
 ## Dynamic layers in templates
 
-Available since Maria GDK 3.1.
+Available since Maria GDK 3.1.+.
 
 It is possible to dynamically build up templates using overlay-templates and corresponding tags. This is done by creating a (basemap) template containing references to (overlay) templates. (Overlay-templates use the same syntax as regular templates, but are NOT regarded as "normal" templates by Maria GDK). The purpose is to ease the process of replacing and adding maps to a basemap without continously having to update the template.xml.
 

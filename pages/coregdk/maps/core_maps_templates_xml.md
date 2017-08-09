@@ -1,7 +1,7 @@
 ---
 title: Explaining the map template xml
-keywords: templates, xml
-tags: [map]
+keywords: templates, xml, dynamic, templatefilter, overlay
+tags: [map, template]
 sidebar: core_sidebar
 permalink: core_maps_templates_xml.html
 summary: Using map templates to create multilayered maps for Maria GDK. 

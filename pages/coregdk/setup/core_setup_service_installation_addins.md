@@ -11,7 +11,7 @@ summary: Installing the Maria GDK service addins.
 
 ## Service addins
 
-The Maria GDK services is organized in a service addin infrastructure. You can read more about this at [MSDN](https///msdn.microsoft.com/en-us/library/bb384200(v=vs.110).aspx) This means that all service addins will run within the single Windows service "TpgServiceHoster".
+The Maria GDK services is organized in a service addin infrastructure. You can read more about this at [MSDN](https://msdn.microsoft.com/en-us/library/bb384200(v=vs.110).aspx) This means that all service addins will run within the single Windows service "TpgServiceHoster".
 
 ## Installation
 

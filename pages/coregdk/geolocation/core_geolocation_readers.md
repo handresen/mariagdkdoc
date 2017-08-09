@@ -53,7 +53,7 @@ All strings meant to be searchable must be added to the FTS table. Using tagged 
 
 ### RTree table
 
-The [RTree](https///www.sqlite.org/rtree.html) table (*spatial_index*) is a mandatory table used for spatial searches. The Maria2012 location database rtree table should have a primary key and two column pairs representing the minimum and maximum values (bounding box) for a 2-dimensional object. 
+The [RTree](https://www.sqlite.org/rtree.html) table (*spatial_index*) is a mandatory table used for spatial searches. The Maria2012 location database rtree table should have a primary key and two column pairs representing the minimum and maximum values (bounding box) for a 2-dimensional object. 
 
  | Columns | Description       | Type    | 
  | ------- | -----------       | ----    | 

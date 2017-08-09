@@ -1,7 +1,7 @@
 ---
 title: Dynamic template example
-keywords: templates, dynamic
-tags: [map]
+keywords: templates, dynamic, overlay, templatefilter
+tags: [map, template]
 sidebar: core_sidebar
 permalink: core_maps_templates_dynamic.html
 summary: Demonstrating dynamic templates 
