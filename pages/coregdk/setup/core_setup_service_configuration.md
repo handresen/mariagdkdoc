@@ -52,6 +52,7 @@ The file must be saved and the TpgServiceHoster service restarted for changes to
 
 *  **M6MParams:**
     * **s52RootPath:** Location of s52 symbol files utilized by the Vector service addin.
+    * **datasetindexpath:** Directory for index files. Default: ''%ALLUSERSPROFILE%\\TeleplanGlobe\\MariaGDK\\MapIndex''
 
 ## SymbolServiceSettings
 
