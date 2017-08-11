@@ -213,3 +213,24 @@ It is also possible to combine the different templatefilters. Say you have a bas
 ```
 
 When the template is resolved - this will appear as a template with 3 maplayers: `PlainOpenstreet`, `MultiTag` and `Peaceful`, but including 4 different datasources (plainopenstreet, scary, danger and bliss).
+
+## IMapLayerViewModel
+
+```csharp
+        /// <summary>
+        /// Get all layernames and corresponding layerids in active template.
+        /// The layerid returned for dynamic layers is a group id.
+        /// Use that id as input to GetReferencedMapLayers to fetch referenced overlays.
+        /// </summary>
+        /// <returns>Returns a dictionary with layernames and corresponding layerids (guid-string)</returns>
+        Dictionary<string, string> GetMapLayers();
+```
+
+```csharp
+        /// <summary>
+        /// Get all referenced overlays for a dynamic templatelayer.
+        /// </summary>
+        /// <param name="id">Layer id</param>
+        /// <returns>Returns a list of all referenced overlays</returns>
+        IEnumerable<IRasterLayerData> GetReferencedMapLayers(string id);
+```
