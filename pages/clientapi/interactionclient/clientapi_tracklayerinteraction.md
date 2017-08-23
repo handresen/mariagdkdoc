@@ -17,8 +17,8 @@ We will now perform further interactions towards the track layer through the tra
 
  | Interface | Accesed through | 
  | --------- | --------------- | 
- | *IMariaTrackLayer*     | *_trackLayer* |                       
- | *IMariaExtendedTrackLayer* | *_trackLayer.ExtendedTrackLayer* |
+ | [*IMariaTrackLayer*](http://maria.support2.teleplan.no/MariaGDKDoc/html/B2FB03E9.htm)     | *_trackLayer* |                       
+ | [*IMariaExtendedTrackLayer*](http://maria.support2.teleplan.no/MariaGDKDoc/html/AA8CECEC.htm) | *_trackLayer.ExtendedTrackLayer* |
 
 
 ##  Create tracks {#createtracks}

@@ -49,7 +49,7 @@ Maria GDK has support for fast terrain/elevation based calculations and visualiz
 * [Elevation Analysis](core_elevationanalysis.html)
 * Elevation Profiles 
   * [Local Elevation Profile](core_localelevationprofile.html)
-  * [Enhanced Elevation Profile](core_enhancedelevationprofile.htm)
+  * [Enhanced Elevation Profile](core_enhancedelevationprofile.htm) utilizing elevation information from service.
 * [Radio Propagation and Coverage](core_radiocalculations.html)
  
 ### Vector map legend
@@ -59,8 +59,17 @@ Displaying [feature legends](./core_maps_vectorlegend.html) for vector maps.
 Performing bitmap [export](./core_maps_export.html) of a Maria layer stack.
 
 ## Technologies
+<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
+<b>Under construction</b><br />
+This section is under construction!<br />
+</div>
 
 ## Tools, libraries and utilities
+<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
+<b>Under construction</b><br />
+This section is under construction!<br />
+Description will be added soon.
+</div>
 
 ## Installation and setup
 Resources on service [installation](./core_setup_service_installation.md), [configuration](./core_setup_service_configuration.html) and [discovery](./core_setup_service_discovery.html).

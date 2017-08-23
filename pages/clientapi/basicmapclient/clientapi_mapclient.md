@@ -24,13 +24,13 @@ Add the MariaUserControl to the xaml of your window, name of your choice, option
  . . . 
  xmlns:MariaUserControl= "clr-namespace:TPG.Maria.MariaUserControl; assembly=TPG.Maria.MariaUserControl"
  Title="MariaWpfWindow" Height="550" Width="525" >
-  `<Grid>`
-   <MariaUserControl:MariaUserControl Name="MariaCtrl"
-                                      IsMiniMapVisible="True"
-                                      IsPanNavigationVisible="True"
-                                      IsScaleBarVisible="True"
-                                      IsRulerVisible="True"
-                                      />
+ <Grid>
+ <MariaUserControl:MariaUserControl Name="MariaCtrl"
+                                    IsMiniMapVisible="True"
+                                    IsPanNavigationVisible="True"
+                                    IsScaleBarVisible="True"
+                                    IsRulerVisible="True"
+                                    />
   </Grid>
 </Window>
 ```

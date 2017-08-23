@@ -56,7 +56,8 @@ private void OnTrackLayerInitialized()
     }
 }
 ```
-Verify that your *app.config* file contains endpoint definitions for the ***catalog service*** and the ***template service***, as described in the [Service Configuration](clientapi_serviceconfiguration.html) section.
+
+Make sure that your *app.config* file contains endpoint definitions for the ***TrackService***, as described in the [Service Configuration](clientapi_serviceconfiguration.html) section.
 
 Then, include the TrackViewModel in the main view model (*MariaWindowViewModel*).
 

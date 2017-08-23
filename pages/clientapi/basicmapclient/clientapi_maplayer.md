@@ -63,7 +63,7 @@ private MapTemplate PreferredMapTemplate()
 }
 ```
 
-Verify that your *app.config* file contains endpoint definitions for the ***catalog service*** and the ***template service***, as described in the [Service Configuration](clientapi_serviceconfiguration.html) section.
+Verify that your *app.config* file contains endpoint definitions for the ***MapCatalogService*** and the ***TemplateService***, as described in the [Service Configuration](clientapi_serviceconfiguration.html) section.
 
 Then, include the MapViewModel in the main view model (*MariaWindowViewModel*).
 
@@ -107,8 +107,9 @@ Update MariaUserControl binding
                                    CenterPosition="{Binding MapViewModel.CenterPosition}" 
                                    MiniMapLayer="{Binding MapViewModel.MiniMapLayer}"     
                                    />
-/>
+                                                                      
 ```
+
 <div class="alert alert-success" role="alert"><i class="fa fa-arrow-circle-right"></i><b> Run:</b><br> 
 Running your application, the window area should now include map information and mini map - and you should be able to navigate the map!
 </div>
