@@ -7,12 +7,6 @@ permalink: elevationdata.html
 summary: This section describes . . . 
 ---
 
-<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
-<b>Under construction</b><br>
-This section is under construction!<br>
-Description will be added soon.
-</div>
-
 ## Available elevation data
 
 Example:
@@ -58,5 +52,10 @@ When the sample distance is smaller than the dataset resolution, with several sa
 
 {% include image.html file="core\calculations\elevation\e2dataset_different_res.png" max-width=500  caption="Dataset transition" %}
 
+<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
+<b>Under construction</b><br>
+This section is under construction!<br>
+Description will be added soon.
+</div>
 
 {% include links.html %}
