@@ -43,13 +43,11 @@ Maria GDK [Geolocation](./core_geolocation.html) service allows fast, faceted, f
 
 ### Point symbols
 
-### Calculations
+### Calculations {#calculations}
 Maria GDK has support for fast terrain/elevation based calculations and visualization:
 
 * [Elevation Analysis](core_elevationanalysis.html)
-* Elevation Profiles 
-  * [Local Elevation Profile](core_localelevationprofile.html)
-  * [Enhanced Elevation Profile](core_enhancedelevationprofile.htm) utilizing elevation information from service.
+* [Elevation Profiles](core_elevationprofiles.html) 
 * [Radio Propagation and Coverage](core_radiocalculations.html)
  
 ### Vector map legend

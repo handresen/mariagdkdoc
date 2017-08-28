@@ -7,32 +7,34 @@ permalink: core_enhancedelevationprofile.htm
 summary: This section describes Maria GDK enhanced elevation profile functionality. 
 ---
 
-{% include image.html file="core\calculations\enhancedelevation\e2profile_example.png" max-width=500 caption="Enhanced Elevation " %}
+{% include image.html file="core\calculations\elevation\e2profile_example.png" max-width=500 caption="Enhanced Elevation " %}
 
-## Enhanced Elevation Service
+# Enhanced Elevation Service
 
-{% include image.html file="core\calculations\enhancedelevation\e2profile_servicearchitecture.png" max-width=400 caption="Enhanced Elevation Service Architecture" %}
+{% include image.html file="core\calculations\elevation\e2profile_servicearchitecture.png" max-width=400 caption="Enhanced Elevation Service Architecture" %}
 
 More details are found in [Elevation Data Overview](elevationdata.html)
 
-<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
-<b>Under construction</b><br>
-This section is under construction!<br>
-Description will be added soon.
-</div>
+## Interfaces
 
-## Enhanced Elevation Profile Component
+* Enhanced Elevation, Interface
+  ***IEnhancedElevationService***
 
-{% include image.html file="core\calculations\enhancedelevation\e2profile_clientarchitecture.png" max-width=400 caption="Enhanced Elevation Client Architecture" %}
+* Enhanced Elevation, WEB Interface
+  ***IEnhancedElevationWebInterface*** 
 
+# Enhanced Elevation Profile in client applications
 
-{% include image.html file="core\calculations\enhancedelevation\e2profile_example_params.png" caption="Profile component example" %}
+Maria GDK provides an Enhanced Elevation Profile component, with helper classes for conneting and communicationg with the EnhancedElevation Service, and profile properties handling. 
 
-<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
-<b>Under construction</b><br>
-This section is under construction!<br>
-Description will be added soon.
-</div>
+The profile is calulated from a list of possitions, e.g. from the Maria GDK Distance tool.
 
+{% include image.html file="core\calculations\elevation\e2profile_clientarchitecture.png" max-width=400 caption="Enhanced Elevation Client Architecture" %}
+
+* ***EnhancedElevationProfileControl*** (TPG.EnhancedElevation.Profile)
+* ***EnhancedElevationProfileViewModel*** (TPG.EnhancedElevation.Profile)
+* ***EnhancedElevationServiceEngine*** (TPG.EnhancedElevationServiceClient)
+
+{% include image.html file="core\calculations\elevation\e2profile_example_params.png" caption="Profile component example" %}
 
 {% include links.html %}

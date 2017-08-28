@@ -6,12 +6,11 @@ sidebar: core_sidebar
 permalink: core_localelevationprofile.html
 summary: This section describes Maria GDK client internal elevation profile functionality. 
 ---
-<div class="alert alert-danger" role="alert"> <i class="fa fa-exclamation-circle  fa-2x"></i>
-<b>Under construction</b><br>
-This section is under construction!<br>
-Description will be added soon.
-</div>
 
+Maria GDK provides an Elevation Profile component with client side profile calculation. The profile is calulated from a list of possitions, e.g. from the Maria GDK Distance tool.
 
+* ***MariaElevationProfileControl*** (TPG.Maria.MapLayer.MariaElevationProfileControl)
+
+{% include image.html file="core\calculations\elevation\profile_example.png" caption="Profile component example" %}
 
 {% include links.html %}
