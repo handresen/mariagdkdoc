@@ -4,7 +4,7 @@ keywords: client installation troubleshooting
 tags: [client, map, rendering]
 sidebar: core_setup_sidebar
 permalink: core_setup_client_configuration.html
-summary: Configuring the Maria GDK service addins. 
+summary: Configuring Maria GDK clients. 
 ---
 
 The Maria client setup will mainly be application specific, but there are a few common settings that control the low level components of the system that will be relevant for all Maria applications.
