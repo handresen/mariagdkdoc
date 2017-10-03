@@ -70,7 +70,13 @@ Description will be added soon.
 </div>
 
 ## Installation and setup
-Resources on service [installation](./core_setup_service_installation.md), [configuration](./core_setup_service_configuration.html) and [discovery](./core_setup_service_discovery.html).
+This section contains resources on settings up and configuring the Maria system
+
+* [Service installation](./core_setup_service_installation.md)
+* [Service configuration](./core_setup_service_configuration.html) 
+* [Service discovery](./core_setup_service_discovery.html)
+* [Client configuration](./core_setup_client_configuration.html) and troubleshooting.
+
 
 ## Maria GDK Releases
 This is an overview of the available releases of the Maria GDK
