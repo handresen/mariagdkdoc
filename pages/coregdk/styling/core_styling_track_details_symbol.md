@@ -102,7 +102,7 @@ If true, symbol scale will be modified by the system so that smaller symbols wil
  | MilStd2525    | Uses 15-character symbol string specified in [Mil-Std-2525C](http://www.dtic.mil/doctrine//doctrine/other/ms_2525c.pdf) | <img class="tableImage" src="images/core/tracks/trackcoresymbology2525.png"/> | 
  | NTDS          | Four fist characters of 2525 code, uses battle dimension and standard identity to determine symbol | <img class="tableImage" src="images/core/tracks/trackcoresymbologyntds.png"/> | 
  | BitmapFile    | URI referencing png or jpg file. Note that this imaged should be scaled appropriately for display and must be reachable from the client. |  <img class="tableImage" src="images/core/tracks/trackcoresymbologybitmapfile.png"/> | 
- | MilSymCompact | Three character code, first denotes threat/identity, the second and third indicate heading or time old (X in symbol). MilStd2525 codes can be used and will be automatically mapped. Heading is indicated using triangle indicator within the symbol. The core symbol itself should not be rotated. |  <img class="tableImage" src="images/core/tracks/milsymcompact.png"/> | 
+ | MilSymCompact | Three or four character code, <br> - first denotes threat/identity, <br> - second and third indicate heading or time old (X in symbol). <br> - fourth (optional) denotes operational status (MilStd2525 values) <br>MilStd2525 codes can be used and will be automatically mapped. Heading is indicated using triangle indicator within the symbol. The core symbol itself should not be rotated. |  <img class="tableImage" src="images/core/tracks/milsymcompact.png"/> | 
 
 
 
