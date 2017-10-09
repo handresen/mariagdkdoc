@@ -35,6 +35,9 @@ entries:
       url: /core_setup_service_discovery.html
       output: web, pdf
 
+    - title: Client setup and troubleshooting
+      url: /core_setup_client_configuration.html
+      output: web, pdf
 
 
 

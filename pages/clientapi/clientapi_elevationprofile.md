@@ -226,7 +226,14 @@ private void OnDrawLayerInitialized()
     EnhancedElevationServiceEngine = new EnhancedElevationServiceEngine();
     EnhancedElevationServiceEngine.ConnectToElevationService("EnahncedElevationService");
     EnhancedProfileViewModel = new EnhancedElevationProfileViewModel(new GeoUnitsSetting());
+    EnhancedProfileViewModel.ProfileParametersChanged += OnEnhancedProfileParametersChanged;
 }
+
+private void OnEnhancedProfileParametersChanged(object sender)
+{
+    UpdateProfiles();
+}
+
 ```
 
 Add a user control for the profile properties, see sample project for details. <br>
