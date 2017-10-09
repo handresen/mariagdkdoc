@@ -57,7 +57,7 @@ Where
 
 **Example:**
 
-"http://localhost:9008/rastermap/e74f48c4-54ff-412f-894b-c1ee977768c0/tilemapservice/getmaptile/BlueMarble/7/67/37.jpg"
+"http://localhost:9008/rastermap/e74f48c4-54ff-412f-894b-c1ee977768c0/web/tilemapservice/getmaptile/BlueMarble/7/67/37.jpg"
 
 In the example above `rastermap/e74f48c4-54ff-412f-894b-c1ee977768c0` is the service instance.
 
