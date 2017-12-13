@@ -119,6 +119,7 @@ matchErr.Dump();
 True\
 False
 ```
+
 ### Predefined format strings
 
 TPG.GeoUnits.PositionFormatDefinitions contains definitions for existing position formats. Note that the formatting used in the generic formatting/parser classes allows parsing and formatting of all entries in “PositionFormats”.
@@ -198,6 +199,13 @@ new GenericPositionFormatter().Format(
 S0W0
 S0.01W0.01
 ```
+
+#### Sign marker
+Lat-lon positions can be parsed and represented using sign instead of N/S, E/W markers. Insert a '-' before the numerical formatting string, example:
+```
+<latdeg -*0.####>°,<londeg -*0.####>°
+```
+This will allow parsing and formatting of positions on the format "-31.1390°,-079.6582°". Note that omitting the sign marker will display unsigned values in order to maintain consistency. 
 
 #### `<mgrs>`
 
