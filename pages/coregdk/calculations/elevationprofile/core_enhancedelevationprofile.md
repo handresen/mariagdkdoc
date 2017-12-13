@@ -3,7 +3,7 @@ title: Core - Enhanced Elevation Profile
 keywords: 
 tags: [elevationprofile, service]
 sidebar: core_sidebar
-permalink: core_enhancedelevationprofile.htm
+permalink: core_enhancedelevationprofile.html
 summary: This section describes Maria GDK enhanced elevation profile functionality. 
 ---
 

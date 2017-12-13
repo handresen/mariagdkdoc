@@ -8,6 +8,6 @@ summary: Maria GDK Elevation profile functionality.
 ---
 
   * [Local Elevation Profile](core_localelevationprofile.html)
-  * [Enhanced Elevation Profile](core_enhancedelevationprofile.htm) utilizing elevation information from service.
+  * [Enhanced Elevation Profile](core_enhancedelevationprofile.html) utilizing elevation information from service.
 
 {% include links.html %}
